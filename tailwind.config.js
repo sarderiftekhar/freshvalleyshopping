@@ -54,6 +54,15 @@ export default {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
                 },
+                // Orfarm theme colors
+                'orfarm-blue': '#8C0808',
+                'orfarm-green': '#106207',
+                'orfarm-green-dark': '#0B4A05',
+                'orfarm-red': '#EA0D42',
+                'orfarm-cyan': '#12B7CE',
+                'orfarm-yellow': '#FFB800',
+                'orfarm-body': '#4D5574',
+                'orfarm-grey': '#F2F2F6',
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -61,7 +70,9 @@ export default {
                 sm: 'calc(var(--radius) - 4px)',
             },
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Jost', ...defaultTheme.fontFamily.sans],
+                heading: ['Quicksand', ...defaultTheme.fontFamily.sans],
+                display: ['Playfair Display', ...defaultTheme.fontFamily.serif],
             },
         },
     },

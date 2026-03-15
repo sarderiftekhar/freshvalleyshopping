@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
 import { Link, usePage } from '@inertiajs/react';
-import { Search, User, ShoppingCart, Menu, X, Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Search, User, ShoppingCart, Menu, X, Phone, MapPin, ChevronDown, Truck, Shield, Tag, Headphones, Package, Mail, Facebook, Twitter, Youtube, ChevronRight } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 
 interface Props {
@@ -12,6 +12,7 @@ export default function StorefrontLayout({ children }: Props) {
         <div className="min-h-screen flex flex-col">
             <Header />
             <main className="flex-1">{children}</main>
+            <FeatureBar />
             <Footer />
         </div>
     );
@@ -26,7 +27,7 @@ function Header() {
     return (
         <header className="sticky top-0 z-50 bg-white shadow-sm">
             {/* Top Bar */}
-            <div className="bg-primary text-primary-foreground">
+            <div className="bg-orfarm-blue text-white">
                 <div className="container mx-auto px-4 py-1.5 flex items-center justify-between text-xs">
                     <div className="flex items-center gap-4">
                         <span className="flex items-center gap-1">
@@ -51,26 +52,26 @@ function Header() {
                     <Link href="/" className="flex items-center gap-2 shrink-0">
                         <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-10 w-auto" />
                         <div className="hidden sm:block">
-                            <span className="font-bold text-xl text-foreground leading-tight block">Fresh Valley</span>
-                            <span className="text-xs text-muted-foreground leading-tight block">Halal Grocery & Delivery</span>
+                            <span className="font-heading font-bold text-xl text-orfarm-blue leading-tight block">Fresh Valley</span>
+                            <span className="text-xs text-orfarm-green font-medium leading-tight block">Halal Grocery & Delivery</span>
                         </div>
                     </Link>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center gap-8">
-                        <Link href="/" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                        <Link href="/" className="text-sm font-medium text-foreground hover:text-orfarm-green transition-colors">
                             Home
                         </Link>
-                        <Link href="/shop" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                        <Link href="/shop" className="text-sm font-medium text-foreground hover:text-orfarm-green transition-colors">
                             Shop
                         </Link>
                         <div className="relative group">
-                            <button className="text-sm font-medium text-foreground hover:text-primary transition-colors flex items-center gap-1">
+                            <button className="text-sm font-medium text-foreground hover:text-orfarm-green transition-colors flex items-center gap-1">
                                 Categories
                                 <ChevronDown className="size-3.5" />
                             </button>
                         </div>
-                        <Link href="/shop" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                        <Link href="/shop" className="text-sm font-medium text-foreground hover:text-orfarm-green transition-colors">
                             Offers
                         </Link>
                     </nav>
@@ -81,9 +82,9 @@ function Header() {
                             <input
                                 type="text"
                                 placeholder="Search for halal meat, fish, groceries..."
-                                className="w-full h-10 pl-4 pr-10 rounded-full border border-border bg-muted/50 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+                                className="w-full h-10 pl-4 pr-10 rounded-full border border-border bg-orfarm-grey text-sm focus:outline-none focus:ring-2 focus:ring-orfarm-green/30 focus:border-orfarm-green"
                             />
-                            <button className="absolute right-1 top-1 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground hover:bg-primary/90 transition-colors">
+                            <button className="absolute right-1 top-1 w-8 h-8 bg-orfarm-green rounded-full flex items-center justify-center text-white hover:bg-orfarm-green-dark transition-colors">
                                 <Search className="size-4" />
                             </button>
                         </div>
@@ -93,7 +94,7 @@ function Header() {
                     <div className="flex items-center gap-2">
                         <button
                             onClick={() => setSearchOpen(!searchOpen)}
-                            className="lg:hidden w-9 h-9 flex items-center justify-center rounded-full hover:bg-muted transition-colors"
+                            className="lg:hidden w-9 h-9 flex items-center justify-center rounded-full hover:bg-orfarm-grey transition-colors"
                         >
                             <Search className="size-5 text-foreground" />
                         </button>
@@ -101,14 +102,14 @@ function Header() {
                         {auth?.user ? (
                             <Link
                                 href="/dashboard"
-                                className="hidden sm:flex w-9 h-9 items-center justify-center rounded-full hover:bg-muted transition-colors"
+                                className="hidden sm:flex w-9 h-9 items-center justify-center rounded-full hover:bg-orfarm-grey transition-colors"
                             >
                                 <User className="size-5 text-foreground" />
                             </Link>
                         ) : (
                             <Link
                                 href="/login"
-                                className="hidden sm:flex w-9 h-9 items-center justify-center rounded-full hover:bg-muted transition-colors"
+                                className="hidden sm:flex w-9 h-9 items-center justify-center rounded-full hover:bg-orfarm-grey transition-colors"
                             >
                                 <User className="size-5 text-foreground" />
                             </Link>
@@ -116,11 +117,11 @@ function Header() {
 
                         <Link
                             href="/cart"
-                            className="relative w-9 h-9 flex items-center justify-center rounded-full hover:bg-muted transition-colors"
+                            className="relative w-9 h-9 flex items-center justify-center rounded-full hover:bg-orfarm-grey transition-colors"
                         >
                             <ShoppingCart className="size-5 text-foreground" />
                             {totalItems > 0 && (
-                                <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-[10px] font-bold rounded-full flex items-center justify-center">
+                                <span className="absolute -top-1 -right-1 w-5 h-5 bg-orfarm-green text-white text-[10px] font-bold rounded-full flex items-center justify-center">
                                     {totalItems}
                                 </span>
                             )}
@@ -128,7 +129,7 @@ function Header() {
 
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="lg:hidden w-9 h-9 flex items-center justify-center rounded-full hover:bg-muted transition-colors"
+                            className="lg:hidden w-9 h-9 flex items-center justify-center rounded-full hover:bg-orfarm-grey transition-colors"
                         >
                             {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
                         </button>
@@ -142,10 +143,10 @@ function Header() {
                             <input
                                 type="text"
                                 placeholder="Search for halal meat, fish, groceries..."
-                                className="w-full h-10 pl-4 pr-10 rounded-full border border-border bg-muted/50 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30"
+                                className="w-full h-10 pl-4 pr-10 rounded-full border border-border bg-orfarm-grey text-sm focus:outline-none focus:ring-2 focus:ring-orfarm-green/30"
                                 autoFocus
                             />
-                            <button className="absolute right-1 top-1 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground">
+                            <button className="absolute right-1 top-1 w-8 h-8 bg-orfarm-green rounded-full flex items-center justify-center text-white">
                                 <Search className="size-4" />
                             </button>
                         </div>
@@ -157,13 +158,13 @@ function Header() {
             {mobileMenuOpen && (
                 <div className="lg:hidden border-t border-border bg-white">
                     <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
-                        <Link href="/" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-                        <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg" onClick={() => setMobileMenuOpen(false)}>Shop</Link>
-                        <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg" onClick={() => setMobileMenuOpen(false)}>Offers</Link>
+                        <Link href="/" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+                        <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Shop</Link>
+                        <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Offers</Link>
                         {auth?.user ? (
-                            <Link href="/dashboard" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg" onClick={() => setMobileMenuOpen(false)}>My Account</Link>
+                            <Link href="/dashboard" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>My Account</Link>
                         ) : (
-                            <Link href="/login" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-muted rounded-lg" onClick={() => setMobileMenuOpen(false)}>Login / Register</Link>
+                            <Link href="/login" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Login / Register</Link>
                         )}
                     </nav>
                 </div>
@@ -172,73 +173,138 @@ function Header() {
     );
 }
 
-function Footer() {
+function FeatureBar() {
+    const features = [
+        { icon: Truck, title: 'Fast Delivery', desc: 'Dartford & Surrounding' },
+        { icon: Shield, title: 'Safe Payment', desc: '100% Secure Payment' },
+        { icon: Tag, title: 'Online Discount', desc: 'Multi-buy Discounts' },
+        { icon: Headphones, title: 'Help Center', desc: 'Dedicated 24/7 Support' },
+        { icon: Package, title: 'Curated Items', desc: 'From Handpicked Sellers' },
+    ];
+
     return (
-        <footer className="bg-neutral-900 text-neutral-300">
+        <section className="relative bg-orfarm-blue pt-16 pb-10">
+            {/* Torn/ripped paper top edge using template SVG */}
+            <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]" style={{ transform: 'translateY(-98%)' }}>
+                <img src="/assets/img/shape/footer-shape-1.svg" alt="" className="w-full h-auto block" />
+            </div>
+            <div className="container mx-auto px-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-white/20 pb-8">
+                    {features.map((f, i) => (
+                        <div key={i} className="flex flex-col items-center text-center gap-3">
+                            <f.icon className="size-8 text-orfarm-green" />
+                            <div>
+                                <h4 className="text-xs font-bold uppercase text-white tracking-wider">{f.title}</h4>
+                                <p className="text-xs text-white/60 mt-1">{f.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
+
+function Footer() {
+    const categories = [
+        { name: 'Fruits & Vegetables', href: '/shop?category=vegetables' },
+        { name: 'Dairy Products', href: '/shop?category=dairy-eggs' },
+        { name: 'Fresh Meat', href: '/shop?category=fresh-meat' },
+        { name: 'Fresh Fish', href: '/shop?category=fresh-fish' },
+        { name: 'Rice & Grains', href: '/shop?category=rice-grains' },
+    ];
+
+    return (
+        <footer className="bg-orfarm-blue text-white/70">
             {/* Main Footer */}
             <div className="container mx-auto px-4 py-12">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {/* About */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                    {/* Let Us Help You */}
                     <div>
-                        <div className="flex items-center gap-2 mb-4">
-                            <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-9 w-auto brightness-0 invert" />
-                            <span className="font-bold text-lg text-white">Fresh Valley</span>
-                        </div>
-                        <p className="text-sm leading-relaxed mb-4">
-                            Certified halal meat, fish, and Asian groceries delivered fresh to your door in Dartford, Orpington & Sidcup.
+                        <h4 className="text-white font-heading font-bold text-base uppercase tracking-wide mb-6">Let Us Help You</h4>
+                        <p className="text-sm leading-relaxed mb-6">
+                            If you have any question, please<br />
+                            contact us at:<Link href="mailto:info@freshvalley.co.uk" className="text-orfarm-green hover:underline">info@freshvalley.co.uk</Link>
                         </p>
+                        <p className="text-sm text-white/50 mb-3">Social Media:</p>
                         <div className="flex gap-3">
-                            <a href="#" className="w-8 h-8 bg-neutral-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-sm">f</a>
-                            <a href="#" className="w-8 h-8 bg-neutral-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-sm">W</a>
+                            <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-orfarm-green transition-colors">
+                                <Facebook className="size-4" />
+                            </a>
+                            <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-orfarm-green transition-colors">
+                                <Twitter className="size-4" />
+                            </a>
+                            <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-orfarm-green transition-colors">
+                                <Youtube className="size-4" />
+                            </a>
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+                    {/* Location & Hours */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-                        <ul className="space-y-2.5 text-sm">
-                            <li><Link href="/shop" className="hover:text-primary transition-colors">Shop All</Link></li>
-                            <li><Link href="/shop?category=fresh-meat" className="hover:text-primary transition-colors">Fresh Meat</Link></li>
-                            <li><Link href="/shop?category=fresh-fish" className="hover:text-primary transition-colors">Fresh Fish</Link></li>
-                            <li><Link href="/shop?category=vegetables" className="hover:text-primary transition-colors">Vegetables</Link></li>
-                            <li><Link href="/shop?category=rice-grains" className="hover:text-primary transition-colors">Rice & Grains</Link></li>
+                        <h4 className="text-white font-heading font-bold text-base uppercase tracking-wide mb-6">Find Us</h4>
+                        <p className="text-sm leading-relaxed mb-5">
+                            Dartford, Orpington, Sidcup<br />
+                            & surrounding areas, Kent, UK.
+                        </p>
+                        <div className="text-sm space-y-1.5">
+                            <p>Monday — Friday: <span className="text-white font-medium">8:00 AM — 6:00 PM</span></p>
+                            <p>Saturday: <span className="text-white font-medium">10:00 AM — 06:00 PM</span></p>
+                            <p>Sunday: <span className="text-white font-medium">Closed</span></p>
+                        </div>
+                    </div>
+
+                    {/* Hot Categories */}
+                    <div>
+                        <h4 className="text-white font-heading font-bold text-base uppercase tracking-wide mb-6">Hot Categories</h4>
+                        <ul className="space-y-3">
+                            {categories.map((cat, i) => (
+                                <li key={i}>
+                                    <Link href={cat.href} className="text-sm hover:text-orfarm-green transition-colors flex items-center gap-2">
+                                        <ChevronRight className="size-3 text-orfarm-green" />
+                                        {cat.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
-                    {/* Delivery Info */}
+                    {/* Newsletter */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4">Delivery Info</h4>
-                        <ul className="space-y-2.5 text-sm">
-                            <li className="flex items-start gap-2">
-                                <MapPin className="size-4 mt-0.5 shrink-0" />
-                                Dartford, Orpington, Sidcup & surrounding areas
-                            </li>
-                            <li>Delivery: Twice a week</li>
-                            <li>Free delivery on orders over £40</li>
-                            <li>Same-day order cutoff: 6pm</li>
-                        </ul>
-                    </div>
-
-                    {/* Contact */}
-                    <div>
-                        <h4 className="text-white font-semibold mb-4">Contact Us</h4>
-                        <ul className="space-y-2.5 text-sm">
-                            <li className="flex items-center gap-2">
-                                <Phone className="size-4 shrink-0" />
-                                07XXX XXXXXX
-                            </li>
-                            <li>WhatsApp orders welcome</li>
-                            <li>info@freshvalley.co.uk</li>
-                        </ul>
+                        <h4 className="text-white font-heading font-bold text-base uppercase tracking-wide mb-6">Our Newsletter</h4>
+                        <p className="text-sm leading-relaxed mb-5">
+                            Subscribe to the Fresh Valley mailing list to receive updates on new arrivals & other information.
+                        </p>
+                        <div className="flex">
+                            <div className="relative flex-1">
+                                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-white/40" />
+                                <input
+                                    type="email"
+                                    placeholder="Your email address..."
+                                    className="w-full h-12 pl-10 pr-3 bg-white/10 border border-white/20 rounded-l-lg text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-orfarm-green"
+                                />
+                            </div>
+                            <button className="h-12 px-5 bg-orfarm-green text-white font-semibold text-sm rounded-r-lg hover:bg-orfarm-green-dark transition-colors uppercase tracking-wide">
+                                Subscribe
+                            </button>
+                        </div>
+                        <label className="flex items-center gap-2 mt-3 text-xs text-white/50 cursor-pointer">
+                            <input type="checkbox" className="rounded border-white/30 bg-transparent text-orfarm-green focus:ring-orfarm-green" />
+                            I accept terms & conditions & privacy policy.
+                        </label>
                     </div>
                 </div>
             </div>
 
             {/* Copyright */}
-            <div className="border-t border-neutral-800">
-                <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-neutral-500">
-                    <p>&copy; {new Date().getFullYear()} Fresh Valley Shopping. All rights reserved.</p>
-                    <p>Halal Certified by HMC</p>
+            <div className="border-t border-white/10">
+                <div className="container mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <p className="text-xs text-white/50">
+                        Copyright &copy; {new Date().getFullYear()} <span className="text-orfarm-green font-semibold">FRESH VALLEY</span> all rights reserved. Halal Certified.
+                    </p>
+                    <div className="flex items-center">
+                        <img src="/assets/img/shape/payment.png" alt="Payment methods" className="h-7" />
+                    </div>
                 </div>
             </div>
         </footer>
