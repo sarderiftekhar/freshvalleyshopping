@@ -14,13 +14,25 @@ class ShopController extends Controller
         $categories = Category::active()
             ->topLevel()
             ->orderBy('sort_order')
+            ->with(['children' => fn($q) => $q->active()->orderBy('sort_order')
+                ->withCount(['products' => fn($q) => $q->where('status', 'published')])])
             ->withCount(['products' => fn($q) => $q->where('status', 'published')])
-            ->get();
+            ->get()
+            ->each(function ($cat) {
+                // Include child products in the parent count
+                $childCount = $cat->children->sum('products_count');
+                $cat->products_count += $childCount;
+            });
 
         $products = Product::published()
             ->with(['category', 'primaryImage'])
             ->when($request->category, function ($query, $slug) {
-                $query->whereHas('category', fn($q) => $q->where('slug', $slug));
+                $category = Category::where('slug', $slug)->first();
+                if ($category) {
+                    $childIds = Category::where('parent_id', $category->id)->pluck('id');
+                    $allIds = $childIds->prepend($category->id);
+                    $query->whereIn('category_id', $allIds);
+                }
             })
             ->when($request->search, function ($query, $search) {
                 $query->where(function ($q) use ($search) {

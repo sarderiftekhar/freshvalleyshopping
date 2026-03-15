@@ -47,14 +47,10 @@ function Header() {
 
             {/* Main Header */}
             <div className="container mx-auto px-4">
-                <div className="flex items-center justify-between h-16 lg:h-20">
+                <div className="flex items-center justify-between h-24 lg:h-28">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 shrink-0">
-                        <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-10 w-auto" />
-                        <div className="hidden sm:block">
-                            <span className="font-heading font-bold text-xl text-orfarm-blue leading-tight block">Fresh Valley</span>
-                            <span className="text-xs text-orfarm-green font-medium leading-tight block">Halal Grocery & Delivery</span>
-                        </div>
+                    <Link href="/" className="shrink-0 ml-4 lg:ml-8">
+                        <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-16 lg:h-20 w-auto" />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -74,6 +70,9 @@ function Header() {
                         <Link href="/shop" className="text-sm font-medium text-foreground hover:text-orfarm-green transition-colors">
                             Offers
                         </Link>
+                        <Link href="/proposal" className="text-sm font-medium text-orfarm-green hover:text-orfarm-blue transition-colors">
+                            Proposal
+                        </Link>
                     </nav>
 
                     {/* Search Bar (Desktop) */}
@@ -84,7 +83,7 @@ function Header() {
                                 placeholder="Search for halal meat, fish, groceries..."
                                 className="w-full h-10 pl-4 pr-10 rounded-full border border-border bg-orfarm-grey text-sm focus:outline-none focus:ring-2 focus:ring-orfarm-green/30 focus:border-orfarm-green"
                             />
-                            <button className="absolute right-1 top-1 w-8 h-8 bg-orfarm-green rounded-full flex items-center justify-center text-white hover:bg-orfarm-green-dark transition-colors">
+                            <button className="absolute right-1 top-1 w-8 h-8 bg-orfarm-green rounded-full flex items-center justify-center text-white hover:bg-orfarm-blue transition-colors">
                                 <Search className="size-4" />
                             </button>
                         </div>
@@ -161,6 +160,7 @@ function Header() {
                         <Link href="/" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                         <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Shop</Link>
                         <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Offers</Link>
+                        <Link href="/proposal" className="py-2.5 px-3 text-sm font-medium text-orfarm-green hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Proposal</Link>
                         {auth?.user ? (
                             <Link href="/dashboard" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>My Account</Link>
                         ) : (
@@ -183,10 +183,10 @@ function FeatureBar() {
     ];
 
     return (
-        <section className="relative bg-orfarm-blue pt-16 pb-10">
+        <section className="relative bg-orfarm-blue pt-16 pb-10 mt-20">
             {/* Torn/ripped paper top edge using template SVG */}
-            <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]" style={{ transform: 'translateY(-98%)' }}>
-                <img src="/assets/img/shape/footer-shape-1.svg" alt="" className="w-full h-auto block" />
+            <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] -translate-y-full" style={{ height: '50px' }}>
+                <img src="/assets/img/shape/footer-shape-1.svg" alt="" className="w-full absolute top-0 left-0" />
             </div>
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-white/20 pb-8">
@@ -284,7 +284,7 @@ function Footer() {
                                     className="w-full h-12 pl-10 pr-3 bg-white/10 border border-white/20 rounded-l-lg text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-orfarm-green"
                                 />
                             </div>
-                            <button className="h-12 px-5 bg-orfarm-green text-white font-semibold text-sm rounded-r-lg hover:bg-orfarm-green-dark transition-colors uppercase tracking-wide">
+                            <button className="h-12 px-5 bg-orfarm-green text-white font-semibold text-sm rounded-r-lg hover:bg-orfarm-blue transition-colors uppercase tracking-wide">
                                 Subscribe
                             </button>
                         </div>

@@ -12,7 +12,7 @@
         --card-foreground: 233 20% 20%;
         --popover: 0 0% 100%;
         --popover-foreground: 233 20% 20%;
-        --primary: 243 45% 30%;
+        --primary: 0 89% 29%;
         --primary-foreground: 0 0% 100%;
         --secondary: 72 100% 34%;
         --secondary-foreground: 0 0% 100%;
@@ -24,7 +24,7 @@
         --destructive-foreground: 0 0% 100%;
         --border: 213 18% 91%;
         --input: 213 18% 91%;
-        --ring: 243 45% 30%;
+        --ring: 0 89% 29%;
         --radius: 0.625rem;
         --chart-1: 12 76% 61%;
         --chart-2: 173 58% 39%;
@@ -40,7 +40,7 @@
         --card-foreground: 0 0% 98%;
         --popover: 233 20% 5%;
         --popover-foreground: 0 0% 98%;
-        --primary: 243 45% 50%;
+        --primary: 0 89% 40%;
         --primary-foreground: 0 0% 100%;
         --secondary: 72 100% 40%;
         --secondary-foreground: 0 0% 100%;
@@ -52,7 +52,7 @@
         --destructive-foreground: 0 0% 98%;
         --border: 0 0% 14.9%;
         --input: 0 0% 14.9%;
-        --ring: 243 45% 50%;
+        --ring: 0 89% 40%;
         --chart-1: 220 70% 50%;
         --chart-2: 160 60% 45%;
         --chart-3: 30 80% 55%;
@@ -130,36 +130,22 @@
 }
 
 /* Orfarm leaf hover animation (chara + lara) */
-@keyframes chara {
-    100% {
+@keyframes leaf-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
         transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
-@keyframes lara {
-    0% {
-        transform: translateY(-1px);
-    }
-    25% {
-        transform: translateY(-5px);
-    }
-    50% {
-        transform: translateY(-7px);
-    }
-    75% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(-1px);
-    }
+.leaf-shape {
+    transition: transform 0.3s ease-out;
 }
 
 .leaf-shape:hover {
-    animation-name: chara, lara;
-    animation-duration: 0.3s, 1.5s;
-    animation-delay: 0s, 0.3s;
-    animation-timing-function: ease-out, ease-in-out;
-    animation-iteration-count: 1, infinite;
-    animation-fill-mode: forwards;
-    animation-direction: normal, alternate;
+    animation: leaf-float 2s ease-in-out infinite;
 }

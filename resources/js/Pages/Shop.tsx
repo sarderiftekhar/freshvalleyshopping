@@ -63,22 +63,49 @@ export default function Shop({ categories, products, filters }: Props) {
                             >
                                 All Products
                             </Link>
-                            {categories.map(cat => (
-                                <Link
-                                    key={cat.id}
-                                    href={`/shop?category=${cat.slug}`}
-                                    className={`block py-2 px-3 rounded-lg text-sm transition-colors ${
-                                        filters.category === cat.slug
-                                            ? 'bg-primary text-primary-foreground font-medium'
-                                            : 'text-foreground hover:bg-muted'
-                                    }`}
-                                >
-                                    {cat.name}
-                                    {cat.products_count !== undefined && (
-                                        <span className="text-xs ml-1 opacity-70">({cat.products_count})</span>
-                                    )}
-                                </Link>
-                            ))}
+                            {categories.map(cat => {
+                                const isParentActive = filters.category === cat.slug;
+                                const isChildActive = cat.children?.some(child => filters.category === child.slug);
+                                const showChildren = isParentActive || isChildActive;
+
+                                return (
+                                    <div key={cat.id}>
+                                        <Link
+                                            href={`/shop?category=${cat.slug}`}
+                                            className={`block py-2 px-3 rounded-lg text-sm transition-colors ${
+                                                isParentActive
+                                                    ? 'bg-primary text-primary-foreground font-medium'
+                                                    : 'text-foreground hover:bg-muted'
+                                            }`}
+                                        >
+                                            {cat.name}
+                                            {cat.products_count !== undefined && (
+                                                <span className="text-xs ml-1 opacity-70">({cat.products_count})</span>
+                                            )}
+                                        </Link>
+                                        {cat.children && cat.children.length > 0 && showChildren && (
+                                            <div className="ml-3 mt-0.5 space-y-0.5 border-l-2 border-border pl-2">
+                                                {cat.children.map(child => (
+                                                    <Link
+                                                        key={child.id}
+                                                        href={`/shop?category=${child.slug}`}
+                                                        className={`block py-1.5 px-3 rounded-lg text-sm transition-colors ${
+                                                            filters.category === child.slug
+                                                                ? 'bg-primary text-primary-foreground font-medium'
+                                                                : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                                                        }`}
+                                                    >
+                                                        {child.name}
+                                                        {child.products_count !== undefined && (
+                                                            <span className="text-xs ml-1 opacity-70">({child.products_count})</span>
+                                                        )}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                );
+                            })}
                         </nav>
                     </aside>
 

@@ -45,6 +45,12 @@ export default function CategoryGrid({ categories }: Props) {
     return (
         <section className="bg-orfarm-grey pb-10">
             <div className="container mx-auto px-4">
+                <div className="text-center mb-8">
+                    <span className="text-sm font-medium text-orfarm-green italic font-heading tracking-widest">
+                        ~ Browse Categories ~
+                    </span>
+                    <h2 className="text-2xl lg:text-[36px] font-heading font-bold text-orfarm-blue mt-2">Pick From Our Categories</h2>
+                </div>
                 <div className="relative">
                     {/* Scroll buttons */}
                     <button

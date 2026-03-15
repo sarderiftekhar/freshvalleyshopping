@@ -32,5 +32,24 @@ class CategorySeeder extends Seeder
                 'is_active' => true,
             ]);
         }
+
+        // Subcategories under Fresh Meat
+        $freshMeat = Category::where('slug', 'fresh-meat')->first();
+        $meatSubs = [
+            ['name' => 'Beef', 'sort_order' => 1],
+            ['name' => 'Lamb', 'sort_order' => 2],
+            ['name' => 'Goat', 'sort_order' => 3],
+            ['name' => 'Chicken', 'sort_order' => 4],
+        ];
+
+        foreach ($meatSubs as $sub) {
+            Category::create([
+                'name' => $sub['name'],
+                'slug' => Str::slug($sub['name']),
+                'parent_id' => $freshMeat->id,
+                'sort_order' => $sub['sort_order'],
+                'is_active' => true,
+            ]);
+        }
     }
 }

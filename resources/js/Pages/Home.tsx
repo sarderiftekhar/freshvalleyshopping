@@ -266,7 +266,7 @@ function BlogSection() {
     };
 
     return (
-        <section className="bg-orfarm-grey py-16 lg:py-20 mt-10">
+        <section className="relative z-10 bg-orfarm-grey py-16 lg:py-20 mt-10">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-12">

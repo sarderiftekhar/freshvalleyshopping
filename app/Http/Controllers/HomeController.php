@@ -14,7 +14,14 @@ class HomeController extends Controller
             ->topLevel()
             ->orderBy('sort_order')
             ->withCount(['products' => fn($q) => $q->where('status', 'published')])
-            ->get();
+            ->get()
+            ->each(function ($cat) {
+                $childCount = Category::where('parent_id', $cat->id)
+                    ->withCount(['products' => fn($q) => $q->where('status', 'published')])
+                    ->get()
+                    ->sum('products_count');
+                $cat->products_count += $childCount;
+            });
 
         $featuredProducts = Product::published()
             ->featured()

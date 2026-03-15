@@ -10,6 +10,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/shop', [ShopController::class, 'index'])->name('shop');
 Route::get('/product/{slug}', [ShopController::class, 'show'])->name('product.show');
 Route::get('/cart', fn() => Inertia::render('Cart'))->name('cart');
+Route::get('/proposal', fn() => Inertia::render('Proposal'))->name('proposal');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
