@@ -79,32 +79,35 @@ class ProductSeeder extends Seeder
         foreach ($products as $index => $data) {
             $category = Category::where('name', $data['category'])->first();
 
-            $product = Product::create([
-                'sku' => 'FV-' . str_pad($index + 1, 4, '0', STR_PAD_LEFT),
-                'title' => $data['title'],
-                'slug' => Str::slug($data['title']),
-                'price' => $data['price'],
-                'sale_price' => $data['sale_price'] ?? null,
-                'category_id' => $category->id,
-                'brand' => $data['brand'] ?? null,
-                'quantity' => $data['quantity'],
-                'unit' => $data['unit'],
-                'description' => $data['description'],
-                'tags' => ['halal', strtolower($category->name)],
-                'is_halal_certified' => true,
-                'halal_certification_body' => 'HMC',
-                'status' => 'published',
-                'sold' => rand(0, 30),
-                'sort_order' => $index,
-                'is_featured' => $data['is_featured'] ?? false,
-            ]);
+            $product = Product::updateOrCreate(
+                ['slug' => Str::slug($data['title'])],
+                [
+                    'sku' => 'FV-' . str_pad($index + 1, 4, '0', STR_PAD_LEFT),
+                    'title' => $data['title'],
+                    'price' => $data['price'],
+                    'sale_price' => $data['sale_price'] ?? null,
+                    'category_id' => $category->id,
+                    'brand' => $data['brand'] ?? null,
+                    'quantity' => $data['quantity'],
+                    'unit' => $data['unit'],
+                    'description' => $data['description'],
+                    'tags' => ['halal', strtolower($category->name)],
+                    'is_halal_certified' => true,
+                    'halal_certification_body' => 'HMC',
+                    'status' => 'published',
+                    'sold' => rand(0, 30),
+                    'sort_order' => $index,
+                    'is_featured' => $data['is_featured'] ?? false,
+                ]
+            );
 
-            ProductImage::create([
-                'product_id' => $product->id,
-                'path' => $data['image'],
-                'is_primary' => true,
-                'sort_order' => 0,
-            ]);
+            ProductImage::updateOrCreate(
+                ['product_id' => $product->id, 'is_primary' => true],
+                [
+                    'path' => $data['image'],
+                    'sort_order' => 0,
+                ]
+            );
         }
     }
 }

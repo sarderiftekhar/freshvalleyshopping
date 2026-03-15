@@ -13,12 +13,14 @@ class DatabaseSeeder extends Seeder
 
     public function run(): void
     {
-        User::create([
-            'name' => 'Admin',
-            'email' => 'admin@freshvalley.co.uk',
-            'email_verified_at' => now(),
-            'password' => Hash::make('password'),
-        ]);
+        User::updateOrCreate(
+            ['email' => 'admin@freshvalley.co.uk'],
+            [
+                'name' => 'Admin',
+                'email_verified_at' => now(),
+                'password' => Hash::make('password'),
+            ]
+        );
 
         $this->call([
             CategorySeeder::class,

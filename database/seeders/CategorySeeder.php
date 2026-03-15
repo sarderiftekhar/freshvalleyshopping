@@ -24,13 +24,15 @@ class CategorySeeder extends Seeder
         ];
 
         foreach ($categories as $category) {
-            Category::create([
-                'name' => $category['name'],
-                'slug' => Str::slug($category['name']),
-                'image' => $category['image'],
-                'sort_order' => $category['sort_order'],
-                'is_active' => true,
-            ]);
+            Category::updateOrCreate(
+                ['slug' => Str::slug($category['name'])],
+                [
+                    'name' => $category['name'],
+                    'image' => $category['image'],
+                    'sort_order' => $category['sort_order'],
+                    'is_active' => true,
+                ]
+            );
         }
 
         // Subcategories under Fresh Meat
@@ -43,13 +45,15 @@ class CategorySeeder extends Seeder
         ];
 
         foreach ($meatSubs as $sub) {
-            Category::create([
-                'name' => $sub['name'],
-                'slug' => Str::slug($sub['name']),
-                'parent_id' => $freshMeat->id,
-                'sort_order' => $sub['sort_order'],
-                'is_active' => true,
-            ]);
+            Category::updateOrCreate(
+                ['slug' => Str::slug($sub['name'])],
+                [
+                    'name' => $sub['name'],
+                    'parent_id' => $freshMeat->id,
+                    'sort_order' => $sub['sort_order'],
+                    'is_active' => true,
+                ]
+            );
         }
     }
 }
