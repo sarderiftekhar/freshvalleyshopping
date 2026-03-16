@@ -12,6 +12,10 @@ class ProductSeeder extends Seeder
 {
     public function run(): void
     {
+        // Clear old products to avoid slug conflicts on re-seed
+        ProductImage::query()->delete();
+        Product::query()->delete();
+
         $json = file_get_contents(database_path('data/scraped_products.json'));
         $items = json_decode($json, true);
 
