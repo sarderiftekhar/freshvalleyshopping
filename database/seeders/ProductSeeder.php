@@ -29,10 +29,12 @@ class ProductSeeder extends Seeder
                 continue;
             }
 
+            $sku = 'FV-' . str_pad($index + 1, 4, '0', STR_PAD_LEFT);
+
             $product = Product::updateOrCreate(
-                ['slug' => $data['slug']],
+                ['sku' => $sku],
                 [
-                    'sku' => 'FV-' . str_pad($index + 1, 4, '0', STR_PAD_LEFT),
+                    'slug' => $data['slug'],
                     'title' => $data['name'],
                     'price' => max($data['price'], 0.01),
                     'sale_price' => null,
