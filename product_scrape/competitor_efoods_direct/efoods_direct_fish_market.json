@@ -1,0 +1,4279 @@
+{
+  "source": "eFoods Direct",
+  "sourceUrl": "https://efoodsdirect.co.uk/product-category/fish-market/",
+  "scrapeDate": "2026-03-16T23:04:15.956Z",
+  "totalProducts": 128,
+  "products": [
+    {
+      "name": "3 KG large Fish Deal – 3KG+ Rohu, 3Kg Mrigal, 3KG Bangla Gold Boal",
+      "url": "https://efoodsdirect.co.uk/product/3-kg-large-fish-deal-3kg-rohu-3kg-mrigal-3kg-bangla-gold-boal/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/05/ROHU-3-4KG-405x330.webp",
+      "regularPrice": "£79.99",
+      "salePrice": "£59.99",
+      "priceText": "",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-whole-fish",
+        "multi-buy",
+        "special-offers"
+      ],
+      "sku": "3-kg-large-fish-deal-3kg-rohu-3kg-mrigal-3kg-bangla-gold-boal",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        },
+        {
+          "name": "Special Offers",
+          "url": "https://efoodsdirect.co.uk/product-category/special-offers/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "4 KG Whole Large Fish Deal – 4Kg+ Mirgal and 4Kg+ Rohu",
+      "url": "https://efoodsdirect.co.uk/product/4-kg-whole-large-fish-deal-4kg-mirgal-and-4kg-rohu/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/05/4KG-Large-Fish-Deals-405x330.webp",
+      "regularPrice": "£69.99",
+      "salePrice": "£55.99",
+      "priceText": "",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-whole-fish",
+        "multi-buy"
+      ],
+      "sku": "4-kg-whole-large-fish-deal-4kg-mirgal-and-4kg-rohu",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Atlantius IQF King Prawns 6/8 Premium 700g",
+      "url": "https://efoodsdirect.co.uk/product/atlantius-iqf-king-prawns-6-8-premium-700g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Atlantius-IQF-King-Prawns-6.8-Premium-700g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.50 – £19.99Price range: £7.50 through £19.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "atlantius-iqf-king-prawns-6-8-premium-700g",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Atlantius Premium Fresh Water King Prawns 6/8 600g",
+      "url": "https://efoodsdirect.co.uk/product/atlantius-premium-fresh-water-king-prawns/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2024/07/Atlantius-Premium-Fresh-Water-King-Prawns.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£17.50 – £44.99Price range: £17.50 through £44.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "atlantius-premium-fresh-water-king-prawns",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Atlantius Premium Fresh Water King Prawns 6/8 600g",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Ayer Whole Fish",
+      "url": "https://efoodsdirect.co.uk/product/ayer-whole-fish-myanmar/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ayre-whole-pack-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£32.50 – £61.99Price range: £32.50 through £61.99",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "ayer-whole-fish-myanmar",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Ayer"
+      ],
+      "shortDescription": "Ayer Whole [Myanmar] \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nFree Next Day Delivery Available *T&C Apply. \nPlease select your favourite Size and Cut for price display.",
+      "longDescription": "",
+      "reviewCount": "6 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Bangla Gold Ayer Fish 2-4KG",
+      "url": "https://efoodsdirect.co.uk/product/bangla-gold-ayer-fish-2-4kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Bangla-Gold-Ayer-Fish-2-4KG-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£23.99 – £41.50Price range: £23.99 through £41.50",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-whole-fish"
+      ],
+      "sku": "bangla-gold-ayer-fish-2-4kg",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Bangladeshi Hilsa Chandpuri (1000/1200g)",
+      "url": "https://efoodsdirect.co.uk/product/bangladeshi-hilsa-chandpuri-1000-1200g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Chandpuri-1000-1200g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£22.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "bangladeshi-hilsa-chandpuri-1000-1200g",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Hilsa Chandpuri (1000/1200g)\nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nFree Next Day Delivery Available *T&C Apply. \nPlease select your favourite Size and Cut for price display.",
+      "longDescription": "",
+      "reviewCount": "25 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Blue Fin Pabda 500g Block",
+      "url": "https://efoodsdirect.co.uk/product/blue-fin-pabda-500g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Blue-Fin-Pabda-500g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £14.99Price range: £4.99 through £14.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-large-fish-block"
+      ],
+      "sku": "blue-fin-pabda-500g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Boal Whole Fish Myanmar (Crown)",
+      "url": "https://efoodsdirect.co.uk/product/boal-whole-fish/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Boal-Whole-Fish-1-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£26.99 – £62.99Price range: £26.99 through £62.99",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "boal-whole-fish",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Whole Fish"
+      ],
+      "shortDescription": "Boal Whole Fish [Myanmar] \nSpecifications:  \n\n100% Best Quality Fish \nVacuum Sealed\n\nSuitable for freezing \n\nFree Next Day Delivery Available *T&C Apply. \nPlease select your favourite Size and Cut to view prices.",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Chital Whole Fish",
+      "url": "https://efoodsdirect.co.uk/product/chital-whole-fish-myanmar/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Chital-Fish-Whole-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£39.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "chital-whole-fish-myanmar",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Chital"
+      ],
+      "shortDescription": "Chital Whole Fish\nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nFree Next Day Delivery Available *T&C Apply. \nPlease select your favourite Size and Cut for price display.",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Baila Whole Clean Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ck-baila-whole-clean-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/BDC-BAila--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "ck-baila-whole-clean-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "CK Baila Whole Clean Block 500g",
+      "longDescription": "",
+      "reviewCount": "6 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Batashi 250g Block",
+      "url": "https://efoodsdirect.co.uk/product/ck-batashi-250g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/CK-Batashi-250g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £13.99Price range: £4.99 through £13.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "ck-batashi-250g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Dried Chingri Shrimps 100g",
+      "url": "https://efoodsdirect.co.uk/product/dry-dried-chingri-shrimps/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/10/Dried-Deshi-Chingri_Shrimp-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market"
+      ],
+      "sku": "dry-dried-chingri-shrimps",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        }
+      ],
+      "tags": [
+        "Dried Fish"
+      ],
+      "shortDescription": "Dry Dried Chingri Shrimps\nAzar Brand Deshi Dry Chingri\n100g net weight",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Dried Deshi Keski Fish 100g",
+      "url": "https://efoodsdirect.co.uk/product/dry-dried-deshi-keski-fish/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/10/Deshi-Dry-Keski-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.20",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market"
+      ],
+      "sku": "dry-dried-deshi-keski-fish",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        }
+      ],
+      "tags": [
+        "Dried Fish"
+      ],
+      "shortDescription": "Dry/ Dried Deshi Keski\nAzar Brand Deshi Dry Keski\n100g net weight",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Gura Icha (Whole) 200g",
+      "url": "https://efoodsdirect.co.uk/product/ck-gura-icha-whole-200g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Gura-Icha-Whole-200g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.49 – £6.99Price range: £2.49 through £6.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps",
+        "multi-buy"
+      ],
+      "sku": "ck-gura-icha-whole-200g",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "CK Gura Icha (Whole) 200g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Harina Tray 250g",
+      "url": "https://efoodsdirect.co.uk/product/ck-harina-tray-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/CK-Harina-Tray-250g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.99 – £7.50Price range: £2.99 through £7.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "ck-harina-tray-250g",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Hilsha Eggs Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/hilsha-eggs-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Eggs-Block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£8.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "hilsha-eggs-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [
+        "Hilsha Eggs"
+      ],
+      "shortDescription": "Hilsha Eggs Block 250g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Mola 25Og Tray",
+      "url": "https://efoodsdirect.co.uk/product/ck-mola-25og-tray/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/CK-Mola-25Og-Tray-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.50 – £8.99Price range: £3.50 through £8.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "ck-mola-25og-tray",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Pabda Fish Whole Block (Indian) 500g",
+      "url": "https://efoodsdirect.co.uk/product/ck-pabda-fish-whole-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/CK-Pabda-Fish-Whole-Block-Indian-500g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50 – £14.99Price range: £5.50 through £14.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block",
+        "fish-market"
+      ],
+      "sku": "ck-pabda-fish-whole-block",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        }
+      ],
+      "tags": [
+        "Pabda"
+      ],
+      "shortDescription": "CK Pabda Fish Whole Block (Indian) 500g",
+      "longDescription": "",
+      "reviewCount": "12 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CK Rohu Fish Egg Block 250G",
+      "url": "https://efoodsdirect.co.uk/product/ck-rohu-fish-egg-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/CK-Rohu-Fish-Egg-Block-250G-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £12.50Price range: £4.99 through £12.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "ck-rohu-fish-egg-block-250g",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown 2 in a Pack Ayer Fish 3Kg+",
+      "url": "https://efoodsdirect.co.uk/product/crown-2-in-a-pack-ayer-fish-3kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-2-in-a-Pack-Ayer-Fish-405x330.webp",
+      "regularPrice": "£35.99",
+      "salePrice": "£32.99",
+      "priceText": "",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-whole-fish"
+      ],
+      "sku": "crown-2-in-a-pack-ayer-fish-3kg",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown 2 in A Pack Boal 3Kg+",
+      "url": "https://efoodsdirect.co.uk/product/crown-2-in-a-pack-boal-3kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-2-in-A-Pack-Boal-3Kg-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£25.99 – £72.50Price range: £25.99 through £72.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-whole-fish"
+      ],
+      "sku": "crown-2-in-a-pack-boal-3kg",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Ayer 2-4Kg",
+      "url": "https://efoodsdirect.co.uk/product/crown-ayer-2-4kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-Ayer-2-4Kg-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£27.50 – £46.99Price range: £27.50 through £46.99",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-whole-fish"
+      ],
+      "sku": "crown-ayer-2-4kg",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Baby Koi 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-baby-koi/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Frozen-Small-Fish-Block6-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.99 – £4.99Price range: £1.99 through £4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block",
+        "multi-buy"
+      ],
+      "sku": "crown-baby-koi",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [
+        "Baby Koi",
+        "Koi"
+      ],
+      "shortDescription": "Crown Baby Koi 250g",
+      "longDescription": "",
+      "reviewCount": "13 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Baby Pabda Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/baby-pabda-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Crown-Baby-Pabda-Block-250g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.50 – £9.99Price range: £3.50 through £9.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "baby-pabda-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [
+        "Pabda"
+      ],
+      "shortDescription": "Baby Pabda Whole 250g",
+      "longDescription": "",
+      "reviewCount": "15 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Bacha Clean Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-bacha-clean-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Bacha-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£8.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-bacha-clean-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Bacha Clean Block 500g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Bata Clean Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-bata-clean-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Bata-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-bata-clean-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Bata Clean Block 500g",
+      "longDescription": "",
+      "reviewCount": "5 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Boal Eggs Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/boal-eggs-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Boal-Eggs-Block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.55",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "boal-eggs-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Boal Eggs Block 250g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Bujuri Clean Ready to Cook Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-bd-bujuri-clean-ready-to-cook-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-bd-Bujuri-clean-ready-to-cook-block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.99 – £4.99Price range: £1.99 through £4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block",
+        "multi-buy"
+      ],
+      "sku": "crown-bd-bujuri-clean-ready-to-cook-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Bujuri Clean Ready to Cook Block 250g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Chapila Whole (Pona) 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-chapila-whole-pona-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Crown-Chapila-Whole-Pona-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-chapila-whole-pona-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Chapila Whole (Pona) 250g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Chapila Whole 250g Large",
+      "url": "https://efoodsdirect.co.uk/product/crown-chapila-whole-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Crown-Chapila-Whole-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.19",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-chapila-whole-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Chapila Whole 250g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Chelepata Whole Medium Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-bd-celepata-whole-medium-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-FARMS-CELEPATA-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-bd-celepata-whole-medium-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Celepata Whole Medium Block 250g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Clean Boal Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-clean-boal-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Boal-Block-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£6.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-clean-boal-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Clean Boal Block 500g",
+      "longDescription": "",
+      "reviewCount": "10 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Clean Desi Magur Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-clean-desi-magur/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Crown-Magur-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£6.29",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-clean-desi-magur",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Clean Desi Magur Block 500g",
+      "longDescription": "",
+      "reviewCount": "3 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Clean Koi Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-clean-koi-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Clean-Koi-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "5060065431084",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Clean Koi Block 500g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Desi Kholisha Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-desi-kholisha-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Desi-Kholisha-Block-250g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.50 – £5.50Price range: £2.50 through £5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block",
+        "multi-buy"
+      ],
+      "sku": "crown-desi-kholisha-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Bd Kholisha ready to cook Block 250g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Desi Puti clean 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-bd-desi-puti-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Desi-Puti-clean-250g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.50 – £6.50Price range: £2.50 through £6.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-bd-desi-puti-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown BD Desi-Puti clean bk ready to cook 250g",
+      "longDescription": "",
+      "reviewCount": "12 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Farm Butterfly King Prawns 300g",
+      "url": "https://efoodsdirect.co.uk/product/crown-farm-butterfly-king-prawn/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/11/cb0d2451-1b65-49e8-ba78-e0f3d42ba932-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.20",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "halal-chilled-frozen",
+        "frozen-foods",
+        "frozen-snack-foods",
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "crown-farm-butterfly-king-prawn",
+      "detailCategories": [
+        {
+          "name": "Chilled & Frozen",
+          "url": "https://efoodsdirect.co.uk/product-category/halal-chilled-frozen/"
+        },
+        {
+          "name": "Frozen Foods",
+          "url": "https://efoodsdirect.co.uk/product-category/halal-chilled-frozen/frozen-foods/"
+        },
+        {
+          "name": "Frozen Snack Foods",
+          "url": "https://efoodsdirect.co.uk/product-category/halal-chilled-frozen/frozen-foods/frozen-snack-foods/"
+        },
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [
+        "King Prawn"
+      ],
+      "shortDescription": "Butterfly King Prawn. Marinated with garlic and herbs.\nFrozen Product",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Farma Chelepata Whole Large 250g",
+      "url": "https://efoodsdirect.co.uk/product/chelepata-whole-large-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Frozen-Small-Fish-Block1-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "chelepata-whole-large-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Chelepata Whole Large 250g",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Farms Tilapia Fillets 500g pack",
+      "url": "https://efoodsdirect.co.uk/product/crown-farms-tilapia-fillets-1kg-pack/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Farms-Tilapia-Fillets-500g-pack-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50 – £11.99Price range: £4.50 through £11.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood",
+        "multi-buy"
+      ],
+      "sku": "crown-farms-tilapia-fillets-1kg-pack",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [
+        "Tilapia Fillets"
+      ],
+      "shortDescription": "Crown Farms Tilapia Fillets 500g pack.\nThese skinless, boneless, trimmed fillets from Crown Farm are ready to cook.\n\nSize: 5/7oz per piece\nDrained weight: 500g\nKeep frozen at -18*C\nDo not refreeze once defrosted",
+      "longDescription": "",
+      "reviewCount": "6 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Fresh Water Head On King Prawns 41/50",
+      "url": "https://efoodsdirect.co.uk/product/crown-fresh-water-head-on-king-prawns-41-50/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Fresh-Water-Head-On-King-Prawns-41-50-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.50 – £6.50Price range: £2.50 through £6.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps",
+        "multi-buy"
+      ],
+      "sku": "crown-fresh-water-head-on-king-prawns-41-50",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Fresh Water Head On King Prawns 41/50",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Fresh Water Head On Shell On IQF King Prawns 2/4",
+      "url": "https://efoodsdirect.co.uk/product/crown-fresh-water-head-on-shell-on-iqf-king-prawns-2-4/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-Fresh-Water-Head-On-Shell-On-IQF-King-Prawns-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£15.99 – £45.50Price range: £15.99 through £45.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "crown-fresh-water-head-on-shell-on-iqf-king-prawns-2-4",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Gulsha Whole Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-gulsha-whole-block-500g-2/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Gulsha-Whole-Block-500g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-gulsha-whole-block-500g-2",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "CK Gulsha Whole Block 500g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Hilsha (1500-2000g)",
+      "url": "https://efoodsdirect.co.uk/product/hilsa-myanmar-1500-2000g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Whole-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£35.49",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "hilsa-myanmar-1500-2000g",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Chandpure Hilsha Burma/Myanmar (1500-2000g)",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Hilsha 3 in Pack (2KG)",
+      "url": "https://efoodsdirect.co.uk/product/crown-hilsha-3-in-pack-2kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Burma-Pack-of-3-Special-1800g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£25.99 – £48.99Price range: £25.99 through £48.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-seafood",
+        "frozen-whole-fish"
+      ],
+      "sku": "crown-hilsha-3-in-pack-2kg",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown IQF Phona Smelt Fish 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-iqf-phona-smelt-fish-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-IQF-Phona-Smelt-Fish-500g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-iqf-phona-smelt-fish-500g",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Kajoli Fish 250g Block",
+      "url": "https://efoodsdirect.co.uk/product/crown-kajoli-fish-250g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-Kajoli-Fish-250g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50 – £12.50Price range: £4.50 through £12.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-kajoli-fish-250g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Keski Whole Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-keski-whole-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Keski-Whole-Block-250g-1-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.19",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-keski-whole-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Keski Whole Block 250g",
+      "longDescription": "",
+      "reviewCount": "15 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Koi Whole Clean 1kg",
+      "url": "https://efoodsdirect.co.uk/product/crown-koi-whole-clean-1kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/5-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "crown-koi-whole-clean-1kg",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Koi Whole Clean 1kg",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Long-Baim (Steak) Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-long-baim-steak-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Long-Baim-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-long-baim-steak-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Long-Baim (Steak) Block 500g",
+      "longDescription": "",
+      "reviewCount": "5 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Meni Clean Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-meni-whole-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Meni-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-meni-whole-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Meni Whole Block 500g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Mixed Fish Clean Ready to Cook Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-bd-mixed-fish-clean-ready-to-cook-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Mixed-Fish-250g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.50 – £6.00Price range: £2.50 through £6.00",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block",
+        "fish-market",
+        "multi-buy"
+      ],
+      "sku": "crown-bd-mixed-fish-clean-ready-to-cook-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Mixed Fish Clean Ready to Cook Block 250g",
+      "longDescription": "",
+      "reviewCount": "10 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Mola headless Block (Clean) 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-mola-headless-block-clean-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Mola-headless-Block-Clean-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-mola-headless-block-clean-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Mola headless Block (Clean) 250g",
+      "longDescription": "",
+      "reviewCount": "6 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Mola Whole Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-mola-whole-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Mola-Whole-Block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-mola-whole-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Mola Whole Block 250g",
+      "longDescription": "",
+      "reviewCount": "3 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Pabda Whole Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-pabda-whole-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Pabda-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99 – £14.99Price range: £5.99 through £14.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-pabda-whole-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Pabda Whole Block 500g",
+      "longDescription": "",
+      "reviewCount": "3 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 3,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Pangas / Basa Fillet (500g)",
+      "url": "https://efoodsdirect.co.uk/product/crown-basa-fillet-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Pangas-Fillet-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.50 – £9.50Price range: £3.50 through £9.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "crown-basa-fillet-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Pata Baim Whole Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-pata-baim-whole-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Pata-Baim-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£6.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-pata-baim-whole-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Pata Baim Whole Block 500g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Puti (RED TAIL) Whole 800g pack",
+      "url": "https://efoodsdirect.co.uk/product/crown-puti-red-tail-whole-800g-pack/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/2-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "crown-puti-red-tail-whole-800g-pack",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Puti (RED TAIL) Whole 800g pack",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Rohu Fish Egg Block 250G",
+      "url": "https://efoodsdirect.co.uk/product/crown-rohu-fish-egg-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-Rohu-Fish-Egg-Block-250G-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £12.99Price range: £4.99 through £12.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-rohu-fish-egg-block-250g",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown S.Tengra Whole Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-s-tengra-whole-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Small-Tengra-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-s-tengra-whole-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown S.Tengra Whole Block 500g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Sea Water Harina Chingri 780GM",
+      "url": "https://efoodsdirect.co.uk/product/crown-sea-water-harina-chingri-780gm/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-Sea-Water-Harina-Chingri-780GM-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99 – £16.99Price range: £5.99 through £16.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "crown-sea-water-harina-chingri-780gm",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Shingi Whole Clean Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-shingi-whole-clean-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Shingi-Block-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.89",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "crown-shingi-whole-clean-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Shingi Whole Clean Block 500g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Small Taki Fish 250g Block",
+      "url": "https://efoodsdirect.co.uk/product/crown-small-taki-fish-250g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Crown-Small-Taki-Fish-250g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.50 – £6.50Price range: £2.50 through £6.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-small-taki-fish-250g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Crown Taki Whole/clean Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/crown-taki-whole-clean-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-Taki-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.50 – £5.50Price range: £2.50 through £5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block",
+        "multi-buy"
+      ],
+      "sku": "crown-taki-whole-clean-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown Taki Whole/clean Block 500g",
+      "longDescription": "",
+      "reviewCount": "5 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "CrownDesi Batashi whole 250g",
+      "url": "https://efoodsdirect.co.uk/product/crown-desi-batashi-whole-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Crown-BD-Batashi-clean-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "crown-desi-batashi-whole-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Crown BD Batashi whole 250g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Dry/ Dried Deshi Lotia Fish 150g",
+      "url": "https://efoodsdirect.co.uk/product/dry-dried-deshi-lotia-fish/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/10/deshi-dry-lotia-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market"
+      ],
+      "sku": "dry-dried-deshi-lotia-fish",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Dry/ Dried Deshi Lotia\nAzar Brand Deshi Dry Lotia\n150g net weight",
+      "longDescription": "",
+      "reviewCount": "10 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Golden Pomfret Rupchanda Big Size 800g",
+      "url": "https://efoodsdirect.co.uk/product/golden-prompret-rupchanda-big-size-800g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Golden-Pomfret-Rupchanda-Big-Size-800g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£8.50 – £24.50Price range: £8.50 through £24.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood",
+        "fish-market"
+      ],
+      "sku": "golden-prompret-rupchanda-big-size-800g",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Hilsha Chandpure(800g-1000g)",
+      "url": "https://efoodsdirect.co.uk/product/hilsha-padma-1000-1200g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Padba-Cut-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£19.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "hilsha-padma-1000-1200g",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Hilsha Padma (1000-1200g) \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "12 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 3,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Hilsha Chandpuri Fish (1200-1500g)",
+      "url": "https://efoodsdirect.co.uk/product/bangladeshi-hilsha-chandpuri-fish/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Whole-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£33.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "bangladeshi-hilsha-chandpuri-fish",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Hilsa"
+      ],
+      "shortDescription": "Hilsha Chandpuri Fish\nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nFree Next Day Delivery Available *T&C Apply. \nPlease select your favourite Size and Cut for price display.",
+      "longDescription": "",
+      "reviewCount": "5 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Hilsha Myanmar (1200-1500g)",
+      "url": "https://efoodsdirect.co.uk/product/hilsha-myanmar-1200-1500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Whole-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£26.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "hilsha-myanmar-1200-1500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Hilsha Myanmar Burma (1200-1500g)",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 6,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Hilsha Myanmar (Pack of 3 Special Promotion) 1800g",
+      "url": "https://efoodsdirect.co.uk/product/hilsha-myanmar-pack-of-3-special-promotion-1800g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Burma-Pack-of-3-Special-1800g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£21.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "hilsha-myanmar-pack-of-3-special-promotion-1800g",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Hilsha Myanmar (Pack of 3 Special Promotion) 1800g \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "7 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Baspata Whole Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-baspata-whole-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/IBCO-Baspata-Whole-Block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "ibco-baspata-whole-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Baspata Whole Block 250g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Chiring Whole Fish 500g Block",
+      "url": "https://efoodsdirect.co.uk/product/ibco-chiring-whole-fish-500g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/IBCO-Chiring-Whole-Fish-500g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £13.99Price range: £4.99 through £13.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-chiring-whole-fish-500g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Clean Ayre Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-clean-ayre-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-ayre-block-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.69",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-clean-ayre-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Clean Ayre Block 500g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Clean Hilsha Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-clean-hilsha-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-Hilsha-Block-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.69",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-clean-hilsha-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [
+        "ilish fish"
+      ],
+      "shortDescription": "IBCO Clean Hilsha Block 500g",
+      "longDescription": "",
+      "reviewCount": "33 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Clean Koi Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-clean-koi-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-Clean-Koi-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-clean-koi-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Clean Koi Block 500g",
+      "longDescription": "",
+      "reviewCount": "7 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Clean Rohu Fish Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-clean-rohu-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-rohu-block-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-clean-rohu-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [
+        "Rohu Fish"
+      ],
+      "shortDescription": "IBCO Clean Rohu Fish Block 500g",
+      "longDescription": "",
+      "reviewCount": "21 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Desi Kalibaush 1-1.4kg",
+      "url": "https://efoodsdirect.co.uk/product/ibco-desi-kalibaush-1-1-4kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/IBCO-Kalibaush-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£12.49",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "ibco-desi-kalibaush-1-1-4kg",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Desi Kalibaush 1-1.4kg \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "5 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Fish Block Selection",
+      "url": "https://efoodsdirect.co.uk/product/ibco-fish-block-selection/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Hilsha-Eggs-Block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.99 – £8.50Price range: £1.99 through £8.50",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block",
+        "multi-buy"
+      ],
+      "sku": "ibco-fish-block-selection",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [
+        "Fish Blocks"
+      ],
+      "shortDescription": "We’ve selected the most popular frozen IBCO Brand fish blocks to make it easier to choose from our vast range of frozen fish blocks.",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 7,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Head On white chingri 300g 91/120",
+      "url": "https://efoodsdirect.co.uk/product/ibco-head-on-white-chingri-300g-91-120/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/IBCO-Head-On-white-chingri-300g-91-120-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50 – £11.99Price range: £4.50 through £11.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps",
+        "multi-buy"
+      ],
+      "sku": "ibco-head-on-white-chingri-300g-91-120",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Head On white chingri 300g 91/120",
+      "longDescription": "",
+      "reviewCount": "3 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Keski Whole Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/keski-whole-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/IBCO-Keski-Whole-Block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.99 – £5.99Price range: £1.99 through £5.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block",
+        "multi-buy"
+      ],
+      "sku": "keski-whole-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [
+        "Keski"
+      ],
+      "shortDescription": "IBCO Brand Keski Whole Block 250g\nOrigin: Bangladeshi Fish",
+      "longDescription": "",
+      "reviewCount": "9 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Keski Whole Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-keski-whole-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/IBCO-Keski-Whole-Block-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "ibco-keski-whole-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "12 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO King Prawn 6/8 (Premium Quality) 700g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-king-prawn-6-8-premium-quality-700g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/IBCO-King-Prawn-6-8-Premium-Quality-1.5kg-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£14.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "ibco-king-prawn-6-8-premium-quality-700g",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO King Prawn 6/8 (Premium Quality) 1.5kg",
+      "longDescription": "",
+      "reviewCount": "7 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Magur 500g Block",
+      "url": "https://efoodsdirect.co.uk/product/ibco-magur-500g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/IBCO-Magur-500g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £13.99Price range: £4.99 through £13.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-magur-500g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Nola 500g Block",
+      "url": "https://efoodsdirect.co.uk/product/ibco-nola-500g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/IBCO-Nola-500g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £13.99Price range: £4.99 through £13.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-nola-500g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Pabda Whole Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-pabda-whole-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-Pabda-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99 – £15.99Price range: £5.99 through £15.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block",
+        "multi-buy"
+      ],
+      "sku": "ibco-pabda-whole-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Pabda Whole Block 500g / Pabda Mas 500g",
+      "longDescription": "",
+      "reviewCount": "15 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 3,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Phona Whole 250g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-phona-whole-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/IBCO-Phona-Whole-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "ibco-phona-whole-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Phona Whole 250g",
+      "longDescription": "",
+      "reviewCount": "5 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Shorputi Whole Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-shorputi-whole-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-shorputi-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.25 – £7.50Price range: £4.25 through £7.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block",
+        "multi-buy"
+      ],
+      "sku": "ibco-shorputi-whole-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Shorputi Whole Block 500g",
+      "longDescription": "",
+      "reviewCount": "3 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO Tengra Whole Block 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-tengra-whole-block-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-Tengra-Block-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-tengra-whole-block-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Tengra Whole Block 500g",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 3,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "IBCO/Crown Clean Tilapia Whole 500g",
+      "url": "https://efoodsdirect.co.uk/product/ibco-clean-tilapia-whole-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Ibco-Telapia-Block-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-large-fish-block"
+      ],
+      "sku": "ibco-clean-tilapia-whole-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "IBCO Clean Tilapia Whole 500g",
+      "longDescription": "",
+      "reviewCount": "10 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 3,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Jafna Dried Baby Shrimps/ Jawala",
+      "url": "https://efoodsdirect.co.uk/product/jafna-dried-baby-shrimps/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/10/Dried-Baby-Shrimp-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.49",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market"
+      ],
+      "sku": "jafna-dried-baby-shrimps",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        }
+      ],
+      "tags": [
+        "Dried Fish"
+      ],
+      "shortDescription": "Dried Baby Shrimps/ Jawala\nJAFNA Brand Dried Baby Shrimps/ Jawala\n150g net weight",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Kalibaush Whole 1-1.2kg",
+      "url": "https://efoodsdirect.co.uk/product/kalibaush-whole-1-1-2kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Kalibaush-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£12.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "kalibaush-whole-1-1-2kg",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Kalibaush Whole \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \n\n\nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "11 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Kangla Whole 1-1.2kg Pack",
+      "url": "https://efoodsdirect.co.uk/product/kangla-whole-1-1-2kg-pack/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/woocommerce-placeholder-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "kangla-whole-1-1-2kg-pack",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Kangla Whole 1-1.2kg Pack",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Katla Whole Fish Myanmar 7-8kg",
+      "url": "https://efoodsdirect.co.uk/product/katla-whole-fish-myanmar/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Katla-Whole-Fish-1-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£39.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "katla-whole-fish-myanmar",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Katla Fish"
+      ],
+      "shortDescription": "Katla Whole Fish Myanmar \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "3 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 4,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Keski Whole Tray 250g",
+      "url": "https://efoodsdirect.co.uk/product/keski-whole-tray-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Keski-Whole-Tray-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£1.50 – £3.99Price range: £1.50 through £3.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block",
+        "multi-buy"
+      ],
+      "sku": "keski-whole-tray-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Keski Whole Tray 250g",
+      "longDescription": "",
+      "reviewCount": "8 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Koral Whole Fish 3-4kg",
+      "url": "https://efoodsdirect.co.uk/product/koral-whole-fish/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/0C0A8780-D91C-4E6B-9DD0-B870C888B7AD-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£26.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "koral-whole-fish",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Whole Fish"
+      ],
+      "shortDescription": "Koral Whole Fish 3-4kg\nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "8 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "large Whole Fish Deals –  3 KG+ Rohu and 1kg-1.5Kg Hilsha",
+      "url": "https://efoodsdirect.co.uk/product/large-whole-fish-deals-3-kg-mirgal-and-1kg-1-5kg-hilsha/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/05/3-KG-Mirgal-and-1kg-1.5Kg-Hilsha-405x330.webp",
+      "regularPrice": "£59.99",
+      "salePrice": "£44.99",
+      "priceText": "",
+      "rating": "",
+      "onSale": true,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-whole-fish",
+        "multi-buy"
+      ],
+      "sku": "large-whole-fish-deals-3-kg-mirgal-and-1kg-1-5kg-hilsha",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Lasso Batashi 250g",
+      "url": "https://efoodsdirect.co.uk/product/batashi-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Lasso-Batashi-250g--405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "batashi-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "CK Batashi 250g",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Masala Brand Bacha Fish 500g Block",
+      "url": "https://efoodsdirect.co.uk/product/masala-brand-bacha-fish-500g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Masala-Brand-Bacha-500g-Block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.50 – £19.99Price range: £7.50 through £19.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-large-fish-block"
+      ],
+      "sku": "masala-brand-bacha-fish-500g-block",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Masala Gold Chital Keema 200g",
+      "url": "https://efoodsdirect.co.uk/product/masala-gold-chital-keema-200g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Masala-Gold-Chital-Keema-200g-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.50 – £8.99Price range: £3.50 through £8.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market",
+        "frozen-small-fish-block",
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "masala-gold-chital-keema-200g",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        },
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Masala Sea Water King Prawn U5",
+      "url": "https://efoodsdirect.co.uk/product/masala-sea-water-king-prawn-u5/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/Masala-King-Sea-Prawn-U5-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£8.50 – £22.99Price range: £8.50 through £22.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "masala-sea-water-king-prawn-u5",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Masala Sea Water King Prawns 6/8",
+      "url": "https://efoodsdirect.co.uk/product/masala-sea-water-king-prawns-6-8/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Masala-Sea-Water-King-Prawns-6-8-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "masala-sea-water-king-prawns-6-8",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Masala Sea Water King Prawns 6/8",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Masala Sea Water King Prawns 8/12",
+      "url": "https://efoodsdirect.co.uk/product/masala-sea-water-king-prawns-8-12/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Masala-Sea-Water-King-Prawns-8-12-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£6.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "masala-sea-water-king-prawns-8-12",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Masala Sea Water King Prawns 8/12",
+      "longDescription": "",
+      "reviewCount": "10 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Mirgal Whole Fish",
+      "url": "https://efoodsdirect.co.uk/product/mirgal-myanmar/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/D6F83F8F-FEA9-4E4C-887F-AD4DD5F9BB49-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£11.99 – £39.99Price range: £11.99 through £39.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "mirgal-myanmar",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Mirgal Fish"
+      ],
+      "shortDescription": "Mirgal Whole Fish Myanmar \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nBrand:\nILCO, Crown Farm, IBCO\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "31 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Mr Prawns Cooked Prawns 350g",
+      "url": "https://efoodsdirect.co.uk/product/mr-prawns-cooked-prawns-350g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Mr-Prawns-Cooked-Prawns-350g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £13.99Price range: £4.99 through £13.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "mr-prawns-cooked-prawns-350g",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [
+        "Mr Prawns Cooked Prawns 350g"
+      ],
+      "shortDescription": "Mr Prawns Cooked Prawns 350g",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "NAZ Mr Shutki 95g",
+      "url": "https://efoodsdirect.co.uk/product/naz-mr-shutki/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/NAZ-Mr-Shutki-95g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market",
+        "oils-condiments",
+        "pickles-dried-products"
+      ],
+      "sku": "naz-mr-shutki",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Oils & Condiments",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/"
+        },
+        {
+          "name": "Pickles & Dried Products",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/pickles-dried-products/"
+        }
+      ],
+      "tags": [
+        "Mr Shutki"
+      ],
+      "shortDescription": "NAZ Mr Shutki 95g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "NAZ Mr Shutki Chingri Sutki Powder 180g",
+      "url": "https://efoodsdirect.co.uk/product/naz-mr-shutki-chingri-sutki-powder/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/NAZ-Mr-Shutki-Chingri-Sutki-Powder-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market",
+        "oils-condiments",
+        "pickles-dried-products"
+      ],
+      "sku": "naz-mr-shutki-chingri-sutki-powder",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Oils & Condiments",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/"
+        },
+        {
+          "name": "Pickles & Dried Products",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/pickles-dried-products/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "NAZ Mr Shutki Chingri Sutki Powder",
+      "longDescription": "",
+      "reviewCount": "2 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Naz Mr Shutki Dried Fish Powder 180g",
+      "url": "https://efoodsdirect.co.uk/product/naz-mr-shutki-dried-fish-powder/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Naz-Mr-Shutki-Dried-Fish-Powder-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market",
+        "oils-condiments",
+        "pickles-dried-products"
+      ],
+      "sku": "naz-mr-shutki-dried-fish-powder",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Oils & Condiments",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/"
+        },
+        {
+          "name": "Pickles & Dried Products",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/pickles-dried-products/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Naz Mr Shutki Dried Fish Powder",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "NAZ Mr Shutki Keski Balachaung 180g",
+      "url": "https://efoodsdirect.co.uk/product/naz-mr-shutki-keski-balachaung-180g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/NAZ-Mr-Shutki-Keski-Balachaung-95g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market",
+        "oils-condiments",
+        "pickles-dried-products"
+      ],
+      "sku": "naz-mr-shutki-keski-balachaung-180g",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Oils & Condiments",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/"
+        },
+        {
+          "name": "Pickles & Dried Products",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/pickles-dried-products/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "NAZ Mr Shutki Keski Balachaung 180g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "NAZ Mr Shutki Shrimp Balachaung 140g",
+      "url": "https://efoodsdirect.co.uk/product/naz-mr-shutki-shrimp-balachaung-140g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/NAZ-Mr-Shutki-Shrimp-Balachaung-95g-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market",
+        "oils-condiments",
+        "pickles-dried-products"
+      ],
+      "sku": "naz-mr-shutki-shrimp-balachaung-140g",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Oils & Condiments",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/"
+        },
+        {
+          "name": "Pickles & Dried Products",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/pickles-dried-products/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "NAZ Mr Shutki Shrimp Balachaung 140g",
+      "longDescription": "",
+      "reviewCount": "3 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "NAZ Shatkora Shutki 200g",
+      "url": "https://efoodsdirect.co.uk/product/naz-shatkora-shutki/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/NAZ-Shatkora-Shutki-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.20",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "dried-fish",
+        "fish-market",
+        "oils-condiments",
+        "pickles-dried-products"
+      ],
+      "sku": "naz-shatkora-shutki",
+      "detailCategories": [
+        {
+          "name": "Dried Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/dried-fish/"
+        },
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Oils & Condiments",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/"
+        },
+        {
+          "name": "Pickles & Dried Products",
+          "url": "https://efoodsdirect.co.uk/product-category/food-cupboard/oils-condiments/pickles-dried-products/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "NAZ Shatkora Shutki",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Pangasius Fillet 500g pack",
+      "url": "https://efoodsdirect.co.uk/product/pangasius-fillet-500g-pack/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/8-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "pangasius-fillet-500g-pack",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Pangasius Fillet 500g pack",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Pangasius Whole Fish",
+      "url": "https://efoodsdirect.co.uk/product/pangasius-whole-fish-myanmar/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Pangasius-Burma-1KG-1.5KG-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£5.50 – £14.99Price range: £5.50 through £14.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "pangasius-whole-fish-myanmar",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [
+        "Pangas"
+      ],
+      "shortDescription": "Pangasius Whole Fish Myanmar \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "16 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Priyo Koi Whole 700g",
+      "url": "https://efoodsdirect.co.uk/product/priyo-koi-whole-700g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/4-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£2.99 – £4.99Price range: £2.99 through £4.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "priyo-koi-whole-700g",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Priyo Koi Whole 700g",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Priyo Pangasius Steak 800g",
+      "url": "https://efoodsdirect.co.uk/product/priyo-pangasius-steak-800g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/9-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "priyo-pangasius-steak-800g",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Priyo Pangasius Steak 800g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 2,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Puti Whole Clean 500g",
+      "url": "https://efoodsdirect.co.uk/product/puti-whole-clean-500g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/3-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.99 – £6.99Price range: £3.99 through £6.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "puti-whole-clean-500g",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Put Whole Clean 500g",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Rohu Fish Egg Block 250g",
+      "url": "https://efoodsdirect.co.uk/product/rohu-fish-egg-block-250g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Rohu-Eggs-Block-250g-1-1-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-small-fish-block"
+      ],
+      "sku": "rohu-fish-egg-block-250g",
+      "detailCategories": [
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [
+        "Fish Egg"
+      ],
+      "shortDescription": "Rohu Fish Eggs Block 250g\nThey are perfect for making Fish Egg Masala.\n\nNet weight: 250g\nKeep frozen at -18*C\nDo not refreeze once defrosted\nSpecies: Labeo rohita\nProduct of Myanmar",
+      "longDescription": "",
+      "reviewCount": "18 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Rohu Whole Fish",
+      "url": "https://efoodsdirect.co.uk/product/rohu-whole/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/704F058D-3393-4DC2-AC5E-4AA8A66A984A-405x330.jpeg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£19.99 – £39.99Price range: £19.99 through £39.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "rohu-whole",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Rohu Fish\nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "54 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 4,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Rosemco Brand Fresh Water King Prawns 6/8 700g block",
+      "url": "https://efoodsdirect.co.uk/product/rosemco-brand-fresh-water-king-prawns-6-8-700g-block/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2024/07/Rosemco-Brand-Fresh-Water-King-Prawns-U.5-700g-block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£16.99 – £49.99Price range: £16.99 through £49.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "rosemco-brand-fresh-water-king-prawns-6-8-700g-block",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Rosemco Brand Fresh Water King Prawns U/5 700g block",
+      "url": "https://efoodsdirect.co.uk/product/rosemco-brand-fresh-water-king-prawns/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2024/07/Rosemco-Brand-Fresh-Water-King-Prawns-U.5-700g-block-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£23.99 – £53.99Price range: £23.99 through £53.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-king-prawns-shrimps"
+      ],
+      "sku": "rosemco-brand-fresh-water-king-prawns",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Rosemco Brand Fresh Water King Prawns U/5 700g block",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Shoal Bangladeshi",
+      "url": "https://efoodsdirect.co.uk/product/shoal-bangladeshi/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Shoal-Whole-Fish-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£11.99 – £19.99Price range: £11.99 through £19.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "shoal-bangladeshi",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Shoal Bangladeshi \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Shoal Myanmar 1-1.5kg",
+      "url": "https://efoodsdirect.co.uk/product/shoal-myanmar-1-1-5kg/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/Shoal-Whole-Fish-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£9.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "shoal-myanmar-1-1-5kg",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Shoal Myanmar 1-1.5kg \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Shoal Pona 250g Tray",
+      "url": "https://efoodsdirect.co.uk/product/shoal-pona/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/01/Shoal-Pona.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£3.99 – £9.50Price range: £3.99 through £9.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-small-fish-block"
+      ],
+      "sku": "shoal-pona",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Small Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-small-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "1 customer review",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Shorputi IQF Whole",
+      "url": "https://efoodsdirect.co.uk/product/shorputi-iqf-whole/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/shorputi-whole-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£9.99 – £13.99Price range: £9.99 through £13.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-whole-fish"
+      ],
+      "sku": "shorputi-iqf-whole",
+      "detailCategories": [
+        {
+          "name": "Frozen Whole Fish",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-whole-fish/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Shorputi IQF Whole \nSpecifications:  \n\n100% Fresh Fish \nVacuum Sealed  \n\n\nSuitable for freezing \n\nPlease select your favourite Size and Cut for price display. \nFree Next Day Delivery Available *T&C Apply.",
+      "longDescription": "",
+      "reviewCount": "8 customer reviews",
+      "brandCount": 6,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Silver Prompret (Rupchanda) Whole 700g pack",
+      "url": "https://efoodsdirect.co.uk/product/silver-prompret-rupchanda-whole-700g-pack/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/01/1-405x330.jpg",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-seafood"
+      ],
+      "sku": "silver-prompret-rupchanda-whole-700g-pack",
+      "detailCategories": [
+        {
+          "name": "Frozen Seafood",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-seafood/"
+        }
+      ],
+      "tags": [
+        "Silver Prompret (Rupchanda)"
+      ],
+      "shortDescription": "Silver Prompret (Rupchanda) Whole 700g pack",
+      "longDescription": "",
+      "reviewCount": "12 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 2,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "SP Pabda 500g Block – Special Edition",
+      "url": "https://efoodsdirect.co.uk/product/sp-pabda-500g-block-special-edition/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2025/11/SP-Pabda-500g-Block-–-Special-Edition-405x330.webp",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£4.99 – £14.99Price range: £4.99 through £14.99",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "fish-market",
+        "frozen-large-fish-block"
+      ],
+      "sku": "sp-pabda-500g-block-special-edition",
+      "detailCategories": [
+        {
+          "name": "Fish Market",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/"
+        },
+        {
+          "name": "Frozen Large Fish Block",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-large-fish-block/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Tiger Brand King Prawns 6/8 600g",
+      "url": "https://efoodsdirect.co.uk/product/tiger-brand-king-prawns-6-8-600g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Tiger-Brand-King-Prawns-82F12-600g-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£7.50 – £13.50Price range: £7.50 through £13.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps",
+        "multi-buy"
+      ],
+      "sku": "tiger-brand-king-prawns-6-8-600g",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Tiger Brand King Prawns 6/8 600g",
+      "longDescription": "",
+      "reviewCount": "4 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    },
+    {
+      "name": "Tiger Brand King Prawns 8/12 600g",
+      "url": "https://efoodsdirect.co.uk/product/tiger-brand-king-prawns-8-12-600g/",
+      "image": "https://efoodsdirect.co.uk/wp-content/uploads/2021/02/Tiger-Brand-King-Prawns-82F12-600g-405x330.png",
+      "regularPrice": "",
+      "salePrice": "",
+      "priceText": "£6.50 – £11.50Price range: £6.50 through £11.50",
+      "rating": "",
+      "onSale": false,
+      "outOfStock": false,
+      "brand": "",
+      "categories": [
+        "frozen-king-prawns-shrimps",
+        "multi-buy"
+      ],
+      "sku": "tiger-brand-king-prawns-8-12-600g",
+      "detailCategories": [
+        {
+          "name": "King Prawns & Shrimps",
+          "url": "https://efoodsdirect.co.uk/product-category/fish-market/frozen-king-prawns-shrimps/"
+        },
+        {
+          "name": "MULTI BUY",
+          "url": "https://efoodsdirect.co.uk/product-category/multi-buy/"
+        }
+      ],
+      "tags": [],
+      "shortDescription": "Tiger Brand King Prawns 8/12 600g",
+      "longDescription": "",
+      "reviewCount": "0 customer reviews",
+      "brandCount": 0,
+      "galleryImageCount": 1,
+      "hasVariations": false,
+      "variationLabels": []
+    }
+  ]
+}
