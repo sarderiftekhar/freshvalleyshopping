@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -70,7 +70,7 @@
         font-family: 'Jost', sans-serif;
     }
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'Plus Jakarta Sans', sans-serif;
     }
 }
 
@@ -148,4 +148,23 @@
 
 .leaf-shape:hover {
     animation: leaf-float 2s ease-in-out infinite;
+}
+
+/* Toast customization */
+.Toastify__toast--success {
+    background: #106207 !important;
+}
+
+.Toastify__toast--error {
+    background: #8C0808 !important;
+}
+
+.Toastify__toast--info {
+    background: #12B7CE !important;
+}
+
+.Toastify__toast {
+    font-family: 'Plus Jakarta Sans', 'Jost', sans-serif;
+    font-size: 14px;
+    border-radius: 10px !important;
 }

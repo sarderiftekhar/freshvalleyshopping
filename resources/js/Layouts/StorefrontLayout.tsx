@@ -20,7 +20,7 @@ export default function StorefrontLayout({ children }: Props) {
 
 function Header() {
     const { auth } = usePage().props as any;
-    const { totalItems } = useCart();
+    const { totalItems, openSidebar } = useCart();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
 
@@ -47,10 +47,10 @@ function Header() {
 
             {/* Main Header */}
             <div className="container mx-auto px-4">
-                <div className="flex items-center justify-between h-24 lg:h-28">
+                <div className="flex items-center justify-between h-28 lg:h-32">
                     {/* Logo */}
                     <Link href="/" className="shrink-0 ml-4 lg:ml-8">
-                        <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-16 lg:h-20 w-auto" />
+                        <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-24 lg:h-28 w-auto" />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -114,17 +114,17 @@ function Header() {
                             </Link>
                         )}
 
-                        <Link
-                            href="/cart"
+                        <button
+                            onClick={openSidebar}
                             className="relative w-9 h-9 flex items-center justify-center rounded-full hover:bg-orfarm-grey transition-colors"
                         >
                             <ShoppingCart className="size-5 text-foreground" />
                             {totalItems > 0 && (
-                                <span className="absolute -top-1 -right-1 w-5 h-5 bg-orfarm-green text-white text-[10px] font-bold rounded-full flex items-center justify-center">
+                                <span className="absolute -top-1 -right-1 w-5 h-5 bg-orfarm-green text-white text-[10px] font-bold rounded-full flex items-center justify-center animate-bounce">
                                     {totalItems}
                                 </span>
                             )}
-                        </Link>
+                        </button>
 
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

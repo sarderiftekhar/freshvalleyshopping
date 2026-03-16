@@ -71,8 +71,8 @@ export default {
             },
             fontFamily: {
                 sans: ['Jost', ...defaultTheme.fontFamily.sans],
-                heading: ['Quicksand', ...defaultTheme.fontFamily.sans],
-                display: ['Playfair Display', ...defaultTheme.fontFamily.serif],
+                heading: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
+                display: ['Cormorant Garamond', ...defaultTheme.fontFamily.serif],
             },
         },
     },

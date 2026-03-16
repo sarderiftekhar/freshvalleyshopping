@@ -3,6 +3,43 @@ export interface User {
     name: string;
     email: string;
     email_verified_at?: string;
+    role?: string;
+}
+
+export interface SupplierCategory {
+    id: number;
+    name: string;
+    slug: string;
+    emoji: string | null;
+    sort_order: number;
+    is_active: boolean;
+    products_count?: number;
+    active_products_count?: number;
+}
+
+export interface SupplierProduct {
+    id: number;
+    supplier_category_id: number;
+    name: string;
+    unit: string;
+    base_price: string;
+    bulk_price: string | null;
+    bulk_unit: string | null;
+    notes: string | null;
+    is_active: boolean;
+    sort_order: number;
+    category?: SupplierCategory;
+}
+
+export interface PaginatedData<T> {
+    data: T[];
+    current_page: number;
+    last_page: number;
+    per_page: number;
+    total: number;
+    from: number | null;
+    to: number | null;
+    links: { url: string | null; label: string; active: boolean }[];
 }
 
 export interface Category {
