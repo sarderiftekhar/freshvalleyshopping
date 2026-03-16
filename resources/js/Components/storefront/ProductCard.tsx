@@ -2,16 +2,11 @@ import { Link } from '@inertiajs/react';
 import { ShoppingCart, Eye, Heart, Star } from 'lucide-react';
 import { Product } from '@/types';
 import { useCart } from '@/context/CartContext';
+import { categoryEmojis } from '@/lib/categoryEmojis';
 
 interface Props {
     product: Product;
 }
-
-const categoryEmojis: Record<string, string> = {
-    'Fresh Meat': '🥩', 'Fresh Fish': '🐟', 'Vegetables': '🥬', 'Fresh Fruits': '🍎',
-    'Rice & Grains': '🍚', 'Spices & Herbs': '🌶️', 'Dairy & Eggs': '🥚',
-    'Frozen Foods': '❄️', 'Snacks & Drinks': '🥤', 'Bakery': '🍞',
-};
 
 export default function ProductCard({ product }: Props) {
     const { addToCart } = useCart();
@@ -68,7 +63,7 @@ export default function ProductCard({ product }: Props) {
                 {product.category && (
                     <Link
                         href={`/shop?category=${product.category.slug}`}
-                        className="text-xs text-orfarm-body/60 hover:text-orfarm-green transition-colors"
+                        className="text-xs text-orfarm-body/80 hover:text-orfarm-green transition-colors"
                     >
                         {product.category.name}
                     </Link>
@@ -93,7 +88,7 @@ export default function ProductCard({ product }: Props) {
                         {salePrice ? (
                             <>
                                 <span className="text-base font-bold text-orfarm-blue">£{salePrice.toFixed(2)}</span>
-                                <span className="text-xs text-orfarm-body/50 line-through">£{price.toFixed(2)}</span>
+                                <span className="text-xs text-orfarm-body/75 line-through">£{price.toFixed(2)}</span>
                             </>
                         ) : (
                             <span className="text-base font-bold text-orfarm-blue">£{price.toFixed(2)}</span>

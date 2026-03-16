@@ -31,6 +31,7 @@ Route::middleware(['auth', 'verified', 'supplier'])->prefix('supplier')->name('s
     Route::get('/products', [SupplierController::class, 'products'])->name('products');
     Route::get('/products/create', [SupplierController::class, 'createProduct'])->name('products.create');
     Route::post('/products', [SupplierController::class, 'storeProduct'])->name('products.store');
+    Route::post('/products/batch', [SupplierController::class, 'storeBatchProducts'])->name('products.batch');
     Route::get('/products/{supplierProduct}/edit', [SupplierController::class, 'editProduct'])->name('products.edit');
     Route::put('/products/{supplierProduct}', [SupplierController::class, 'updateProduct'])->name('products.update');
     Route::delete('/products/{supplierProduct}', [SupplierController::class, 'destroyProduct'])->name('products.destroy');

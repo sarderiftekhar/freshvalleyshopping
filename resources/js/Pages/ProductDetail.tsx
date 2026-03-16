@@ -6,6 +6,7 @@ import ProductCard from '@/Components/storefront/ProductCard';
 import { useCart } from '@/context/CartContext';
 import { Product } from '@/types';
 import { Button } from '@/Components/ui/button';
+import { categoryEmojis } from '@/lib/categoryEmojis';
 
 interface Props {
     product: Product;
@@ -32,7 +33,7 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
             {/* Breadcrumb */}
             <div className="bg-muted/30 border-b border-border/50">
                 <div className="container mx-auto px-4 py-4">
-                    <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1.5 text-sm text-gray-700">
                         <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                         <ChevronRight className="size-3.5" />
                         <Link href="/shop" className="hover:text-primary transition-colors">Shop</Link>
@@ -59,11 +60,7 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                             <img src={activeImage} alt={product.title} className="w-full h-full object-contain p-8" />
                         ) : (
                             <div className="text-8xl">
-                                {product.category?.name === 'Fresh Meat' ? '🥩' :
-                                 product.category?.name === 'Fresh Fish' ? '🐟' :
-                                 product.category?.name === 'Vegetables' ? '🥬' :
-                                 product.category?.name === 'Rice & Grains' ? '🍚' :
-                                 product.category?.name === 'Spices & Herbs' ? '🌶️' : '📦'}
+                                {categoryEmojis[product.category?.name || ''] || '📦'}
                             </div>
                         )}
                     </div>
@@ -89,7 +86,7 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                                     {product.halal_certification_body && ` (${product.halal_certification_body})`}
                                 </span>
                             )}
-                            <span className="text-xs text-muted-foreground">SKU: {product.sku}</span>
+                            <span className="text-xs text-gray-700">SKU: {product.sku}</span>
                         </div>
 
                         {/* Price */}
@@ -97,7 +94,7 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                             {salePrice ? (
                                 <>
                                     <span className="text-3xl font-bold text-primary">£{salePrice.toFixed(2)}</span>
-                                    <span className="text-lg text-muted-foreground line-through">£{price.toFixed(2)}</span>
+                                    <span className="text-lg text-gray-700 line-through">£{price.toFixed(2)}</span>
                                     <span className="px-2 py-0.5 bg-red-500 text-white text-xs font-bold rounded">
                                         -{product.discount_percent}%
                                     </span>
@@ -106,10 +103,10 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                                 <span className="text-3xl font-bold text-foreground">£{price.toFixed(2)}</span>
                             )}
                         </div>
-                        <p className="text-sm text-muted-foreground mt-1">{product.unit}</p>
+                        <p className="text-sm text-gray-700 mt-1">{product.unit}</p>
 
                         {/* Description */}
-                        <p className="text-sm text-muted-foreground mt-5 leading-relaxed">
+                        <p className="text-sm text-gray-700 mt-5 leading-relaxed">
                             {product.description}
                         </p>
 
@@ -140,7 +137,7 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                         {product.tags && product.tags.length > 0 && (
                             <div className="flex flex-wrap gap-2 mt-6">
                                 {product.tags.map((tag, i) => (
-                                    <span key={i} className="px-2.5 py-1 bg-muted rounded-full text-xs text-muted-foreground">
+                                    <span key={i} className="px-2.5 py-1 bg-muted rounded-full text-xs text-gray-700">
                                         {tag}
                                     </span>
                                 ))}
@@ -149,12 +146,12 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
 
                         {/* Info */}
                         <div className="mt-8 space-y-3 border-t pt-6">
-                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <div className="flex items-center gap-2 text-sm text-gray-700">
                                 <span className="text-green-600">✓</span>
                                 {product.quantity > 0 ? `In Stock (${product.quantity} available)` : 'Out of Stock'}
                             </div>
                             {product.brand && (
-                                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                <div className="flex items-center gap-2 text-sm text-gray-700">
                                     Brand: <span className="text-foreground font-medium">{product.brand}</span>
                                 </div>
                             )}

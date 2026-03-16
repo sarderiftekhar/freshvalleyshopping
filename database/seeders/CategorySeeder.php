@@ -11,16 +11,19 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            ['name' => 'Fresh Meat', 'image' => '/assets/img/catagory/category-6.jpg', 'sort_order' => 1],
-            ['name' => 'Fresh Fish', 'image' => '/assets/img/catagory/category-8.jpg', 'sort_order' => 2],
-            ['name' => 'Vegetables', 'image' => '/assets/img/catagory/category-1.jpg', 'sort_order' => 3],
-            ['name' => 'Fresh Fruits', 'image' => '/assets/img/catagory/category-2.jpg', 'sort_order' => 4],
-            ['name' => 'Rice & Grains', 'image' => '/assets/img/catagory/category-5.jpg', 'sort_order' => 5],
-            ['name' => 'Spices & Herbs', 'image' => '/assets/img/catagory/category-9.jpg', 'sort_order' => 6],
-            ['name' => 'Dairy & Eggs', 'image' => '/assets/img/catagory/category-7.jpg', 'sort_order' => 7],
-            ['name' => 'Frozen Foods', 'image' => '/assets/img/catagory/category-3.jpg', 'sort_order' => 8],
-            ['name' => 'Snacks & Drinks', 'image' => '/assets/img/catagory/category-4.jpg', 'sort_order' => 9],
-            ['name' => 'Bakery', 'image' => '/assets/img/catagory/category-10.jpg', 'sort_order' => 10],
+            ['name' => 'Grocery', 'sort_order' => 1],
+            ['name' => 'Rice & Grains', 'sort_order' => 2],
+            ['name' => 'Live Fish', 'sort_order' => 3],
+            ['name' => 'Frozen Prepared Foods', 'sort_order' => 4],
+            ['name' => 'Fresh Vegetables', 'sort_order' => 5],
+            ['name' => 'Fresh Meat & Chicken', 'sort_order' => 6],
+            ['name' => 'Biscuits', 'sort_order' => 7],
+            ['name' => 'Seasonal Fruits', 'sort_order' => 8],
+            ['name' => 'Chilled Foods', 'sort_order' => 9],
+            ['name' => 'Frozen Fruit & Veg', 'sort_order' => 10],
+            ['name' => 'Drinks', 'sort_order' => 11],
+            ['name' => 'Dry Fruits & Nuts', 'sort_order' => 12],
+            ['name' => 'Tea & Coffee', 'sort_order' => 13],
         ];
 
         foreach ($categories as $category) {
@@ -28,29 +31,8 @@ class CategorySeeder extends Seeder
                 ['slug' => Str::slug($category['name'])],
                 [
                     'name' => $category['name'],
-                    'image' => $category['image'],
+                    'image' => null,
                     'sort_order' => $category['sort_order'],
-                    'is_active' => true,
-                ]
-            );
-        }
-
-        // Subcategories under Fresh Meat
-        $freshMeat = Category::where('slug', 'fresh-meat')->first();
-        $meatSubs = [
-            ['name' => 'Beef', 'sort_order' => 1],
-            ['name' => 'Lamb', 'sort_order' => 2],
-            ['name' => 'Goat', 'sort_order' => 3],
-            ['name' => 'Chicken', 'sort_order' => 4],
-        ];
-
-        foreach ($meatSubs as $sub) {
-            Category::updateOrCreate(
-                ['slug' => Str::slug($sub['name'])],
-                [
-                    'name' => $sub['name'],
-                    'parent_id' => $freshMeat->id,
-                    'sort_order' => $sub['sort_order'],
                     'is_active' => true,
                 ]
             );

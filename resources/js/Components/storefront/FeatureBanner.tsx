@@ -41,7 +41,7 @@ export default function FeatureBanner() {
                             <h4 className={`text-xl lg:text-2xl font-heading font-bold ${banner.textColor} whitespace-pre-line leading-tight mb-3`}>
                                 {banner.title}
                             </h4>
-                            <p className="text-sm text-white/70">{banner.desc}</p>
+                            <p className="text-sm text-white/90">{banner.desc}</p>
 
                             {/* Decorative circle */}
                             <div className="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-white/10 group-hover:scale-110 transition-transform" />

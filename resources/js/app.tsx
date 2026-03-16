@@ -8,8 +8,6 @@ import { createRoot } from 'react-dom/client';
 import { CartProvider } from '@/context/CartContext';
 import { ToastContainer } from 'react-toastify';
 import CartSidebar from '@/Components/storefront/CartSidebar';
-import PageTransition from '@/Components/storefront/PageTransition';
-
 const appName = import.meta.env.VITE_APP_NAME || 'Fresh Valley';
 
 createInertiaApp({
@@ -24,9 +22,7 @@ createInertiaApp({
 
         root.render(
             <CartProvider>
-                <PageTransition>
-                    <App {...props} />
-                </PageTransition>
+                <App {...props} />
                 <CartSidebar />
                 <ToastContainer
                     position="top-center"
@@ -42,7 +38,5 @@ createInertiaApp({
             </CartProvider>
         );
     },
-    progress: {
-        color: '#106207',
-    },
+    progress: false,
 });

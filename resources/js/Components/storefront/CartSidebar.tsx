@@ -50,8 +50,8 @@ export default function CartSidebar() {
                 <div className="flex-1 overflow-y-auto px-6 py-4">
                     {items.length === 0 ? (
                         <div className="flex flex-col items-center justify-center h-full text-center">
-                            <ShoppingBag className="size-16 text-gray-200 mb-4" />
-                            <p className="text-sm text-orfarm-body/60">Your cart is empty</p>
+                            <ShoppingBag className="size-16 text-gray-400 mb-4" />
+                            <p className="text-sm text-orfarm-body/80">Your cart is empty</p>
                             <button
                                 onClick={closeSidebar}
                                 className="mt-4 text-sm font-semibold text-orfarm-green hover:text-orfarm-green-dark transition-colors"
@@ -116,7 +116,7 @@ export default function CartSidebar() {
                                                 </button>
                                                 <button
                                                     onClick={() => removeFromCart(item.product.id)}
-                                                    className="ml-auto w-7 h-7 rounded-md flex items-center justify-center text-gray-400 hover:text-orfarm-red hover:bg-red-50 transition-colors"
+                                                    className="ml-auto w-7 h-7 rounded-md flex items-center justify-center text-gray-600 hover:text-orfarm-red hover:bg-red-50 transition-colors"
                                                 >
                                                     <Trash2 className="size-3.5" />
                                                 </button>
@@ -133,11 +133,11 @@ export default function CartSidebar() {
                 {items.length > 0 && (
                     <div className="border-t border-gray-100 px-6 py-5">
                         <div className="flex items-center justify-between mb-1">
-                            <span className="text-sm text-orfarm-body/70">Subtotal:</span>
+                            <span className="text-sm text-orfarm-body">Subtotal:</span>
                             <span className="text-lg font-bold text-orfarm-blue">£{subtotal.toFixed(2)}</span>
                         </div>
                         {subtotal < 40 && (
-                            <p className="text-xs text-orfarm-body/50 mb-4">
+                            <p className="text-xs text-orfarm-body/80 mb-4">
                                 Add £{(40 - subtotal).toFixed(2)} more for free delivery
                             </p>
                         )}

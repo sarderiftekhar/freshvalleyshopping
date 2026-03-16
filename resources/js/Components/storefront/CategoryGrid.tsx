@@ -2,36 +2,11 @@ import { Link } from '@inertiajs/react';
 import { Category } from '@/types';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useRef } from 'react';
+import { categoryEmojis } from '@/lib/categoryEmojis';
 
 interface Props {
     categories: Category[];
 }
-
-const categoryIcons: Record<string, string> = {
-    'Fresh Meat': '/assets/img/category/category-1.png',
-    'Fresh Fish': '/assets/img/category/category-2.png',
-    'Vegetables': '/assets/img/category/category-3.png',
-    'Fresh Fruits': '/assets/img/category/category-4.png',
-    'Rice & Grains': '/assets/img/category/category-5.png',
-    'Spices & Herbs': '/assets/img/category/category-6.png',
-    'Dairy & Eggs': '/assets/img/category/category-7.png',
-    'Frozen Foods': '/assets/img/category/category-8.png',
-    'Snacks & Drinks': '/assets/img/category/category-9.png',
-    'Bakery': '/assets/img/category/category-10.png',
-};
-
-const categoryEmojis: Record<string, string> = {
-    'Fresh Meat': '🥩',
-    'Fresh Fish': '🐟',
-    'Vegetables': '🥬',
-    'Fresh Fruits': '🍎',
-    'Rice & Grains': '🍚',
-    'Spices & Herbs': '🌶️',
-    'Dairy & Eggs': '🥚',
-    'Frozen Foods': '❄️',
-    'Snacks & Drinks': '🥤',
-    'Bakery': '🍞',
-};
 
 export default function CategoryGrid({ categories }: Props) {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -89,7 +64,7 @@ export default function CategoryGrid({ categories }: Props) {
                                     {category.name}
                                 </h3>
                                 {category.products_count !== undefined && (
-                                    <span className="text-xs text-orfarm-body/60 mt-1 block">
+                                    <span className="text-xs text-orfarm-body/80 mt-1 block">
                                         {category.products_count} items
                                     </span>
                                 )}

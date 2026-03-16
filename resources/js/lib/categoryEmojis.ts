@@ -1,0 +1,15 @@
+export const categoryEmojis: Record<string, string> = {
+    'Grocery': '🛒',
+    'Rice & Grains': '🍚',
+    'Live Fish': '🐟',
+    'Frozen Prepared Foods': '🥟',
+    'Fresh Vegetables': '🥬',
+    'Fresh Meat & Chicken': '🥩',
+    'Biscuits': '🍪',
+    'Seasonal Fruits': '🍎',
+    'Chilled Foods': '🧊',
+    'Frozen Fruit & Veg': '❄️',
+    'Drinks': '🥤',
+    'Dry Fruits & Nuts': '🥜',
+    'Tea & Coffee': '☕',
+};

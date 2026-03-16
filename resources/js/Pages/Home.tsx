@@ -95,11 +95,11 @@ function ProductFeatureArea() {
                                     </div>
                                     <h4 className="text-sm font-semibold text-orfarm-blue uppercase">Halal Certified</h4>
                                 </div>
-                                <p className="text-xs text-orfarm-body/70 leading-relaxed">
+                                <p className="text-xs text-orfarm-body leading-relaxed">
                                     All meat products are HMC certified for your peace of mind.
                                 </p>
                                 <Link
-                                    href="/shop?category=fresh-meat"
+                                    href="/shop?category=fresh-meat-chicken"
                                     className="inline-flex items-center gap-1 text-xs font-semibold text-orfarm-green mt-3 hover:text-orfarm-green-dark transition-colors"
                                 >
                                     Shop Meat <ArrowRight className="size-3" />
@@ -113,11 +113,11 @@ function ProductFeatureArea() {
                                     </div>
                                     <h4 className="text-sm font-semibold text-orfarm-blue uppercase">Farm Fresh</h4>
                                 </div>
-                                <p className="text-xs text-orfarm-body/70 leading-relaxed">
+                                <p className="text-xs text-orfarm-body leading-relaxed">
                                     Fresh vegetables and fruits sourced from trusted farms.
                                 </p>
                                 <Link
-                                    href="/shop?category=vegetables"
+                                    href="/shop?category=fresh-vegetables"
                                     className="inline-flex items-center gap-1 text-xs font-semibold text-orfarm-blue mt-3 hover:text-orfarm-green transition-colors"
                                 >
                                     Shop Veggies <ArrowRight className="size-3" />
@@ -171,14 +171,14 @@ function CountdownBanner() {
             <div className="container mx-auto px-4">
                 <div className="py-[150px] lg:py-[130px] lg:pl-[175px] relative">
                     <div className="max-w-lg">
-                        <span className="text-sm font-medium text-white/80 italic font-heading tracking-widest block mb-3">
+                        <span className="text-sm font-medium text-white/90 italic font-heading tracking-widest block mb-3">
                             ~ Deals Of The Day ~
                         </span>
                         <h2 className="text-3xl lg:text-[42px] font-heading font-bold text-white leading-tight mb-6">
                             Premium Drinks<br />
                             Fresh Farm Product
                         </h2>
-                        <p className="text-white/70 text-base leading-relaxed mb-8 max-w-md">
+                        <p className="text-white/90 text-base leading-relaxed mb-8 max-w-md">
                             Get the best deals on fresh organic products. Limited time offer on our weekly specials — halal, fresh, and delivered to your door.
                         </p>
 
@@ -193,7 +193,7 @@ function CountdownBanner() {
                             ].map((item, i) => (
                                 <div key={i} className="flex items-end">
                                     <span className="text-4xl font-medium text-white leading-none">{String(item.value).padStart(2, '0')}</span>
-                                    <span className="text-[11px] text-white/60 uppercase tracking-wider ml-1 mb-0.5">{item.label}</span>
+                                    <span className="text-[11px] text-white/85 uppercase tracking-wider ml-1 mb-0.5">{item.label}</span>
                                 </div>
                             ))}
                         </div>
@@ -274,7 +274,7 @@ function BlogSection() {
                         ~ Read Our Blog ~
                     </span>
                     <h2 className="text-2xl lg:text-[36px] font-heading font-bold text-orfarm-blue mt-2">Our Latest Post</h2>
-                    <p className="text-sm text-orfarm-body/70 mt-2 max-w-lg mx-auto">
+                    <p className="text-sm text-orfarm-body mt-2 max-w-lg mx-auto">
                         Tips, recipes, and insights on healthy eating, halal food, and making the most of fresh produce.
                     </p>
                 </div>
@@ -294,7 +294,7 @@ function BlogSection() {
 
                             {/* Content */}
                             <div className="p-5">
-                                <div className="flex items-center gap-2 text-xs text-orfarm-body/60 mb-2">
+                                <div className="flex items-center gap-2 text-xs text-orfarm-body/80 mb-2">
                                     <span className={`font-semibold uppercase ${categoryColors[post.category] || 'text-orfarm-green'}`}>
                                         {post.category}
                                     </span>
@@ -306,7 +306,7 @@ function BlogSection() {
                                     {post.title}
                                 </h3>
 
-                                <p className="text-xs text-orfarm-body/60 leading-relaxed line-clamp-2 mb-4">
+                                <p className="text-xs text-orfarm-body/80 leading-relaxed line-clamp-2 mb-4">
                                     {post.excerpt}
                                 </p>
 

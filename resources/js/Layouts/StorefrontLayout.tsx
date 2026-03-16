@@ -2,6 +2,7 @@ import { ReactNode, useState } from 'react';
 import { Link, usePage } from '@inertiajs/react';
 import { Search, User, ShoppingCart, Menu, X, Phone, MapPin, ChevronDown, Truck, Shield, Tag, Headphones, Package, Mail, Facebook, Twitter, Youtube, ChevronRight } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
+import PageTransition from '@/Components/storefront/PageTransition';
 
 interface Props {
     children: ReactNode;
@@ -11,7 +12,9 @@ export default function StorefrontLayout({ children }: Props) {
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1">
+                <PageTransition>{children}</PageTransition>
+            </main>
             <FeatureBar />
             <Footer />
         </div>
@@ -195,7 +198,7 @@ function FeatureBar() {
                             <f.icon className="size-8 text-orfarm-green" />
                             <div>
                                 <h4 className="text-xs font-bold uppercase text-white tracking-wider">{f.title}</h4>
-                                <p className="text-xs text-white/60 mt-1">{f.desc}</p>
+                                <p className="text-xs text-white/85 mt-1">{f.desc}</p>
                             </div>
                         </div>
                     ))}
@@ -215,7 +218,7 @@ function Footer() {
     ];
 
     return (
-        <footer className="bg-orfarm-blue text-white/70">
+        <footer className="bg-orfarm-blue text-white/90">
             {/* Main Footer */}
             <div className="container mx-auto px-4 py-12">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -226,7 +229,7 @@ function Footer() {
                             If you have any question, please<br />
                             contact us at:<Link href="mailto:info@freshvalley.co.uk" className="text-orfarm-green hover:underline">info@freshvalley.co.uk</Link>
                         </p>
-                        <p className="text-sm text-white/50 mb-3">Social Media:</p>
+                        <p className="text-sm text-white/80 mb-3">Social Media:</p>
                         <div className="flex gap-3">
                             <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-orfarm-green transition-colors">
                                 <Facebook className="size-4" />
@@ -288,7 +291,7 @@ function Footer() {
                                 Subscribe
                             </button>
                         </div>
-                        <label className="flex items-center gap-2 mt-3 text-xs text-white/50 cursor-pointer">
+                        <label className="flex items-center gap-2 mt-3 text-xs text-white/80 cursor-pointer">
                             <input type="checkbox" className="rounded border-white/30 bg-transparent text-orfarm-green focus:ring-orfarm-green" />
                             I accept terms & conditions & privacy policy.
                         </label>
@@ -299,7 +302,7 @@ function Footer() {
             {/* Copyright */}
             <div className="border-t border-white/10">
                 <div className="container mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <p className="text-xs text-white/50">
+                    <p className="text-xs text-white/80">
                         Copyright &copy; {new Date().getFullYear()} <span className="text-orfarm-green font-semibold">FRESH VALLEY</span> all rights reserved. Halal Certified.
                     </p>
                     <div className="flex items-center">

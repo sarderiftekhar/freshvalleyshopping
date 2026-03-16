@@ -39,7 +39,7 @@ export default function Shop({ categories, products, filters }: Props) {
             {/* Breadcrumb */}
             <div className="bg-muted/30 border-b border-border/50">
                 <div className="container mx-auto px-4 py-4">
-                    <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1.5 text-sm text-gray-700">
                         <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                         <ChevronRight className="size-3.5" />
                         <span className="text-foreground font-medium">
@@ -80,7 +80,7 @@ export default function Shop({ categories, products, filters }: Props) {
                                         >
                                             {cat.name}
                                             {cat.products_count !== undefined && (
-                                                <span className="text-xs ml-1 opacity-70">({cat.products_count})</span>
+                                                <span className="text-xs ml-1 opacity-90">({cat.products_count})</span>
                                             )}
                                         </Link>
                                         {cat.children && cat.children.length > 0 && showChildren && (
@@ -92,12 +92,12 @@ export default function Shop({ categories, products, filters }: Props) {
                                                         className={`block py-1.5 px-3 rounded-lg text-sm transition-colors ${
                                                             filters.category === child.slug
                                                                 ? 'bg-primary text-primary-foreground font-medium'
-                                                                : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                                                                : 'text-gray-700 hover:bg-muted hover:text-foreground'
                                                         }`}
                                                     >
                                                         {child.name}
                                                         {child.products_count !== undefined && (
-                                                            <span className="text-xs ml-1 opacity-70">({child.products_count})</span>
+                                                            <span className="text-xs ml-1 opacity-90">({child.products_count})</span>
                                                         )}
                                                     </Link>
                                                 ))}
@@ -113,7 +113,7 @@ export default function Shop({ categories, products, filters }: Props) {
                     <div className="flex-1">
                         {/* Toolbar */}
                         <div className="flex items-center justify-between mb-6">
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-sm text-gray-700">
                                 Showing {products.data.length} of {products.total} products
                             </p>
                             <select
@@ -138,7 +138,7 @@ export default function Shop({ categories, products, filters }: Props) {
                             </div>
                         ) : (
                             <div className="text-center py-16">
-                                <p className="text-lg text-muted-foreground">No products found</p>
+                                <p className="text-lg text-gray-700">No products found</p>
                                 <Link href="/shop" className={cn(buttonVariants({ variant: 'outline' }), 'mt-4')}>
                                     View all products
                                 </Link>
@@ -157,7 +157,7 @@ export default function Shop({ categories, products, filters }: Props) {
                                                 ? 'bg-primary text-primary-foreground'
                                                 : link.url
                                                 ? 'hover:bg-muted text-foreground'
-                                                : 'text-muted-foreground pointer-events-none'
+                                                : 'text-gray-700 pointer-events-none'
                                         }`}
                                         dangerouslySetInnerHTML={{ __html: link.label }}
                                     />

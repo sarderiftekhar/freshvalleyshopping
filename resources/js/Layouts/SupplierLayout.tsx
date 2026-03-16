@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from 'react';
 import { Link, usePage } from '@inertiajs/react';
 import { LayoutDashboard, Package, FolderOpen, LogOut, ChevronRight, User } from 'lucide-react';
 import { toast } from 'react-toastify';
+import PageTransition from '@/Components/storefront/PageTransition';
 
 interface Props {
     children: ReactNode;
@@ -42,7 +43,7 @@ export default function SupplierLayout({ children, title }: Props) {
                         </div>
 
                         <div className="flex items-center gap-4">
-                            <span className="text-sm text-white/70 hidden sm:block">
+                            <span className="text-sm text-white/90 hidden sm:block">
                                 <User className="size-4 inline mr-1" />
                                 {auth?.user?.name}
                             </span>
@@ -50,7 +51,7 @@ export default function SupplierLayout({ children, title }: Props) {
                                 href="/logout"
                                 method="post"
                                 as="button"
-                                className="flex items-center gap-1 text-sm text-white/70 hover:text-white transition-colors"
+                                className="flex items-center gap-1 text-sm text-white/90 hover:text-white transition-colors"
                             >
                                 <LogOut className="size-4" />
                                 <span className="hidden sm:inline">Logout</span>
@@ -79,15 +80,15 @@ export default function SupplierLayout({ children, title }: Props) {
                     ))}
                 </nav>
 
-                {/* Page Title */}
-                {title && (
-                    <div className="mb-6">
-                        <h1 className="text-2xl font-heading font-bold text-orfarm-blue">{title}</h1>
-                    </div>
-                )}
-
-                {/* Content */}
-                {children}
+                {/* Page Title + Content — animated on navigation */}
+                <PageTransition>
+                    {title && (
+                        <div className="mb-6">
+                            <h1 className="text-2xl font-heading font-bold text-orfarm-blue">{title}</h1>
+                        </div>
+                    )}
+                    {children}
+                </PageTransition>
             </div>
         </div>
     );

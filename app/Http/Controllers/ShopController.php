@@ -49,7 +49,7 @@ class ShopController extends Controller
                     default => $query->orderBy('sort_order'),
                 };
             }, fn($query) => $query->orderBy('sort_order'))
-            ->paginate(12)
+            ->paginate(24)
             ->withQueryString();
 
         $products->getCollection()->each->append(['discount_percent', 'effective_price']);

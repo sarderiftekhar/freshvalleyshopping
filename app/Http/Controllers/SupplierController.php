@@ -43,7 +43,7 @@ class SupplierController extends Controller
 
         $products = $query->orderBy('supplier_category_id')
             ->orderBy('sort_order')
-            ->paginate(50)
+            ->paginate(15)
             ->withQueryString();
 
         $categories = SupplierCategory::active()
@@ -72,8 +72,10 @@ class SupplierController extends Controller
             'supplier_category_id' => 'required|exists:supplier_categories,id',
             'name' => 'required|string|max:255',
             'unit' => 'required|string|max:50',
+            'pack_size' => 'nullable|string|max:50',
             'base_price' => 'required|numeric|min:0.01',
             'bulk_price' => 'nullable|numeric|min:0',
+            'bulk_qty' => 'nullable|integer|min:1',
             'bulk_unit' => 'nullable|string|max:100',
             'notes' => 'nullable|string|max:500',
             'is_active' => 'boolean',
@@ -102,8 +104,10 @@ class SupplierController extends Controller
             'supplier_category_id' => 'required|exists:supplier_categories,id',
             'name' => 'required|string|max:255',
             'unit' => 'required|string|max:50',
+            'pack_size' => 'nullable|string|max:50',
             'base_price' => 'required|numeric|min:0.01',
             'bulk_price' => 'nullable|numeric|min:0',
+            'bulk_qty' => 'nullable|integer|min:1',
             'bulk_unit' => 'nullable|string|max:100',
             'notes' => 'nullable|string|max:500',
             'is_active' => 'boolean',
@@ -174,17 +178,59 @@ class SupplierController extends Controller
         return redirect()->route('supplier.categories')->with('success', 'Category deleted.');
     }
 
-    // Inline update for quick price changes
+    public function storeBatchProducts(Request $request)
+    {
+        $request->validate([
+            'products' => 'required|array|min:1',
+            'products.*.supplier_category_id' => 'required|exists:supplier_categories,id',
+            'products.*.name' => 'required|string|max:255',
+            'products.*.unit' => 'required|string|max:50',
+            'products.*.pack_size' => 'nullable|string|max:50',
+            'products.*.base_price' => 'required|numeric|min:0.01',
+            'products.*.bulk_price' => 'nullable|numeric|min:0',
+            'products.*.bulk_qty' => 'nullable|integer|min:1',
+            'products.*.bulk_unit' => 'nullable|string|max:100',
+            'products.*.notes' => 'nullable|string|max:500',
+        ]);
+
+        $count = 0;
+        foreach ($request->products as $item) {
+            SupplierProduct::create([
+                'supplier_category_id' => $item['supplier_category_id'],
+                'name' => $item['name'],
+                'unit' => $item['unit'],
+                'pack_size' => $item['pack_size'] ?? null,
+                'base_price' => $item['base_price'],
+                'bulk_price' => $item['bulk_price'] ?? null,
+                'bulk_qty' => $item['bulk_qty'] ?? null,
+                'bulk_unit' => $item['bulk_unit'] ?? null,
+                'notes' => $item['notes'] ?? null,
+                'is_active' => true,
+            ]);
+            $count++;
+        }
+
+        return back()->with('success', "{$count} product(s) added successfully.");
+    }
+
+    // Inline update for quick edits directly in the table
     public function quickUpdate(Request $request, SupplierProduct $supplierProduct)
     {
         $validated = $request->validate([
+            'name' => 'sometimes|string|max:255',
+            'unit' => 'sometimes|string|max:50',
+            'pack_size' => 'sometimes|nullable|string|max:50',
             'base_price' => 'sometimes|numeric|min:0.01',
             'bulk_price' => 'sometimes|nullable|numeric|min:0',
+            'bulk_qty' => 'sometimes|nullable|integer|min:1',
+            'bulk_unit' => 'sometimes|nullable|string|max:100',
+            'notes' => 'sometimes|nullable|string|max:500',
+            'supplier_category_id' => 'sometimes|exists:supplier_categories,id',
             'is_active' => 'sometimes|boolean',
         ]);
 
         $supplierProduct->update($validated);
 
-        return back()->with('success', 'Updated successfully.');
+        return back()->with('success', "{$supplierProduct->name} updated.");
     }
 }

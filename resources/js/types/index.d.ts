@@ -22,8 +22,10 @@ export interface SupplierProduct {
     supplier_category_id: number;
     name: string;
     unit: string;
+    pack_size: string | null;
     base_price: string;
     bulk_price: string | null;
+    bulk_qty: number | null;
     bulk_unit: string | null;
     notes: string | null;
     is_active: boolean;
