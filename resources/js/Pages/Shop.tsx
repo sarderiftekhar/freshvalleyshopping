@@ -1,5 +1,5 @@
 import { Head, Link, router } from '@inertiajs/react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ChevronDown } from 'lucide-react';
 import StorefrontLayout from '@/Layouts/StorefrontLayout';
 import ProductCard from '@/Components/storefront/ProductCard';
 import { Category, Product } from '@/types';
@@ -52,18 +52,21 @@ export default function Shop({ categories, products, filters }: Props) {
             <div className="container mx-auto px-4 py-8">
                 <div className="lg:flex lg:gap-8">
                     {/* Sidebar */}
-                    <aside className="lg:w-60 shrink-0 mb-6 lg:mb-0">
-                        <h3 className="font-semibold text-foreground mb-3">Categories</h3>
+                    <aside className="lg:w-64 shrink-0 mb-6 lg:mb-0">
+                        <h3 className="font-heading font-bold text-foreground mb-4 text-base tracking-tight">Categories</h3>
                         <nav className="space-y-0.5">
                             <Link
                                 href="/shop"
-                                className={`block py-2 px-3 rounded-lg text-sm transition-colors ${
-                                    !filters.category ? 'bg-primary text-primary-foreground font-medium' : 'text-foreground hover:bg-muted'
+                                className={`group flex items-center justify-between py-2.5 px-3 rounded-lg text-sm transition-all duration-200 ${
+                                    !filters.category
+                                        ? 'bg-primary text-primary-foreground font-medium shadow-sm'
+                                        : 'text-foreground hover:bg-primary/5 hover:text-primary hover:translate-x-1'
                                 }`}
                             >
-                                All Products
+                                <span>All Products</span>
                             </Link>
                             {categories.map(cat => {
+                                const hasChildren = cat.children && cat.children.length > 0;
                                 const isParentActive = filters.category === cat.slug;
                                 const isChildActive = cat.children?.some(child => filters.category === child.slug);
                                 const showChildren = isParentActive || isChildActive;
@@ -72,32 +75,58 @@ export default function Shop({ categories, products, filters }: Props) {
                                     <div key={cat.id}>
                                         <Link
                                             href={`/shop?category=${cat.slug}`}
-                                            className={`block py-2 px-3 rounded-lg text-sm transition-colors ${
+                                            className={`group flex items-center justify-between py-2.5 px-3 rounded-lg text-sm transition-all duration-200 ${
                                                 isParentActive
-                                                    ? 'bg-primary text-primary-foreground font-medium'
-                                                    : 'text-foreground hover:bg-muted'
+                                                    ? 'bg-primary text-primary-foreground font-medium shadow-sm'
+                                                    : 'text-foreground hover:bg-primary/5 hover:text-primary hover:translate-x-1'
                                             }`}
                                         >
-                                            {cat.name}
-                                            {cat.products_count !== undefined && (
-                                                <span className="text-xs ml-1 opacity-90">({cat.products_count})</span>
-                                            )}
+                                            <span className="flex items-center gap-2">
+                                                <span className={`inline-block w-1.5 h-1.5 rounded-full transition-all duration-200 ${
+                                                    isParentActive
+                                                        ? 'bg-primary-foreground scale-100'
+                                                        : 'bg-primary/40 scale-0 group-hover:scale-100'
+                                                }`} />
+                                                {cat.name}
+                                            </span>
+                                            <span className="flex items-center gap-1.5">
+                                                {cat.products_count !== undefined && (
+                                                    <span className={`text-xs tabular-nums px-1.5 py-0.5 rounded-full transition-all duration-200 ${
+                                                        isParentActive
+                                                            ? 'bg-primary-foreground/20 text-primary-foreground'
+                                                            : 'bg-muted text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary'
+                                                    }`}>
+                                                        {cat.products_count}
+                                                    </span>
+                                                )}
+                                                {hasChildren && (
+                                                    <ChevronDown className={`size-3.5 transition-transform duration-200 ${
+                                                        showChildren ? 'rotate-0' : '-rotate-90'
+                                                    } ${isParentActive ? 'text-primary-foreground' : 'text-muted-foreground group-hover:text-primary'}`} />
+                                                )}
+                                            </span>
                                         </Link>
-                                        {cat.children && cat.children.length > 0 && showChildren && (
-                                            <div className="ml-3 mt-0.5 space-y-0.5 border-l-2 border-border pl-2">
-                                                {cat.children.map(child => (
+                                        {hasChildren && showChildren && (
+                                            <div className="mt-1 mb-2 ml-3 rounded-lg bg-muted/50 py-1.5 px-1">
+                                                {cat.children!.map(child => (
                                                     <Link
                                                         key={child.id}
                                                         href={`/shop?category=${child.slug}`}
-                                                        className={`block py-1.5 px-3 rounded-lg text-sm transition-colors ${
+                                                        className={`group/child flex items-center justify-between py-2 px-3 rounded-md text-[13px] transition-all duration-200 ${
                                                             filters.category === child.slug
-                                                                ? 'bg-primary text-primary-foreground font-medium'
-                                                                : 'text-gray-700 hover:bg-muted hover:text-foreground'
+                                                                ? 'bg-white text-primary font-medium shadow-sm'
+                                                                : 'text-muted-foreground hover:bg-white hover:text-foreground hover:shadow-sm hover:translate-x-0.5'
                                                         }`}
                                                     >
-                                                        {child.name}
+                                                        <span>{child.name}</span>
                                                         {child.products_count !== undefined && (
-                                                            <span className="text-xs ml-1 opacity-90">({child.products_count})</span>
+                                                            <span className={`text-xs tabular-nums transition-all duration-200 ${
+                                                                filters.category === child.slug
+                                                                    ? 'text-primary'
+                                                                    : 'text-muted-foreground/60 group-hover/child:text-foreground'
+                                                            }`}>
+                                                                {child.products_count}
+                                                            </span>
                                                         )}
                                                     </Link>
                                                 ))}

@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode, useState, useEffect } from 'react';
 import { Link, usePage } from '@inertiajs/react';
 import { Search, User, ShoppingCart, Menu, X, Phone, MapPin, ChevronDown, Truck, Shield, Tag, Headphones, Package, Mail, Facebook, Twitter, Youtube, ChevronRight } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
@@ -26,9 +26,17 @@ function Header() {
     const { totalItems, openSidebar } = useCart();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 10);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
 
     return (
-        <header className="sticky top-0 z-50 bg-white shadow-sm">
+        <header className={`sticky top-0 z-50 bg-white shadow-sm transition-[border-color] duration-300 border-b-[3px] ${scrolled ? 'border-orfarm-green' : 'border-transparent'}`}>
             {/* Top Bar */}
             <div className="bg-orfarm-blue text-white">
                 <div className="container mx-auto px-4 py-1.5 flex items-center justify-between text-xs">
