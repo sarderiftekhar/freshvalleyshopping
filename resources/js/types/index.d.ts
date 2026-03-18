@@ -54,6 +54,7 @@ export interface Category {
     is_active: boolean;
     products_count?: number;
     children?: Category[];
+    parent?: Category;
 }
 
 export interface ProductImage {
@@ -93,6 +94,7 @@ export interface Product {
 export interface CartItem {
     product: Product;
     quantity: number;
+    cuttingOption?: string;
 }
 
 export type PageProps<

@@ -7,6 +7,7 @@ import FeatureBanner from '@/Components/storefront/FeatureBanner';
 import { Category, Product } from '@/types';
 import { useState, useEffect } from 'react';
 import { ArrowRight, Leaf, Shield } from 'lucide-react';
+import { useRecentlyViewed } from '@/hooks/useRecentlyViewed';
 
 interface Props {
     categories: Category[];
@@ -15,6 +16,8 @@ interface Props {
 }
 
 export default function Home({ categories, featuredProducts, latestProducts }: Props) {
+    const recentlyViewed = useRecentlyViewed();
+
     return (
         <StorefrontLayout>
             <Head title="Fresh Halal Grocery Delivery - Dartford, Orpington & Sidcup" />
@@ -39,13 +42,22 @@ export default function Home({ categories, featuredProducts, latestProducts }: P
             {/* 5. Three Promotional Banners */}
             <FeatureBanner />
 
-            {/* 6. All Products / Latest */}
-            <ProductSection
-                title="Our Latest Products"
-                subtitle="Fresh Arrivals"
-                products={latestProducts}
-                viewAllHref="/shop?sort=newest"
-            />
+            {/* 6. Recently Viewed Items */}
+            {recentlyViewed.length > 0 ? (
+                <ProductSection
+                    title="Recently Viewed Items"
+                    subtitle="Your History"
+                    products={recentlyViewed}
+                    viewAllHref="/shop"
+                />
+            ) : (
+                <ProductSection
+                    title="Our Latest Products"
+                    subtitle="Fresh Arrivals"
+                    products={latestProducts}
+                    viewAllHref="/shop?sort=newest"
+                />
+            )}
 
             {/* 7. Offer Countdown Banner */}
             <CountdownBanner />

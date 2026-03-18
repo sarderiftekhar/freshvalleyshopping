@@ -63,9 +63,10 @@ export default function CartSidebar() {
                         <ul className="space-y-4">
                             {items.map((item, index) => {
                                 const price = parseFloat(item.product.sale_price ?? item.product.price);
+                                const itemKey = `${item.product.id}-${item.cuttingOption ?? ''}`;
                                 return (
                                     <li
-                                        key={item.product.id}
+                                        key={itemKey}
                                         className="flex gap-4 pb-4 border-b border-gray-50 animate-fade-in-up"
                                         style={{ animationDelay: `${index * 50}ms` }}
                                     >
@@ -95,6 +96,9 @@ export default function CartSidebar() {
                                             >
                                                 {item.product.title}
                                             </Link>
+                                            {item.cuttingOption && (
+                                                <p className="text-xs text-orfarm-green font-medium mt-0.5">{item.cuttingOption}</p>
+                                            )}
                                             <p className="text-sm font-bold text-orfarm-green mt-1">
                                                 £{(price * item.quantity).toFixed(2)}
                                             </p>
@@ -102,20 +106,20 @@ export default function CartSidebar() {
                                             {/* Quantity controls */}
                                             <div className="flex items-center gap-2 mt-2">
                                                 <button
-                                                    onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
+                                                    onClick={() => updateQuantity(item.product.id, item.quantity - 1, item.cuttingOption)}
                                                     className="w-7 h-7 rounded-md border border-gray-200 flex items-center justify-center hover:bg-orfarm-green hover:text-white hover:border-orfarm-green transition-colors"
                                                 >
                                                     <Minus className="size-3" />
                                                 </button>
                                                 <span className="text-sm font-medium w-6 text-center">{item.quantity}</span>
                                                 <button
-                                                    onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
+                                                    onClick={() => updateQuantity(item.product.id, item.quantity + 1, item.cuttingOption)}
                                                     className="w-7 h-7 rounded-md border border-gray-200 flex items-center justify-center hover:bg-orfarm-green hover:text-white hover:border-orfarm-green transition-colors"
                                                 >
                                                     <Plus className="size-3" />
                                                 </button>
                                                 <button
-                                                    onClick={() => removeFromCart(item.product.id)}
+                                                    onClick={() => removeFromCart(item.product.id, item.cuttingOption)}
                                                     className="ml-auto w-7 h-7 rounded-md flex items-center justify-center text-gray-600 hover:text-orfarm-red hover:bg-red-50 transition-colors"
                                                 >
                                                     <Trash2 className="size-3.5" />

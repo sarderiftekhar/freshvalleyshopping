@@ -65,7 +65,7 @@ class ShopController extends Controller
     {
         $product = Product::where('slug', $slug)
             ->published()
-            ->with(['category', 'images'])
+            ->with(['category.parent', 'images'])
             ->firstOrFail()
             ->append(['discount_percent', 'effective_price']);
 

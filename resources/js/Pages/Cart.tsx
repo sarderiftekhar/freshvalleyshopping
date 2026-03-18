@@ -26,8 +26,8 @@ export default function Cart() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 py-8">
-                <h1 className="text-2xl font-bold text-foreground mb-6">Shopping Cart</h1>
+            <div className="container mx-auto px-4 pt-10 pb-20">
+                <h1 className="text-2xl font-bold text-foreground mb-8">Shopping Cart</h1>
 
                 {items.length === 0 ? (
                     <div className="text-center py-16">
@@ -39,40 +39,44 @@ export default function Cart() {
                     <div className="lg:flex lg:gap-8">
                         {/* Cart Items */}
                         <div className="flex-1">
-                            <div className="space-y-3">
+                            <div className="space-y-4">
                                 {items.map(item => {
                                     const price = parseFloat(item.product.sale_price ?? item.product.price);
+                                    const itemKey = `${item.product.id}-${item.cuttingOption ?? ''}`;
                                     return (
-                                        <div key={item.product.id} className="flex gap-4 p-4 bg-white rounded-xl border border-border/50">
+                                        <div key={itemKey} className="flex gap-5 p-5 bg-white rounded-xl border border-border/50">
                                             {/* Image */}
-                                            <Link href={`/product/${item.product.slug}`} className="w-20 h-20 bg-muted/30 rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
+                                            <Link href={`/product/${item.product.slug}`} className="w-28 h-28 bg-muted/30 rounded-lg flex items-center justify-center shrink-0 overflow-hidden">
                                                 {item.product.primary_image ? (
                                                     <img src={item.product.primary_image.path} alt={item.product.title} className="w-full h-full object-contain p-2" />
                                                 ) : (
-                                                    <span className="text-2xl">📦</span>
+                                                    <span className="text-3xl">📦</span>
                                                 )}
                                             </Link>
 
                                             {/* Details */}
                                             <div className="flex-1 min-w-0">
-                                                <Link href={`/product/${item.product.slug}`} className="text-sm font-semibold text-foreground hover:text-primary transition-colors line-clamp-1">
+                                                <Link href={`/product/${item.product.slug}`} className="text-base font-semibold text-foreground hover:text-primary transition-colors line-clamp-2">
                                                     {item.product.title}
                                                 </Link>
-                                                <p className="text-xs text-muted-foreground mt-0.5">{item.product.unit}</p>
-                                                <div className="flex items-center justify-between mt-2">
+                                                <p className="text-sm text-muted-foreground mt-1">
+                                                    {item.product.unit}
+                                                    {item.cuttingOption && <span className="ml-2 text-orfarm-green font-medium">· {item.cuttingOption}</span>}
+                                                </p>
+                                                <div className="flex items-center justify-between mt-3">
                                                     <div className="flex items-center border border-border rounded-lg">
-                                                        <button onClick={() => updateQuantity(item.product.id, item.quantity - 1)} className="w-8 h-8 flex items-center justify-center hover:bg-muted rounded-l-lg">
-                                                            <Minus className="size-3" />
+                                                        <button onClick={() => updateQuantity(item.product.id, item.quantity - 1, item.cuttingOption)} className="w-9 h-9 flex items-center justify-center hover:bg-muted rounded-l-lg">
+                                                            <Minus className="size-4" />
                                                         </button>
-                                                        <span className="w-8 text-center text-sm">{item.quantity}</span>
-                                                        <button onClick={() => updateQuantity(item.product.id, item.quantity + 1)} className="w-8 h-8 flex items-center justify-center hover:bg-muted rounded-r-lg">
-                                                            <Plus className="size-3" />
+                                                        <span className="w-10 text-center text-base font-medium">{item.quantity}</span>
+                                                        <button onClick={() => updateQuantity(item.product.id, item.quantity + 1, item.cuttingOption)} className="w-9 h-9 flex items-center justify-center hover:bg-muted rounded-r-lg">
+                                                            <Plus className="size-4" />
                                                         </button>
                                                     </div>
                                                     <div className="flex items-center gap-3">
-                                                        <span className="text-sm font-bold text-foreground">£{(price * item.quantity).toFixed(2)}</span>
-                                                        <button onClick={() => removeFromCart(item.product.id)} className="text-muted-foreground hover:text-destructive transition-colors">
-                                                            <Trash2 className="size-4" />
+                                                        <span className="text-base font-bold text-foreground">£{(price * item.quantity).toFixed(2)}</span>
+                                                        <button onClick={() => removeFromCart(item.product.id, item.cuttingOption)} className="text-muted-foreground hover:text-destructive transition-colors">
+                                                            <Trash2 className="size-5" />
                                                         </button>
                                                     </div>
                                                 </div>

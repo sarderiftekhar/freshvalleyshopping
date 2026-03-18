@@ -1,12 +1,15 @@
 import { Head, Link } from '@inertiajs/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronRight, Minus, Plus, ShoppingCart, Shield } from 'lucide-react';
+import { toast } from 'react-toastify';
 import StorefrontLayout from '@/Layouts/StorefrontLayout';
 import ProductCard from '@/Components/storefront/ProductCard';
 import { useCart } from '@/context/CartContext';
 import { Product } from '@/types';
 import { Button } from '@/Components/ui/button';
 import { categoryEmojis } from '@/lib/categoryEmojis';
+import { getCuttingOptions } from '@/lib/meatCuttingOptions';
+import { addRecentlyViewed } from '@/hooks/useRecentlyViewed';
 
 interface Props {
     product: Product;
@@ -16,14 +19,28 @@ interface Props {
 export default function ProductDetail({ product, relatedProducts }: Props) {
     const { addToCart } = useCart();
     const [quantity, setQuantity] = useState(1);
+    const [selectedCut, setSelectedCut] = useState<string | null>(null);
+
+    useEffect(() => {
+        addRecentlyViewed(product);
+    }, [product.id]);
 
     const price = parseFloat(product.price);
     const salePrice = product.sale_price ? parseFloat(product.sale_price) : null;
     const activeImage = product.images?.[0]?.path;
+    const cuttingOptions = getCuttingOptions(product);
 
     const handleAddToCart = () => {
-        addToCart(product, quantity);
+        if (cuttingOptions.length > 0 && !selectedCut) {
+            toast.warning('Please select a cut style first', {
+                position: 'top-center',
+                autoClose: 2500,
+            });
+            return;
+        }
+        addToCart(product, quantity, selectedCut ?? undefined);
         setQuantity(1);
+        setSelectedCut(null);
     };
 
     return (
@@ -80,7 +97,7 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
 
                         <div className="flex items-center gap-3 mt-3">
                             {product.is_halal_certified && (
-                                <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
+                                <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-orfarm-green text-white text-xs font-semibold rounded-full">
                                     <Shield className="size-3" />
                                     Halal Certified
                                     {product.halal_certification_body && ` (${product.halal_certification_body})`}
@@ -90,25 +107,46 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                         </div>
 
                         {/* Price */}
-                        <div className="flex items-center gap-3 mt-5">
+                        <div className="flex items-baseline gap-3 mt-5">
                             {salePrice ? (
                                 <>
-                                    <span className="text-3xl font-bold text-primary">£{salePrice.toFixed(2)}</span>
+                                    <span className="text-3xl font-bold text-primary">£{salePrice.toFixed(2)}<span className="text-lg font-medium text-muted-foreground">/{product.unit.toLowerCase()}</span></span>
                                     <span className="text-lg text-gray-700 line-through">£{price.toFixed(2)}</span>
                                     <span className="px-2 py-0.5 bg-red-500 text-white text-xs font-bold rounded">
                                         -{product.discount_percent}%
                                     </span>
                                 </>
                             ) : (
-                                <span className="text-3xl font-bold text-foreground">£{price.toFixed(2)}</span>
+                                <span className="text-3xl font-bold text-foreground">£{price.toFixed(2)}<span className="text-lg font-medium text-muted-foreground">/{product.unit.toLowerCase()}</span></span>
                             )}
                         </div>
-                        <p className="text-sm text-gray-700 mt-1">{product.unit}</p>
 
                         {/* Description */}
                         <p className="text-sm text-gray-700 mt-5 leading-relaxed">
                             {product.description}
                         </p>
+
+                        {/* Cutting Options */}
+                        {cuttingOptions.length > 0 && (
+                            <div className="mt-6">
+                                <p className="text-sm font-semibold text-foreground mb-2.5">Select Cut Style</p>
+                                <div className="flex flex-wrap gap-2">
+                                    {cuttingOptions.map(option => (
+                                        <button
+                                            key={option}
+                                            onClick={() => setSelectedCut(selectedCut === option ? null : option)}
+                                            className={`px-4 py-2 rounded-full text-sm font-medium border-2 transition-all ${
+                                                selectedCut === option
+                                                    ? 'border-orfarm-green bg-orfarm-green text-white'
+                                                    : 'border-border text-foreground hover:border-orfarm-green hover:text-orfarm-green'
+                                            }`}
+                                        >
+                                            {option}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
 
                         {/* Add to Cart */}
                         <div className="flex items-center gap-3 mt-8">
@@ -127,7 +165,8 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                                     <Plus className="size-4" />
                                 </button>
                             </div>
-                            <Button size="lg" className="flex-1" onClick={handleAddToCart}>
+                            <span className="text-sm font-medium text-muted-foreground">{product.unit.toLowerCase()}</span>
+                            <Button size="lg" className="px-8" onClick={handleAddToCart}>
                                 <ShoppingCart className="size-4 mr-2" />
                                 Add to Cart
                             </Button>

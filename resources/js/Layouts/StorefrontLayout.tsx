@@ -3,6 +3,7 @@ import { Link, usePage } from '@inertiajs/react';
 import { Search, User, ShoppingCart, Menu, X, Phone, MapPin, ChevronDown, Truck, Shield, Tag, Headphones, Package, Mail, Facebook, Twitter, Youtube, ChevronRight } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import PageTransition from '@/Components/storefront/PageTransition';
+import type { Category } from '@/types';
 
 interface Props {
     children: ReactNode;
@@ -22,11 +23,13 @@ export default function StorefrontLayout({ children }: Props) {
 }
 
 function Header() {
-    const { auth } = usePage().props as any;
+    const { auth, navCategories } = usePage().props as any;
+    const categories = (navCategories ?? []) as Category[];
     const { totalItems, openSidebar } = useCart();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [expandedMobileCat, setExpandedMobileCat] = useState<number | null>(null);
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 10);
@@ -61,7 +64,7 @@ function Header() {
                 <div className="flex items-center justify-between h-28 lg:h-32">
                     {/* Logo */}
                     <Link href="/" className="shrink-0 ml-4 lg:ml-8">
-                        <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-24 lg:h-28 w-auto" />
+                        <img src="/assets/img/logo/logo.png" alt="Fresh Valley" className="h-24 lg:h-28 w-auto logo-animated" />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -77,6 +80,40 @@ function Header() {
                                 Categories
                                 <ChevronDown className="size-3.5" />
                             </button>
+                            {/* Dropdown */}
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div className="bg-white rounded-xl shadow-xl border border-border/50 py-2 w-56 max-h-[70vh] overflow-y-auto">
+                                    {categories.map(cat => (
+                                        <div key={cat.id} className="relative group/sub">
+                                            <Link
+                                                href={`/shop?category=${cat.slug}`}
+                                                className="flex items-center justify-between px-4 py-2.5 text-sm text-foreground hover:bg-orfarm-grey hover:text-orfarm-green transition-colors"
+                                            >
+                                                {cat.name}
+                                                {cat.children && cat.children.length > 0 && (
+                                                    <ChevronRight className="size-3.5 text-muted-foreground" />
+                                                )}
+                                            </Link>
+                                            {/* Sub-dropdown */}
+                                            {cat.children && cat.children.length > 0 && (
+                                                <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
+                                                    <div className="bg-white rounded-xl shadow-xl border border-border/50 py-2 w-52 max-h-[60vh] overflow-y-auto">
+                                                        {cat.children.map(child => (
+                                                            <Link
+                                                                key={child.id}
+                                                                href={`/shop?category=${child.slug}`}
+                                                                className="block px-4 py-2 text-sm text-foreground hover:bg-orfarm-grey hover:text-orfarm-green transition-colors"
+                                                            >
+                                                                {child.name}
+                                                            </Link>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                         <Link href="/shop" className="text-sm font-medium text-foreground hover:text-orfarm-green transition-colors">
                             Offers
@@ -167,9 +204,45 @@ function Header() {
             {/* Mobile Menu */}
             {mobileMenuOpen && (
                 <div className="lg:hidden border-t border-border bg-white">
-                    <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
+                    <nav className="container mx-auto px-4 py-4 flex flex-col gap-1 max-h-[70vh] overflow-y-auto">
                         <Link href="/" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                         <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Shop</Link>
+                        {/* Mobile Categories */}
+                        {categories.map(cat => (
+                            <div key={cat.id}>
+                                <div className="flex items-center">
+                                    <Link
+                                        href={`/shop?category=${cat.slug}`}
+                                        className="flex-1 py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {cat.name}
+                                    </Link>
+                                    {cat.children && cat.children.length > 0 && (
+                                        <button
+                                            onClick={() => setExpandedMobileCat(expandedMobileCat === cat.id ? null : cat.id)}
+                                            className="p-2 hover:bg-orfarm-grey rounded-lg"
+                                        >
+                                            <ChevronDown className={`size-4 transition-transform ${expandedMobileCat === cat.id ? 'rotate-180' : ''}`} />
+                                        </button>
+                                    )}
+                                </div>
+                                {expandedMobileCat === cat.id && cat.children && (
+                                    <div className="ml-4 border-l-2 border-orfarm-green/20 pl-2">
+                                        {cat.children.map(child => (
+                                            <Link
+                                                key={child.id}
+                                                href={`/shop?category=${child.slug}`}
+                                                className="block py-2 px-3 text-sm text-muted-foreground hover:text-orfarm-green hover:bg-orfarm-grey rounded-lg"
+                                                onClick={() => setMobileMenuOpen(false)}
+                                            >
+                                                {child.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        ))}
                         <Link href="/shop" className="py-2.5 px-3 text-sm font-medium text-foreground hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Offers</Link>
                         <Link href="/proposal" className="py-2.5 px-3 text-sm font-medium text-orfarm-green hover:bg-orfarm-grey rounded-lg" onClick={() => setMobileMenuOpen(false)}>Proposal</Link>
                         {auth?.user ? (

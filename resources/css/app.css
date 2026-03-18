@@ -161,6 +161,39 @@
     animation: leaf-float 2s ease-in-out infinite;
 }
 
+/* Logo animation */
+@keyframes logo-breathe {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 2px 4px rgba(16, 98, 7, 0));
+    }
+    50% {
+        transform: scale(1.03);
+        filter: drop-shadow(0 4px 12px rgba(16, 98, 7, 0.15));
+    }
+}
+
+@keyframes logo-gentle-float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-3px) rotate(0.5deg);
+    }
+    66% {
+        transform: translateY(-1px) rotate(-0.5deg);
+    }
+}
+
+.logo-animated {
+    animation: logo-gentle-float 6s ease-in-out infinite;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.logo-animated:hover {
+    animation: logo-breathe 2s ease-in-out infinite;
+}
+
 /* Toast customization */
 .Toastify__toast--success {
     background: #106207 !important;

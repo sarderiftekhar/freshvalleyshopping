@@ -57,7 +57,7 @@ export default function Shop({ categories, products, filters }: Props) {
                         <nav className="space-y-0.5">
                             <Link
                                 href="/shop"
-                                className={`group flex items-center justify-between py-2.5 px-3 rounded-lg text-sm transition-all duration-200 ${
+                                className={`group flex items-center justify-between py-2.5 px-3 rounded-lg text-[15px] transition-all duration-200 ${
                                     !filters.category
                                         ? 'bg-primary text-primary-foreground font-medium shadow-sm'
                                         : 'text-foreground hover:bg-primary/5 hover:text-primary hover:translate-x-1'
@@ -75,7 +75,7 @@ export default function Shop({ categories, products, filters }: Props) {
                                     <div key={cat.id}>
                                         <Link
                                             href={`/shop?category=${cat.slug}`}
-                                            className={`group flex items-center justify-between py-2.5 px-3 rounded-lg text-sm transition-all duration-200 ${
+                                            className={`group flex items-center justify-between py-2.5 px-3 rounded-lg text-[15px] transition-all duration-200 ${
                                                 isParentActive
                                                     ? 'bg-primary text-primary-foreground font-medium shadow-sm'
                                                     : 'text-foreground hover:bg-primary/5 hover:text-primary hover:translate-x-1'
@@ -112,7 +112,7 @@ export default function Shop({ categories, products, filters }: Props) {
                                                     <Link
                                                         key={child.id}
                                                         href={`/shop?category=${child.slug}`}
-                                                        className={`group/child flex items-center justify-between py-2 px-3 rounded-md text-[13px] transition-all duration-200 ${
+                                                        className={`group/child flex items-center justify-between py-2 px-3 rounded-md text-sm transition-all duration-200 ${
                                                             filters.category === child.slug
                                                                 ? 'bg-white text-primary font-medium shadow-sm'
                                                                 : 'text-muted-foreground hover:bg-white hover:text-foreground hover:shadow-sm hover:translate-x-0.5'

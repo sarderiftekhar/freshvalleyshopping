@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -38,6 +39,11 @@ class HandleInertiaRequests extends Middleware
                 'success' => fn () => $request->session()->get('success'),
                 'error' => fn () => $request->session()->get('error'),
             ],
+            'navCategories' => fn () => Category::active()
+                ->topLevel()
+                ->orderBy('sort_order')
+                ->with(['children' => fn ($q) => $q->active()->orderBy('sort_order')])
+                ->get(['id', 'name', 'slug', 'parent_id', 'sort_order']),
         ];
     }
 }
