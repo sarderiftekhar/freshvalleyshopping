@@ -10,7 +10,7 @@ class SupplierMiddleware
 {
     public function handle(Request $request, Closure $next): Response
     {
-        if (!$request->user() || !in_array($request->user()->role, ['supplier', 'admin'])) {
+        if (!$request->user() || !in_array($request->user()->role, ['supplier', 'admin', 'super_admin'])) {
             abort(403, 'Unauthorized. Supplier access required.');
         }
 

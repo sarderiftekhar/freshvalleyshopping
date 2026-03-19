@@ -196,7 +196,7 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                             </div>
                             {product.brand && (
                                 <div className="flex items-center gap-2 text-sm text-gray-700">
-                                    Brand: <span className="text-foreground font-medium">{product.brand}</span>
+                                    Brand: <span className="text-foreground font-medium">{product.brand.name}</span>
                                 </div>
                             )}
                         </div>

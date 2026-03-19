@@ -274,11 +274,13 @@ function FeatureBar() {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 border-b border-white/20 pb-8">
                     {features.map((f, i) => (
-                        <div key={i} className="flex flex-col items-center text-center gap-3">
-                            <f.icon className="size-8 text-orfarm-green" />
-                            <div>
+                        <div key={i} className="group/feat flex flex-col items-center text-center gap-3 cursor-pointer py-3 rounded-xl transition-all duration-300 hover:bg-white/5">
+                            <div className="w-14 h-14 rounded-full border-2 border-orfarm-green/40 flex items-center justify-center transition-all duration-300 group-hover/feat:bg-orfarm-green group-hover/feat:border-orfarm-green group-hover/feat:scale-110 group-hover/feat:shadow-[0_0_20px_rgba(16,98,7,0.4)]">
+                                <f.icon className="size-6 text-orfarm-green transition-colors duration-300 group-hover/feat:text-white" />
+                            </div>
+                            <div className="transition-transform duration-300 group-hover/feat:-translate-y-0.5">
                                 <h4 className="text-xs font-bold uppercase text-white tracking-wider">{f.title}</h4>
-                                <p className="text-xs text-white/85 mt-1">{f.desc}</p>
+                                <p className="text-xs text-white/60 mt-1 transition-colors duration-300 group-hover/feat:text-white/90">{f.desc}</p>
                             </div>
                         </div>
                     ))}
@@ -360,11 +362,11 @@ function Footer() {
                         </p>
                         <div className="flex">
                             <div className="relative flex-1">
-                                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-white/40" />
+                                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-gray-400" />
                                 <input
                                     type="email"
                                     placeholder="Your email address..."
-                                    className="w-full h-12 pl-10 pr-3 bg-white/10 border border-white/20 rounded-l-lg text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-orfarm-green"
+                                    className="w-full h-12 pl-10 pr-3 bg-white border border-white/20 rounded-l-lg text-sm text-gray-800 placeholder:text-gray-400 focus:outline-none focus:border-orfarm-green"
                                 />
                             </div>
                             <button className="h-12 px-5 bg-orfarm-green text-white font-semibold text-sm rounded-r-lg hover:bg-orfarm-blue transition-colors uppercase tracking-wide">
@@ -384,6 +386,9 @@ function Footer() {
                 <div className="container mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-xs text-white/80">
                         Copyright &copy; {new Date().getFullYear()} <span className="text-orfarm-green font-semibold">FRESH VALLEY</span> all rights reserved. Halal Certified.
+                    </p>
+                    <p className="text-xs text-white/60">
+                        Designed & Developed by <a href="https://www.uniqevo.co.uk" target="_blank" rel="noopener noreferrer" className="text-orfarm-green hover:text-white transition-colors font-medium">Unique Evolution Limited</a>
                     </p>
                     <div className="flex items-center">
                         <img src="/assets/img/shape/payment.png" alt="Payment methods" className="h-7" />

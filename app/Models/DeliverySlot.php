@@ -10,14 +10,18 @@ class DeliverySlot extends Model
     protected $fillable = [
         'delivery_date',
         'label',
+        'start_time',
+        'end_time',
         'max_orders',
         'current_orders',
         'is_active',
+        'delivery_fee',
     ];
 
     protected $casts = [
         'delivery_date' => 'date',
         'is_active' => 'boolean',
+        'delivery_fee' => 'decimal:2',
     ];
 
     public function orders(): HasMany
