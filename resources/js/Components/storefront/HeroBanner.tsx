@@ -83,7 +83,7 @@ export default function HeroBanner() {
                         <span className="inline-block text-sm font-medium uppercase tracking-widest text-orfarm-green mb-4 animate-fade-in-up">
                             {slide.subtitle}
                         </span>
-                        <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-display font-bold italic text-orfarm-blue leading-[1.35] sm:leading-[1.4] lg:leading-[1.45] mb-6 whitespace-pre-line animate-fade-in-up animation-delay-100">
+                        <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-display font-medium text-orfarm-blue leading-[1.2] sm:leading-[1.25] lg:leading-[1.3] mb-6 whitespace-pre-line animate-fade-in-up animation-delay-100">
                             {slide.title}
                         </h1>
                         <p className="text-orfarm-body text-base leading-relaxed mb-8 animate-fade-in-up animation-delay-200">

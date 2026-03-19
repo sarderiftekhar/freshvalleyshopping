@@ -5,8 +5,8 @@ import CategoryGrid from '@/Components/storefront/CategoryGrid';
 import ProductSection from '@/Components/storefront/ProductSection';
 import FeatureBanner from '@/Components/storefront/FeatureBanner';
 import { Category, Product } from '@/types';
-import { useState, useEffect } from 'react';
-import { ArrowRight, Leaf, Shield } from 'lucide-react';
+import { useState, useEffect, useCallback } from 'react';
+import { ArrowRight, Leaf, Shield, Truck, Clock, Award, Sparkles } from 'lucide-react';
 import { useRecentlyViewed } from '@/hooks/useRecentlyViewed';
 
 interface Props {
@@ -68,73 +68,126 @@ export default function Home({ categories, featuredProducts, latestProducts }: P
     );
 }
 
+const featureSlides = [
+    {
+        image: '/assets/img/slider/slider-bg-1.png',
+        subtitle: 'About Our Products',
+        title: 'Choose Your Healthy\nLifestyle With Us.',
+        description: 'We source only the finest halal-certified meat, fresh fish, and premium groceries. Every product is carefully selected to ensure quality and freshness for your family.',
+        cards: [
+            { icon: Shield, iconBg: 'bg-orfarm-green/10', iconColor: 'text-orfarm-green', label: 'Halal Certified', text: 'All meat products are HMC certified for your peace of mind.', link: '/shop?category=fresh-meat-chicken', linkText: 'Shop Meat', linkColor: 'text-orfarm-green hover:text-orfarm-green-dark' },
+            { icon: Leaf, iconBg: 'bg-orfarm-blue/10', iconColor: 'text-orfarm-blue', label: 'Farm Fresh', text: 'Fresh vegetables and fruits sourced from trusted farms.', link: '/shop?category=fresh-vegetables', linkText: 'Shop Veggies', linkColor: 'text-orfarm-blue hover:text-orfarm-green' },
+        ],
+    },
+    {
+        image: '/assets/img/slider/slider-bg-3.png',
+        subtitle: 'Why Choose Us',
+        title: 'Fresh From The\nFarm To Your Door.',
+        description: 'We deliver straight from trusted farms and suppliers to your doorstep. No middlemen, no delays — just the freshest groceries at the best prices.',
+        cards: [
+            { icon: Truck, iconBg: 'bg-emerald-100', iconColor: 'text-emerald-600', label: 'Fast Delivery', text: 'Same-day delivery across Dartford, Orpington & Sidcup.', link: '/shop', linkText: 'Order Now', linkColor: 'text-emerald-600 hover:text-emerald-700' },
+            { icon: Clock, iconBg: 'bg-amber-100', iconColor: 'text-amber-600', label: 'Always Fresh', text: 'Products restocked daily to guarantee peak freshness.', link: '/shop', linkText: 'Browse Fresh', linkColor: 'text-amber-600 hover:text-amber-700' },
+        ],
+    },
+    {
+        image: '/assets/img/slider/slider-bg-5.png',
+        subtitle: 'Our Promise',
+        title: 'Quality You Can\nTrust Every Day.',
+        description: 'From premium halal meats to exotic spices and everyday staples — we bring you authentic flavours with uncompromising quality standards.',
+        cards: [
+            { icon: Award, iconBg: 'bg-purple-100', iconColor: 'text-purple-600', label: 'Top Quality', text: 'Hand-selected products that meet our strict quality standards.', link: '/shop?category=grocery', linkText: 'Shop Grocery', linkColor: 'text-purple-600 hover:text-purple-700' },
+            { icon: Sparkles, iconBg: 'bg-rose-100', iconColor: 'text-rose-600', label: 'Best Value', text: 'Competitive prices on premium products, with weekly deals.', link: '/offers', linkText: 'See Offers', linkColor: 'text-rose-600 hover:text-rose-700' },
+        ],
+    },
+];
+
 function ProductFeatureArea() {
+    const [current, setCurrent] = useState(0);
+    const [animating, setAnimating] = useState(false);
+
+    const goTo = useCallback((index: number) => {
+        if (animating || index === current) return;
+        setAnimating(true);
+        setCurrent(index);
+        setTimeout(() => setAnimating(false), 600);
+    }, [animating, current]);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrent(prev => (prev + 1) % featureSlides.length);
+        }, 5500);
+        return () => clearInterval(timer);
+    }, []);
+
+    const slide = featureSlides[current];
+
     return (
-        <section className="bg-orfarm-grey py-16 lg:py-20">
+        <section className="bg-orfarm-grey py-16 lg:py-20 overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-10 items-center">
                     {/* Image Side */}
-                    <div className="relative flex justify-center">
-                        <div className="relative">
-                            <img
-                                src="/assets/img/slider/slider-bg-1.png"
-                                alt="Fresh produce"
-                                className="max-h-[400px] object-contain drop-shadow-xl"
-                            />
-                            <div className="absolute -top-4 -right-4 w-24 h-24 bg-orfarm-green/10 rounded-full" />
-                            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-orfarm-blue/10 rounded-full" />
-                        </div>
+                    <div className="relative flex justify-center min-h-[350px] lg:min-h-[420px]">
+                        {featureSlides.map((s, i) => (
+                            <div
+                                key={i}
+                                className={`absolute inset-0 flex justify-center items-center transition-all duration-700 ease-in-out ${i === current ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
+                            >
+                                <div className="relative">
+                                    <img
+                                        src={s.image}
+                                        alt={s.subtitle}
+                                        className="max-h-[380px] lg:max-h-[420px] object-contain drop-shadow-xl"
+                                    />
+                                    <div className="absolute -top-4 -right-4 w-24 h-24 bg-orfarm-green/10 rounded-full animate-pulse" />
+                                    <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-orfarm-blue/10 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
+                                </div>
+                            </div>
+                        ))}
                     </div>
 
                     {/* Content Side */}
-                    <div className="lg:pl-10">
-                        <span className="text-sm font-medium text-orfarm-green uppercase tracking-widest">
-                            ~ About Our Products ~
+                    <div className="lg:pl-10" key={current}>
+                        <span className="text-sm font-medium text-orfarm-green uppercase tracking-widest animate-fade-in-up">
+                            ~ {slide.subtitle} ~
                         </span>
-                        <h2 className="text-2xl lg:text-[36px] font-heading font-bold text-orfarm-blue mt-3 leading-tight">
-                            Choose Your Healthy<br />Lifestyle With Us.
+                        <h2 className="text-2xl lg:text-[36px] font-heading font-bold text-orfarm-blue mt-3 leading-tight whitespace-pre-line animate-fade-in-up animation-delay-100">
+                            {slide.title}
                         </h2>
-                        <p className="text-orfarm-body text-base mt-4 leading-relaxed">
-                            We source only the finest halal-certified meat, fresh fish, and premium groceries.
-                            Every product is carefully selected to ensure quality and freshness for your family.
+                        <p className="text-orfarm-body text-base mt-4 leading-relaxed animate-fade-in-up animation-delay-200">
+                            {slide.description}
                         </p>
 
-                        <div className="grid grid-cols-2 gap-4 mt-8">
-                            <div className="bg-white rounded-xl p-5 border border-border/50">
-                                <div className="flex items-center gap-3 mb-3">
-                                    <div className="w-10 h-10 bg-orfarm-green/10 rounded-lg flex items-center justify-center">
-                                        <Shield className="size-5 text-orfarm-green" />
+                        <div className="grid grid-cols-2 gap-4 mt-8 animate-fade-in-up animation-delay-300">
+                            {slide.cards.map((card, i) => (
+                                <div key={i} className="bg-white rounded-xl p-5 border border-border/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className={`w-10 h-10 ${card.iconBg} rounded-lg flex items-center justify-center`}>
+                                            <card.icon className={`size-5 ${card.iconColor}`} />
+                                        </div>
+                                        <h4 className="text-sm font-semibold text-orfarm-blue uppercase">{card.label}</h4>
                                     </div>
-                                    <h4 className="text-sm font-semibold text-orfarm-blue uppercase">Halal Certified</h4>
+                                    <p className="text-xs text-orfarm-body leading-relaxed">
+                                        {card.text}
+                                    </p>
+                                    <Link
+                                        href={card.link}
+                                        className={`inline-flex items-center gap-1 text-xs font-semibold ${card.linkColor} mt-3 transition-colors`}
+                                    >
+                                        {card.linkText} <ArrowRight className="size-3" />
+                                    </Link>
                                 </div>
-                                <p className="text-xs text-orfarm-body leading-relaxed">
-                                    All meat products are HMC certified for your peace of mind.
-                                </p>
-                                <Link
-                                    href="/shop?category=fresh-meat-chicken"
-                                    className="inline-flex items-center gap-1 text-xs font-semibold text-orfarm-green mt-3 hover:text-orfarm-green-dark transition-colors"
-                                >
-                                    Shop Meat <ArrowRight className="size-3" />
-                                </Link>
-                            </div>
+                            ))}
+                        </div>
 
-                            <div className="bg-white rounded-xl p-5 border border-border/50">
-                                <div className="flex items-center gap-3 mb-3">
-                                    <div className="w-10 h-10 bg-orfarm-blue/10 rounded-lg flex items-center justify-center">
-                                        <Leaf className="size-5 text-orfarm-blue" />
-                                    </div>
-                                    <h4 className="text-sm font-semibold text-orfarm-blue uppercase">Farm Fresh</h4>
-                                </div>
-                                <p className="text-xs text-orfarm-body leading-relaxed">
-                                    Fresh vegetables and fruits sourced from trusted farms.
-                                </p>
-                                <Link
-                                    href="/shop?category=fresh-vegetables"
-                                    className="inline-flex items-center gap-1 text-xs font-semibold text-orfarm-blue mt-3 hover:text-orfarm-green transition-colors"
-                                >
-                                    Shop Veggies <ArrowRight className="size-3" />
-                                </Link>
-                            </div>
+                        {/* Dot indicators */}
+                        <div className="flex items-center gap-2 mt-6">
+                            {featureSlides.map((_, i) => (
+                                <button
+                                    key={i}
+                                    onClick={() => goTo(i)}
+                                    className={`rounded-full transition-all duration-300 ${i === current ? 'w-8 h-2.5 bg-orfarm-green' : 'w-2.5 h-2.5 bg-orfarm-green/30 hover:bg-orfarm-green/50'}`}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>

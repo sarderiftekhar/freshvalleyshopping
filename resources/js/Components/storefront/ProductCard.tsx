@@ -2,7 +2,7 @@ import { Link } from '@inertiajs/react';
 import { ShoppingCart, Eye, Heart, Star } from 'lucide-react';
 import { Product } from '@/types';
 import { useCart } from '@/context/CartContext';
-import { categoryEmojis } from '@/lib/categoryEmojis';
+import { getCategoryIcon } from '@/lib/categoryEmojis';
 
 interface Props {
     product: Product;
@@ -25,9 +25,14 @@ export default function ProductCard({ product }: Props) {
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                     />
                 ) : (
-                    <div className="w-full h-full flex items-center justify-center text-6xl">
-                        {categoryEmojis[product.category?.name || ''] || '📦'}
-                    </div>
+                    (() => {
+                        const { icon: FallbackIcon, color, bg } = getCategoryIcon(product.category?.name || '');
+                        return (
+                            <div className={`w-full h-full flex items-center justify-center ${bg}`}>
+                                <FallbackIcon className={`size-16 ${color}`} strokeWidth={1.5} />
+                            </div>
+                        );
+                    })()
                 )}
 
                 {/* Badges */}

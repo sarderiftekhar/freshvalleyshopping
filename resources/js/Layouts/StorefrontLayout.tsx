@@ -1,6 +1,7 @@
 import { ReactNode, useState, useEffect } from 'react';
 import { Link, usePage } from '@inertiajs/react';
-import { Search, User, ShoppingCart, Menu, X, Phone, MapPin, ChevronDown, Truck, Shield, Tag, Headphones, Package, Mail, Facebook, Twitter, Youtube, ChevronRight } from 'lucide-react';
+import { Search, User, ShoppingCart, Menu, X, Phone, MapPin, ChevronDown, ChevronRight, Truck, Shield, Tag, Headphones, Package, Mail, Facebook, Twitter, Youtube } from 'lucide-react';
+import { getCategoryIcon } from '@/lib/categoryEmojis';
 import { useCart } from '@/context/CartContext';
 import PageTransition from '@/Components/storefront/PageTransition';
 import type { Category } from '@/types';
@@ -78,40 +79,38 @@ function Header() {
                         <div className="relative group">
                             <button className="text-sm font-medium text-foreground hover:text-orfarm-green transition-colors flex items-center gap-1">
                                 Categories
-                                <ChevronDown className="size-3.5" />
+                                <ChevronDown className="size-3.5 transition-transform duration-200 group-hover:rotate-180" />
                             </button>
-                            {/* Dropdown */}
+                            {/* Mega Menu Dropdown */}
                             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <div className="bg-white rounded-xl shadow-xl border border-border/50 py-2 w-56 max-h-[70vh] overflow-y-auto">
-                                    {categories.map(cat => (
-                                        <div key={cat.id} className="relative group/sub">
-                                            <Link
-                                                href={`/shop?category=${cat.slug}`}
-                                                className="flex items-center justify-between px-4 py-2.5 text-sm text-foreground hover:bg-orfarm-grey hover:text-orfarm-green transition-colors"
-                                            >
-                                                {cat.name}
-                                                {cat.children && cat.children.length > 0 && (
-                                                    <ChevronRight className="size-3.5 text-muted-foreground" />
-                                                )}
-                                            </Link>
-                                            {/* Sub-dropdown */}
-                                            {cat.children && cat.children.length > 0 && (
-                                                <div className="absolute left-full top-0 pl-1 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
-                                                    <div className="bg-white rounded-xl shadow-xl border border-border/50 py-2 w-52 max-h-[60vh] overflow-y-auto">
-                                                        {cat.children.map(child => (
-                                                            <Link
-                                                                key={child.id}
-                                                                href={`/shop?category=${child.slug}`}
-                                                                className="block px-4 py-2 text-sm text-foreground hover:bg-orfarm-grey hover:text-orfarm-green transition-colors"
-                                                            >
-                                                                {child.name}
-                                                            </Link>
-                                                        ))}
+                                <div className="bg-white rounded-2xl shadow-2xl border border-border/50 p-6 w-[680px]">
+                                    <div className="grid grid-cols-3 gap-1.5">
+                                        {categories.map(cat => {
+                                            const { icon: Icon, color, bg } = getCategoryIcon(cat.name);
+                                            return (
+                                                <Link
+                                                    key={cat.id}
+                                                    href={`/shop?category=${cat.slug}`}
+                                                    className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-orfarm-green transition-all duration-200 group/item hover:shadow-md hover:scale-[1.03]"
+                                                >
+                                                    <div className={`w-8 h-8 rounded-lg ${bg} flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover/item:bg-white/20`}>
+                                                        <Icon className={`size-4 ${color} transition-colors duration-200 group-hover/item:text-white`} strokeWidth={1.5} />
                                                     </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                    ))}
+                                                    <span className="text-sm font-medium text-foreground group-hover/item:text-white transition-colors duration-200">
+                                                        {cat.name}
+                                                    </span>
+                                                </Link>
+                                            );
+                                        })}
+                                    </div>
+                                    <div className="mt-4 pt-4 border-t border-border/50 text-center">
+                                        <Link
+                                            href="/shop"
+                                            className="text-xs font-semibold text-orfarm-green hover:text-orfarm-green-dark transition-colors uppercase tracking-wide"
+                                        >
+                                            Browse All Products
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

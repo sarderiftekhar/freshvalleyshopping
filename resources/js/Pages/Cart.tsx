@@ -26,7 +26,7 @@ export default function Cart() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 pt-10 pb-20">
+            <div className="container mx-auto px-4 pt-10 pb-20 min-h-[70vh]">
                 <h1 className="text-2xl font-bold text-foreground mb-8">Shopping Cart</h1>
 
                 {items.length === 0 ? (

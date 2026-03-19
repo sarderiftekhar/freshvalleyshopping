@@ -7,7 +7,7 @@ import ProductCard from '@/Components/storefront/ProductCard';
 import { useCart } from '@/context/CartContext';
 import { Product } from '@/types';
 import { Button } from '@/Components/ui/button';
-import { categoryEmojis } from '@/lib/categoryEmojis';
+import { getCategoryIcon } from '@/lib/categoryEmojis';
 import { getCuttingOptions } from '@/lib/meatCuttingOptions';
 import { addRecentlyViewed } from '@/hooks/useRecentlyViewed';
 
@@ -76,9 +76,14 @@ export default function ProductDetail({ product, relatedProducts }: Props) {
                         {activeImage ? (
                             <img src={activeImage} alt={product.title} className="w-full h-full object-contain p-8" />
                         ) : (
-                            <div className="text-8xl">
-                                {categoryEmojis[product.category?.name || ''] || '📦'}
-                            </div>
+                            (() => {
+                                const { icon: FallbackIcon, color, bg } = getCategoryIcon(product.category?.name || '');
+                                return (
+                                    <div className={`w-full h-full flex items-center justify-center ${bg} rounded-2xl`}>
+                                        <FallbackIcon className={`size-24 ${color}`} strokeWidth={1.5} />
+                                    </div>
+                                );
+                            })()
                         )}
                     </div>
 
