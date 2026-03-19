@@ -162,36 +162,93 @@
 }
 
 /* Logo animation */
-@keyframes logo-breathe {
-    0%, 100% {
-        transform: scale(1);
-        filter: drop-shadow(0 2px 4px rgba(16, 98, 7, 0));
-    }
-    50% {
-        transform: scale(1.03);
-        filter: drop-shadow(0 4px 12px rgba(16, 98, 7, 0.15));
-    }
-}
-
-@keyframes logo-gentle-float {
-    0%, 100% {
-        transform: translateY(0) rotate(0deg);
-    }
-    33% {
-        transform: translateY(-3px) rotate(0.5deg);
-    }
-    66% {
-        transform: translateY(-1px) rotate(-0.5deg);
-    }
-}
-
 .logo-animated {
-    animation: logo-gentle-float 6s ease-in-out infinite;
-    transition: transform 0.4s ease, filter 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .logo-animated:hover {
-    animation: logo-breathe 2s ease-in-out infinite;
+    transform: scale(1.08);
+}
+
+/* Spinner driving animation */
+@keyframes spinner-drive {
+    0% {
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(60px);
+        opacity: 0;
+    }
+}
+
+@keyframes spinner-tilt {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(-3deg);
+    }
+    70% {
+        transform: rotate(2deg);
+    }
+}
+
+.spinner-drive {
+    animation: spinner-drive 1.4s ease-in-out infinite, spinner-tilt 0.7s ease-in-out infinite;
+}
+
+/* Speed lines behind the cart */
+@keyframes speed-lines {
+    0% {
+        opacity: 0;
+        transform: translateX(0) scaleX(0.3);
+    }
+    30% {
+        opacity: 0.6;
+        transform: translateX(-8px) scaleX(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-30px) scaleX(0.5);
+    }
+}
+
+.speed-line {
+    position: absolute;
+    right: 100%;
+    height: 2px;
+    width: 20px;
+    background: linear-gradient(to left, #106207, transparent);
+    border-radius: 2px;
+    animation: speed-lines 0.8s ease-out infinite;
+}
+
+.speed-line:nth-child(1) {
+    top: 30%;
+    animation-delay: 0s;
+}
+
+.speed-line:nth-child(2) {
+    top: 50%;
+    animation-delay: 0.15s;
+    width: 16px;
+}
+
+.speed-line:nth-child(3) {
+    top: 70%;
+    animation-delay: 0.3s;
+    width: 12px;
 }
 
 /* Toast customization */

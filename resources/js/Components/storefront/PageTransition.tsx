@@ -4,16 +4,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 /**
  * Wraps the content area of a layout to animate only the page content
- * (not the header/nav) on navigation. Also shows a slim top loading bar.
+ * (not the header/nav) on navigation. Also shows a branded loading overlay.
  */
 export default function PageTransition({ children }: { children: ReactNode }) {
     const { url } = usePage();
-    // Strip query params so filtering/search doesn't trigger full page animation
     const pageKey = url.split('?')[0];
 
     return (
         <>
-            <NavigationProgress />
+            <LoadingOverlay />
             <AnimatePresence mode="wait" initial={false}>
                 <motion.div
                     key={pageKey}
@@ -32,59 +31,69 @@ export default function PageTransition({ children }: { children: ReactNode }) {
     );
 }
 
-/** Slim animated progress bar at the very top of the viewport */
-function NavigationProgress() {
-    const [progress, setProgress] = useState(0);
-    const [visible, setVisible] = useState(false);
+function LoadingOverlay() {
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        let interval: ReturnType<typeof setInterval>;
-
-        const removeStart = router.on('start', () => {
-            setProgress(15);
-            setVisible(true);
-            interval = setInterval(() => {
-                setProgress((p) => {
-                    if (p >= 90) { clearInterval(interval); return 90; }
-                    // Slow down as we approach 90
-                    return p + (90 - p) * 0.1;
-                });
-            }, 100);
-        });
-
-        const removeFinish = router.on('finish', () => {
-            clearInterval(interval);
-            setProgress(100);
-            setTimeout(() => {
-                setVisible(false);
-                setProgress(0);
-            }, 300);
-        });
-
-        return () => {
-            removeStart();
-            removeFinish();
-            clearInterval(interval);
-        };
+        const removeStart = router.on('start', () => setLoading(true));
+        const removeFinish = router.on('finish', () => setLoading(false));
+        return () => { removeStart(); removeFinish(); };
     }, []);
 
     return (
         <AnimatePresence>
-            {visible && (
-                <motion.div
-                    className="fixed top-0 left-0 right-0 z-[9999] h-[3px]"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                >
+            {loading && (
+                <>
+                    {/* Top progress bar */}
                     <motion.div
-                        className="h-full bg-gradient-to-r from-orfarm-green via-emerald-400 to-orfarm-green rounded-r-full shadow-[0_0_10px_rgba(16,98,7,0.5)]"
-                        initial={{ width: '0%' }}
-                        animate={{ width: `${progress}%` }}
-                        transition={{ duration: 0.3, ease: 'easeOut' }}
-                    />
-                </motion.div>
+                        className="fixed top-0 left-0 right-0 z-[9999] h-[3px]"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.15 }}
+                    >
+                        <motion.div
+                            className="h-full bg-gradient-to-r from-orfarm-green via-emerald-400 to-orfarm-green rounded-r-full shadow-[0_0_10px_rgba(16,98,7,0.5)]"
+                            initial={{ width: '0%' }}
+                            animate={{ width: '90%' }}
+                            transition={{ duration: 8, ease: 'easeOut' }}
+                        />
+                    </motion.div>
+
+                    {/* Overlay with spinner */}
+                    <motion.div
+                        className="fixed inset-0 z-[9998] flex items-center justify-center bg-white/60 backdrop-blur-[2px]"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.15 }}
+                    >
+                        <div className="flex flex-col items-center gap-4">
+                            <div className="relative overflow-hidden w-40 h-20 flex items-center justify-center">
+                                {/* Cart icon driving across */}
+                                <div className="relative spinner-drive">
+                                    {/* Speed lines */}
+                                    <span className="speed-line" />
+                                    <span className="speed-line" />
+                                    <span className="speed-line" />
+                                    <img
+                                        src="/assets/img/spinner.png"
+                                        alt="Loading..."
+                                        className="w-16 h-16 object-contain"
+                                    />
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-1.5">
+                                <span className="text-sm font-medium text-orfarm-green tracking-wide">Loading</span>
+                                <span className="flex gap-0.5">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-orfarm-green animate-bounce" style={{ animationDelay: '0ms' }} />
+                                    <span className="w-1.5 h-1.5 rounded-full bg-orfarm-green animate-bounce" style={{ animationDelay: '150ms' }} />
+                                    <span className="w-1.5 h-1.5 rounded-full bg-orfarm-green animate-bounce" style={{ animationDelay: '300ms' }} />
+                                </span>
+                            </div>
+                        </div>
+                    </motion.div>
+                </>
             )}
         </AnimatePresence>
     );

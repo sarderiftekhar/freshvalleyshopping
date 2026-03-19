@@ -54,12 +54,12 @@ export default function ProductCard({ product }: Props) {
                     <button className="w-9 h-9 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-orfarm-green hover:text-white transition-colors text-orfarm-blue">
                         <Heart className="size-4" />
                     </button>
-                    <Link
-                        href={`/product/${product.slug}`}
+                    <button
+                        onClick={(e) => { e.preventDefault(); window.location.href = `/product/${product.slug}`; }}
                         className="w-9 h-9 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-orfarm-green hover:text-white transition-colors text-orfarm-blue"
                     >
                         <Eye className="size-4" />
-                    </Link>
+                    </button>
                 </div>
             </Link>
 
