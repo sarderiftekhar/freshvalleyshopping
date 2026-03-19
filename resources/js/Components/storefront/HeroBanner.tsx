@@ -2,7 +2,16 @@ import { Link } from '@inertiajs/react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect, useCallback } from 'react';
 
-const slides = [
+interface Slide {
+    subtitle: string;
+    title: string;
+    description: string;
+    image: string;
+    btnText: string;
+    btnLink: string;
+}
+
+const slides: Slide[] = [
     {
         subtitle: 'Fresh & Halal Delivered',
         title: 'Farm Fresh Vegetables\nAt Your Doorstep.',
@@ -49,6 +58,78 @@ const slides = [
         description: 'Skip the supermarket queues. Get halal meat, fresh fish, vegetables, and Asian groceries delivered to Dartford, Orpington & Sidcup.',
         image: '/assets/img/hero/veggies-line.png',
         btnText: 'Start Shopping',
+        btnLink: '/shop',
+    },
+    {
+        subtitle: 'Healthy & Delicious',
+        title: 'Fresh Salad Bowls\nMade With Love.',
+        description: 'Crisp greens, ripe avocado, cherry tomatoes, and herbs — everything you need for a wholesome, colourful meal at home.',
+        image: '/assets/img/slider/slider-bg-6.png',
+        btnText: 'Shop Salads',
+        btnLink: '/shop?category=fresh-vegetables',
+    },
+    {
+        subtitle: 'Wholesome Goodness',
+        title: 'Nutritious Grain\nBowls & Greens.',
+        description: 'Packed with kale, almonds, and hearty grains — fuel your body with superfoods straight from our fresh produce aisle.',
+        image: '/assets/img/slider/slider-bg-7.png',
+        btnText: 'Shop Healthy',
+        btnLink: '/shop?category=grocery',
+    },
+    {
+        subtitle: 'Ocean Fresh Daily',
+        title: 'Whole River Fish\nSourced & Cleaned.',
+        description: 'Carp, tilapia, rohu, and catfish — descaled, gutted, and ready to cook. Fresh river fish delivered to your kitchen.',
+        image: '/assets/img/hero/fish2.png',
+        btnText: 'Shop River Fish',
+        btnLink: '/shop?category=fresh-fish',
+    },
+    {
+        subtitle: 'Spice Up Your Kitchen',
+        title: 'Authentic Flavours\nFrom Our Kitchen.',
+        description: 'From turmeric and cumin to garam masala and chilli flakes — bring the authentic flavours of South Asian cooking to your table.',
+        image: '/assets/img/slider/slider-bg-1.png',
+        btnText: 'Shop Spices',
+        btnLink: '/shop?category=spices-herbs',
+    },
+    {
+        subtitle: 'Berry Fresh & Creamy',
+        title: 'Strawberries, Cream\n& Fresh Desserts.',
+        description: 'Plump, juicy strawberries paired with fresh cream — perfect for desserts, smoothies, and healthy snacking.',
+        image: '/assets/img/slider/slider-bg-3.png',
+        btnText: 'Shop Fruits',
+        btnLink: '/shop?category=fresh-fruits',
+    },
+    {
+        subtitle: 'Garden Fresh Greens',
+        title: 'Tossed Salads With\nOlive Oil & Herbs.',
+        description: 'Fresh lettuce, olives, onions, and a drizzle of extra virgin olive oil — make every meal lighter and healthier.',
+        image: '/assets/img/slider/slider-bg-5.png',
+        btnText: 'Shop Vegetables',
+        btnLink: '/shop?category=fresh-vegetables',
+    },
+    {
+        subtitle: 'Halal Chicken & Poultry',
+        title: 'Fresh Chicken\nWhole & Portioned.',
+        description: 'HMC certified whole chickens, drumsticks, breast fillets, and wings — fresh from our halal butchers, never frozen.',
+        image: '/assets/img/hero/meat.png',
+        btnText: 'Shop Chicken',
+        btnLink: '/shop?category=fresh-meat-chicken',
+    },
+    {
+        subtitle: 'Seafood Lovers',
+        title: 'King Prawns &\nFresh Shrimps.',
+        description: 'Jumbo king prawns, tiger shrimps, and shell-on varieties — cleaned and ready to cook for your favourite seafood dishes.',
+        image: '/assets/img/hero/fish.png',
+        btnText: 'Shop Prawns',
+        btnLink: '/shop?category=fresh-fish',
+    },
+    {
+        subtitle: 'Seasonal Savings',
+        title: 'Weekly Fresh Box\nDelivered To You.',
+        description: 'A curated mix of seasonal vegetables, fruits, and salad greens delivered every week — fresh, affordable, and convenient.',
+        image: '/assets/img/hero/fruits.png',
+        btnText: 'Order Weekly Box',
         btnLink: '/shop',
     },
 ];
@@ -107,7 +188,6 @@ export default function HeroBanner() {
                             alt={slide.title.replace('\n', ' ')}
                             className="max-h-[420px] max-w-full object-contain drop-shadow-2xl animate-fade-in-right"
                         />
-                        {/* Decorative shapes */}
                         <div className="absolute top-8 right-8 w-20 h-20 rounded-full bg-orfarm-green/10 animate-pulse" />
                         <div className="absolute bottom-12 left-8 w-14 h-14 rounded-full bg-orfarm-blue/10 animate-pulse animation-delay-200" />
                         <div className="absolute top-1/2 right-0 w-10 h-10 rounded-full bg-orfarm-yellow/20 animate-bounce" />
@@ -130,12 +210,12 @@ export default function HeroBanner() {
             </button>
 
             {/* Dots */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-1.5">
                 {slides.map((_, i) => (
                     <button
                         key={i}
                         onClick={() => goTo(i)}
-                        className={`w-3 h-3 rounded-full transition-all ${i === current ? 'bg-orfarm-green w-8' : 'bg-orfarm-blue/30 hover:bg-orfarm-blue/50'}`}
+                        className={`h-2.5 rounded-full transition-all ${i === current ? 'w-7 bg-orfarm-green' : 'w-2.5 bg-orfarm-blue/30 hover:bg-orfarm-blue/50'}`}
                     />
                 ))}
             </div>

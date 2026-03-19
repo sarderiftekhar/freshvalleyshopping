@@ -196,8 +196,62 @@ function ProductFeatureArea() {
     );
 }
 
+const countdownSlides = [
+    {
+        bg: '/assets/img/banner/coundpwn-bg-1.png',
+        subtitle: 'Deals Of The Day',
+        title: 'Premium Drinks\nFresh Farm Product',
+        description: 'Get the best deals on fresh organic products. Limited time offer on our weekly specials — halal, fresh, and delivered to your door.',
+        btnText: 'Shop Now',
+        btnLink: '/shop',
+        secondBtnText: 'View Menu',
+        textAlign: 'left' as const,
+    },
+    {
+        bg: '/assets/img/banner/coundpwn-bg-2.png',
+        subtitle: 'Weekend Special',
+        title: 'Fresh Halal Meat\nDirect From Butcher',
+        description: 'Hand-cut lamb, beef, and chicken — all HMC certified. Order before Friday and get free delivery on your weekend shop.',
+        btnText: 'Shop Meat',
+        btnLink: '/shop?category=fresh-meat-chicken',
+        secondBtnText: 'View Cuts',
+        textAlign: 'left' as const,
+    },
+    {
+        bg: '/assets/img/banner/coundpwn-bg-3.png',
+        subtitle: 'Seasonal Offer',
+        title: 'Farm Fresh Fruits\n& Vegetables Box',
+        description: 'Get a curated box of seasonal fruits and vegetables delivered weekly. Fresh from the farm, packed with nutrition and flavour.',
+        btnText: 'Order Box',
+        btnLink: '/shop?category=fresh-fruits',
+        secondBtnText: 'Browse All',
+        textAlign: 'right' as const,
+    },
+    {
+        bg: '/assets/img/banner/coundpwn-bg-4.jpg',
+        subtitle: 'Berry Boost',
+        title: 'Antioxidant Rich\nSmoothies & Juices',
+        description: 'Freshly blended berry smoothies packed with blueberries, raspberries, and blackberries. Natural energy and antioxidant power in every sip.',
+        btnText: 'Shop Drinks',
+        btnLink: '/shop?category=snacks-drinks',
+        secondBtnText: 'View All',
+        textAlign: 'left' as const,
+    },
+    {
+        bg: '/assets/img/banner/coundpwn-bg-5.jpg',
+        subtitle: 'Fresh & Natural',
+        title: 'Raw Natural Juices\nDelivered Fresh Daily',
+        description: 'Cold-pressed and freshly prepared smoothies made from real fruits. No preservatives, no added sugar — just pure goodness.',
+        btnText: 'Order Now',
+        btnLink: '/shop?category=snacks-drinks',
+        secondBtnText: 'Browse Menu',
+        textAlign: 'left' as const,
+    },
+];
+
 function CountdownBanner() {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [current, setCurrent] = useState(0);
 
     useEffect(() => {
         const getNextSunday = () => {
@@ -228,60 +282,91 @@ function CountdownBanner() {
         return () => clearInterval(timer);
     }, []);
 
+    // Rotate slides every 15 seconds
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrent(prev => (prev + 1) % countdownSlides.length);
+        }, 15000);
+        return () => clearInterval(timer);
+    }, []);
+
+    const slide = countdownSlides[current];
+
     return (
-        <section
-            className="relative bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url(/assets/img/banner/coundpwn-bg-1.png)' }}
-        >
-            <div className="container mx-auto px-4">
-                <div className="py-[150px] lg:py-[130px] lg:pl-[175px] relative">
-                    <div className="max-w-lg">
-                        <span className="text-sm font-medium text-white/90 italic font-heading tracking-widest block mb-3">
-                            ~ Deals Of The Day ~
+        <section className="relative overflow-hidden">
+            {/* Background images with crossfade */}
+            {countdownSlides.map((s, i) => (
+                <div
+                    key={i}
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+                    style={{
+                        backgroundImage: `url(${s.bg})`,
+                        opacity: i === current ? 1 : 0,
+                    }}
+                />
+            ))}
+
+            <div className="container mx-auto px-4 relative z-10">
+                <div className={`py-[150px] lg:py-[130px] relative ${slide.textAlign === 'right' ? 'lg:pl-[55%]' : 'lg:pl-[175px]'}`}>
+                    <div className="max-w-lg" key={current}>
+                        <span className="text-sm font-medium text-white/90 italic font-heading tracking-widest block mb-3 animate-fade-in-up">
+                            ~ {slide.subtitle} ~
                         </span>
-                        <h2 className="text-3xl lg:text-[42px] font-heading font-bold text-white leading-tight mb-6">
-                            Premium Drinks<br />
-                            Fresh Farm Product
+                        <h2 className="text-3xl lg:text-[42px] font-heading font-bold text-white leading-tight mb-6 whitespace-pre-line animate-fade-in-up animation-delay-100">
+                            {slide.title}
                         </h2>
-                        <p className="text-white/90 text-base leading-relaxed mb-8 max-w-md">
-                            Get the best deals on fresh organic products. Limited time offer on our weekly specials — halal, fresh, and delivered to your door.
+                        <p className="text-white/90 text-base leading-relaxed mb-8 max-w-md animate-fade-in-up animation-delay-200">
+                            {slide.description}
                         </p>
 
                         {/* Countdown */}
-                        <h4 className="text-white text-sm font-bold mb-1 uppercase tracking-wide">Hurry Up! Offer End In:</h4>
-                        <div className="flex items-end gap-10 mb-12">
-                            {[
-                                { value: timeLeft.days, label: 'Days' },
-                                { value: timeLeft.hours, label: 'Hour' },
-                                { value: timeLeft.minutes, label: 'Minute' },
-                                { value: timeLeft.seconds, label: 'Second' },
-                            ].map((item, i) => (
-                                <div key={i} className="flex items-end">
-                                    <span className="text-4xl font-medium text-white leading-none">{String(item.value).padStart(2, '0')}</span>
-                                    <span className="text-[11px] text-white/85 uppercase tracking-wider ml-1 mb-0.5">{item.label}</span>
-                                </div>
-                            ))}
+                        <div className="animate-fade-in-up animation-delay-200">
+                            <h4 className="text-white text-sm font-bold mb-1 uppercase tracking-wide">Hurry Up! Offer End In:</h4>
+                            <div className="flex items-end gap-10 mb-12">
+                                {[
+                                    { value: timeLeft.days, label: 'Days' },
+                                    { value: timeLeft.hours, label: 'Hour' },
+                                    { value: timeLeft.minutes, label: 'Minute' },
+                                    { value: timeLeft.seconds, label: 'Second' },
+                                ].map((item, i) => (
+                                    <div key={i} className="flex items-end">
+                                        <span className="text-4xl font-medium text-white leading-none">{String(item.value).padStart(2, '0')}</span>
+                                        <span className="text-[11px] text-white/85 uppercase tracking-wider ml-1 mb-0.5">{item.label}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-wrap gap-4">
+                        <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
                             <Link
-                                href="/shop"
+                                href={slide.btnLink}
                                 className="inline-flex items-center gap-2 px-10 py-4 bg-white text-orfarm-blue font-semibold rounded-full hover:bg-orfarm-green hover:text-white transition-colors text-sm uppercase tracking-wide"
                             >
-                                Shop Now
+                                {slide.btnText}
                                 <ArrowRight className="size-4" />
                             </Link>
                             <Link
                                 href="/shop"
                                 className="inline-flex items-center gap-2 px-10 py-4 border-2 border-white/50 text-white font-semibold rounded-full hover:bg-white/10 transition-colors text-sm uppercase tracking-wide"
                             >
-                                View Menu
+                                {slide.secondBtnText}
                             </Link>
                         </div>
                     </div>
 
-                    {/* Decorative leaf shapes positioned like template */}
+                    {/* Dot indicators */}
+                    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 lg:left-auto lg:translate-x-0 lg:bottom-10 lg:right-10">
+                        {countdownSlides.map((_, i) => (
+                            <button
+                                key={i}
+                                onClick={() => setCurrent(i)}
+                                className={`rounded-full transition-all duration-300 ${i === current ? 'w-8 h-2.5 bg-white' : 'w-2.5 h-2.5 bg-white/40 hover:bg-white/60'}`}
+                            />
+                        ))}
+                    </div>
+
+                    {/* Decorative leaf shapes */}
                     <img src="/assets/img/shape/tree-leaf-1.svg" alt="" className="leaf-shape absolute -left-[175px] top-[140px] hidden lg:block cursor-pointer" />
                     <img src="/assets/img/shape/tree-leaf-2.svg" alt="" className="leaf-shape absolute right-[600px] bottom-[190px] hidden xl:block cursor-pointer" />
                     <img src="/assets/img/shape/tree-leaf-3.svg" alt="" className="leaf-shape absolute right-[70px] top-[215px] hidden lg:block cursor-pointer" />

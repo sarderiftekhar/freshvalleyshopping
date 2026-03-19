@@ -12,8 +12,15 @@ export function addRecentlyViewed(product: Product) {
         // Remove if already exists (we'll re-add at front)
         items = items.filter((p) => p.id !== product.id);
 
+        // Ensure primary_image is set (derive from images array if missing)
+        const toStore = { ...product };
+        if (!toStore.primary_image && toStore.images?.length) {
+            toStore.primary_image =
+                toStore.images.find((img) => img.is_primary) ?? toStore.images[0];
+        }
+
         // Add to front
-        items.unshift(product);
+        items.unshift(toStore);
 
         // Limit size
         if (items.length > MAX_ITEMS) {
