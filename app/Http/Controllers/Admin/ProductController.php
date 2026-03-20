@@ -80,11 +80,24 @@ class ProductController extends Controller
         $sortDir = $request->input('direction', 'desc');
         $query->orderBy($sortField, $sortDir);
 
+        $stats = [
+            'total' => Product::count(),
+            'published' => Product::where('status', 'published')->count(),
+            'draft' => Product::where('status', 'draft')->count(),
+            'out_of_stock' => Product::where('quantity', 0)->count(),
+            'low_stock' => Product::where('quantity', '>', 0)->whereColumn('quantity', '<=', 'low_stock_threshold')->count(),
+            'featured' => Product::where('is_featured', true)->count(),
+            'categories' => Product::distinct('category_id')->count('category_id'),
+            'brands' => Product::whereNotNull('brand_id')->distinct('brand_id')->count('brand_id'),
+            'total_value' => Product::sum(\DB::raw('price * quantity')),
+        ];
+
         return Inertia::render('Admin/Products/Index', [
             'products' => $query->paginate(20)->withQueryString(),
             'categories' => Category::active()->orderBy('name')->get(['id', 'name']),
             'brands' => Brand::active()->orderBy('name')->get(['id', 'name']),
             'filters' => $request->only($filterKeys),
+            'stats' => $stats,
         ]);
     }
 

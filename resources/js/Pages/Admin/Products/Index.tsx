@@ -4,7 +4,7 @@ import AdminLayout from '@/Layouts/AdminLayout';
 import StatusBadge from '@/Components/admin/StatusBadge';
 import ConfirmDialog from '@/Components/admin/ConfirmDialog';
 import { PaginatedData, Product, Category, Brand } from '@/types';
-import { Plus, Download, Trash2, Edit, Eye, Package, Search, X } from 'lucide-react';
+import { Plus, Download, Trash2, Edit, Eye, Package, Search, X, BarChart2, ShoppingBag, CheckCircle, FileText, AlertTriangle, AlertOctagon, Star, Grid3X3, Tag, PoundSterling } from 'lucide-react';
 
 interface Props {
     products: PaginatedData<Product & { order_items_count: number }>;
@@ -20,17 +20,29 @@ interface Props {
         price_min?: string;
         price_max?: string;
     };
+    stats: {
+        total: number;
+        published: number;
+        draft: number;
+        out_of_stock: number;
+        low_stock: number;
+        featured: number;
+        categories: number;
+        brands: number;
+        total_value: number;
+    };
 }
 
-export default function ProductsIndex({ products, categories, brands, filters }: Props) {
+export default function ProductsIndex({ products, categories, brands, filters, stats }: Props) {
     const [selected, setSelected] = useState<number[]>([]);
     const [deleteId, setDeleteId] = useState<number | null>(null);
     const [viewProduct, setViewProduct] = useState<(Product & { order_items_count: number }) | null>(null);
     const [search, setSearch] = useState(filters.search || '');
+    const [showStats, setShowStats] = useState(false);
     const [priceMin, setPriceMin] = useState(filters.price_min || '');
     const [priceMax, setPriceMax] = useState(filters.price_max || '');
 
-    const hasActiveFilters = filters.category_id || filters.brand_id || filters.status || filters.stock || filters.featured || filters.price_min || filters.price_max || filters.search;
+    const hasActiveFilters = filters.category_id || filters.brand_id || filters.status || filters.stock || filters.featured || filters.price_min || filters.price_max;
 
     const toggleSelect = (id: number) => {
         setSelected((prev) =>
@@ -96,36 +108,94 @@ export default function ProductsIndex({ products, categories, brands, filters }:
 
     return (
         <AdminLayout title="Products">
-            {/* Toolbar Row 1: Search + Actions */}
-            <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
-                <div className="relative flex-1 min-w-[200px] max-w-md">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-gray-400" />
+            {/* Toolbar: Search centered + Actions */}
+            <div className="flex items-center gap-3 mb-4">
+                <div className="relative w-full max-w-lg">
+                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 size-4 text-gray-400" />
                     <input
                         type="text"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                        placeholder="Search products by name, SKU..."
-                        className="w-full pl-10 pr-4 py-2.5 bg-white border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orfarm-blue/30 focus:border-orfarm-blue shadow-sm"
+                        placeholder="Search products by name, SKU, barcode... (press Enter to search)"
+                        className="w-full pl-11 pr-4 py-2.5 bg-white border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-orfarm-blue/30 focus:border-orfarm-blue shadow-sm"
                     />
                 </div>
+                {search && (
+                    <button
+                        onClick={clearFilters}
+                        className="p-2 text-gray-400 hover:text-white hover:bg-red-500 rounded-lg transition-all duration-200"
+                        title="Clear search"
+                    >
+                        <X className="size-4" />
+                    </button>
+                )}
+                <div className="flex-1" />
                 <div className="flex items-center gap-2">
+                    <button
+                        onClick={() => setShowStats(true)}
+                        className="inline-flex items-center gap-2 px-3 py-2.5 bg-orfarm-blue text-white rounded-xl text-sm hover:bg-orfarm-blue/90 shadow-sm transition-all whitespace-nowrap"
+                    >
+                        <BarChart2 className="size-4" />
+                        Statistics
+                    </button>
                     <a
                         href="/admin/products-export"
-                        className="inline-flex items-center gap-2 px-3 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50"
+                        className="inline-flex items-center gap-2 px-3 py-2.5 border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 whitespace-nowrap"
                     >
                         <Download className="size-4" />
                         Export
                     </a>
                     <Link
                         href="/admin/products/create"
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-orfarm-blue text-white rounded-lg text-sm font-medium hover:bg-orfarm-blue/90"
+                        className="inline-flex items-center gap-2 px-4 py-2.5 bg-orfarm-blue text-white rounded-xl text-sm font-medium hover:bg-orfarm-blue/90 whitespace-nowrap"
                     >
                         <Plus className="size-4" />
                         Add Product
                     </Link>
                 </div>
             </div>
+
+            {/* Stats Modal */}
+            {showStats && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                    <div className="absolute inset-0 bg-black/40" onClick={() => setShowStats(false)} />
+                    <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden">
+                        <div className="bg-orfarm-blue px-6 py-4 flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                                <BarChart2 className="size-5 text-white/80" />
+                                <h2 className="text-base text-white">Product Statistics</h2>
+                            </div>
+                            <button onClick={() => setShowStats(false)} className="text-white/60 hover:text-white p-1.5 rounded-lg transition-colors">
+                                <X className="size-5" />
+                            </button>
+                        </div>
+                        <div className="p-6 grid grid-cols-3 gap-3">
+                            {[
+                                { label: 'Total Products', value: stats.total, icon: ShoppingBag },
+                                { label: 'Published', value: stats.published, icon: CheckCircle },
+                                { label: 'Draft', value: stats.draft, icon: FileText },
+                                { label: 'Out of Stock', value: stats.out_of_stock, icon: AlertOctagon },
+                                { label: 'Low Stock', value: stats.low_stock, icon: AlertTriangle },
+                                { label: 'Featured', value: stats.featured, icon: Star },
+                                { label: 'Categories', value: stats.categories, icon: Grid3X3 },
+                                { label: 'Brands', value: stats.brands, icon: Tag },
+                                { label: 'Stock Value', value: `£${stats.total_value >= 1000 ? (stats.total_value / 1000).toFixed(1) + 'k' : stats.total_value.toFixed(0)}`, icon: PoundSterling },
+                            ].map((stat, i) => (
+                                <div key={stat.label} className="group bg-gray-50 hover:bg-orfarm-blue rounded-xl p-4 flex items-center gap-3 cursor-default transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ transitionDelay: `${i * 30}ms` }}>
+                                    <div className="bg-orfarm-blue/10 group-hover:bg-white/20 p-2 rounded-lg transition-colors duration-300">
+                                        <stat.icon className="size-4 text-orfarm-blue group-hover:text-white transition-colors duration-300" />
+                                    </div>
+                                    <div>
+                                        <p className="text-xl text-gray-900 group-hover:text-white leading-tight transition-colors duration-300">{stat.value}</p>
+                                        <p className="text-xs text-gray-500 group-hover:text-white/70 transition-colors duration-300">{stat.label}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Toolbar Row 2: Filters */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 mb-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
