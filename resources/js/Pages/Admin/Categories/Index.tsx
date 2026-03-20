@@ -74,6 +74,11 @@ export default function CategoriesIndex({ categories }: Props) {
         );
     };
 
+    const getTotalProducts = (cat: Category & { products_count: number; children?: any[] }): number => {
+        const childCount = cat.children?.reduce((sum: number, child: any) => sum + getTotalProducts(child), 0) ?? 0;
+        return cat.products_count + childCount;
+    };
+
     const inputClass = "w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orfarm-blue/20 focus:border-orfarm-blue";
 
     const renderCategory = (cat: Category & { products_count: number; children?: any[] }, depth = 0) => (
@@ -102,8 +107,8 @@ export default function CategoriesIndex({ categories }: Props) {
                             <input type="checkbox" checked={editForm.data.is_active} onChange={(e) => editForm.setData('is_active', e.target.checked)} className="rounded border-gray-300" />
                             <span className="text-xs text-gray-500">Active</span>
                         </label>
-                        <button type="submit" className="px-3 py-1.5 bg-orfarm-blue text-white rounded-md text-xs">Save</button>
-                        <button type="button" onClick={() => setEditingId(null)} className="px-3 py-1.5 bg-gray-100 rounded-md text-xs">Cancel</button>
+                        <button type="submit" className="px-3 py-1.5 bg-green-600 text-white rounded-md text-xs hover:bg-green-700">Save</button>
+                        <button type="button" onClick={() => setEditingId(null)} className="px-3 py-1.5 bg-red-500 text-white rounded-md text-xs hover:bg-red-600">Cancel</button>
                     </form>
                 ) : (
                     <>
@@ -113,10 +118,15 @@ export default function CategoriesIndex({ categories }: Props) {
                             {!cat.is_active && <span className="ml-2 text-xs text-red-500 font-medium">Inactive</span>}
                         </div>
                         <div className="flex items-center gap-1">
-                            <button onClick={() => startEdit(cat)} className="p-1.5 text-gray-400 hover:text-orfarm-blue rounded-md hover:bg-blue-50">
+                            <button onClick={() => startEdit(cat)} className="p-2 text-blue-500 bg-blue-50 hover:text-white hover:bg-blue-600 rounded-lg transition-all duration-200 hover:scale-110 hover:shadow-md" title="Edit category">
                                 <Edit className="size-4" />
                             </button>
-                            <button onClick={() => setDeleteId(cat.id)} className="p-1.5 text-gray-400 hover:text-red-600 rounded-md hover:bg-red-50">
+                            <button
+                                onClick={() => setDeleteId(cat.id)}
+                                disabled={getTotalProducts(cat) > 0}
+                                className={`p-2 rounded-lg transition-all duration-200 ${getTotalProducts(cat) > 0 ? 'text-gray-300 bg-gray-50 cursor-not-allowed' : 'text-red-500 bg-red-50 hover:text-white hover:bg-red-600 hover:scale-110 hover:shadow-md'}`}
+                                title={getTotalProducts(cat) > 0 ? `Cannot delete: ${getTotalProducts(cat)} products in this category or its children` : 'Delete category'}
+                            >
                                 <Trash2 className="size-4" />
                             </button>
                         </div>
@@ -131,6 +141,7 @@ export default function CategoriesIndex({ categories }: Props) {
 
     return (
         <AdminLayout title="Categories">
+          <div className="max-w-3xl">
             <div className="flex items-center justify-between mb-6">
                 <p className="text-sm text-gray-500">{categories.length} top-level categories</p>
                 <button
@@ -162,10 +173,10 @@ export default function CategoriesIndex({ categories }: Props) {
                             <input type="checkbox" checked={createForm.data.is_active} onChange={(e) => createForm.setData('is_active', e.target.checked)} className="rounded border-gray-300" />
                             <span className="text-xs text-gray-500">Active</span>
                         </label>
-                        <button type="submit" disabled={createForm.processing} className="px-4 py-2 bg-orfarm-blue text-white rounded-lg text-sm font-medium hover:bg-orfarm-blue/90 disabled:opacity-50">
+                        <button type="submit" disabled={createForm.processing} className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 disabled:opacity-50">
                             Create
                         </button>
-                        <button type="button" onClick={() => setShowCreate(false)} className="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200">
+                        <button type="button" onClick={() => setShowCreate(false)} className="px-4 py-2 bg-red-500 text-white rounded-lg text-sm font-medium hover:bg-red-600">
                             Cancel
                         </button>
                     </div>
@@ -190,6 +201,7 @@ export default function CategoriesIndex({ categories }: Props) {
                 message="Are you sure? Categories with products cannot be deleted. Move products first."
                 confirmText="Delete"
             />
+          </div>
         </AdminLayout>
     );
 }

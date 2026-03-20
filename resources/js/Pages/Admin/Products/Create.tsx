@@ -365,7 +365,7 @@ export default function ProductCreate({ categories, brands }: Props) {
                                 </div>
                                 <div>
                                     <label className={labelClass}>Expiry Date</label>
-                                    <input type="date" value={data.expiry_date} onChange={(e) => setData('expiry_date', e.target.value)} className={inputClass} />
+                                    <input type="date" value={data.expiry_date} onChange={(e) => setData('expiry_date', e.target.value)} min={new Date().toISOString().split('T')[0]} className={inputClass} />
                                     {errors.expiry_date && <p className={errorClass}>{errors.expiry_date}</p>}
                                 </div>
                                 <label className="flex items-center gap-2">

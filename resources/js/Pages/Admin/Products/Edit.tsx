@@ -3,6 +3,7 @@ import { router, useForm } from '@inertiajs/react';
 import axios from 'axios';
 import AdminLayout from '@/Layouts/AdminLayout';
 import { Brand, Category, Product, ProductImage } from '@/types';
+import { Link } from '@inertiajs/react';
 import { Upload, X, RefreshCw } from 'lucide-react';
 
 interface Props {
@@ -390,7 +391,7 @@ export default function ProductEdit({ product, categories, brands }: Props) {
                                 </div>
                                 <div>
                                     <label className={labelClass}>Expiry Date</label>
-                                    <input type="date" value={data.expiry_date} onChange={(e) => setData('expiry_date', e.target.value)} className={inputClass} />
+                                    <input type="date" value={data.expiry_date} onChange={(e) => setData('expiry_date', e.target.value)} min={new Date().toISOString().split('T')[0]} className={inputClass} />
                                     {errors.expiry_date && <p className={errorClass}>{errors.expiry_date}</p>}
                                 </div>
                                 <label className="flex items-center gap-2">
@@ -419,10 +420,16 @@ export default function ProductEdit({ product, categories, brands }: Props) {
                         <button
                             type="submit"
                             disabled={processing}
-                            className="w-full py-3 bg-orfarm-blue text-white rounded-lg font-medium hover:bg-orfarm-blue/90 disabled:opacity-50 transition-colors"
+                            className="w-full py-3 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 disabled:opacity-50 transition-colors"
                         >
                             {processing ? 'Saving...' : 'Update Product'}
                         </button>
+                        <Link
+                            href="/admin/products"
+                            className="block w-full py-3 text-center text-sm font-medium text-white bg-red-500 rounded-lg hover:bg-red-600 transition-colors mt-2"
+                        >
+                            Cancel
+                        </Link>
                     </div>
                 </div>
             </form>

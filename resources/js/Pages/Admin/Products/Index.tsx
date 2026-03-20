@@ -221,7 +221,7 @@ export default function ProductsIndex({ products, categories, brands, filters }:
                     <button onClick={() => handleBulkAction('publish')} className="text-xs px-3 py-1 bg-green-600 text-white rounded-md hover:bg-green-700">Publish</button>
                     <button onClick={() => handleBulkAction('draft')} className="text-xs px-3 py-1 bg-gray-600 text-white rounded-md hover:bg-gray-700">Draft</button>
                     <button onClick={() => handleBulkAction('delete')} className="text-xs px-3 py-1 bg-red-600 text-white rounded-md hover:bg-red-700">Delete</button>
-                    <button onClick={() => setSelected([])} className="text-xs text-blue-600 hover:underline ml-auto">Clear</button>
+                    <button onClick={() => setSelected([])} className="text-xs px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700">Clear Selection</button>
                 </div>
             )}
 
